@@ -47,3 +47,6 @@ footer p {
 .paddin {
     margin: 0 20px;
 }
+hr {
+    margin: 0 !important;
+}

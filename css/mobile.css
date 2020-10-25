@@ -65,11 +65,46 @@
         margin-right: 10px;
         color: #999;
     }
-    .fa-arrow-left {
-        font-size: 24px;
+    .fa-angle-left {
+        font-size: 20px;
     }
     .logo {
         height: 40px;
+    }
+    .container-download {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 10px 20px;
+    }
+    .link-download {
+        padding: 10px;
+        text-decoration: none;
+        color: #222;
+    }
+    .link-download i {
+        font-size: 24px;
+    }
+    .back2Top {
+        width: 40px;
+        line-height: 40px;
+        overflow: hidden;
+        z-index: 999;
+        display: none;
+        cursor: pointer;
+        position: fixed;
+        bottom: 30px;
+        right: 10px;
+        background-color: #ddddffaf;
+        color: #555;
+        text-align: center;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    .back2Top:hover {
+        background-color: #ddddffd7;
+        color: #000;
     }
 
 }
