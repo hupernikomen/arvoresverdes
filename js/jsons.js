@@ -31,3 +31,19 @@ agenda = [[],
 [{ 'dia': 30, 'semana': 'Sexta-Feira', 'evento': 'Culto - Exemplo', 'hora': '19:20h', 'local': 'Templo Batista em Arvores Verdes' }],
 [{ 'dia': 31, 'semana': 'Sexta-Feira', 'evento': 'Culto - Exemplo', 'hora': '19:20h', 'local': 'Templo Batista em Arvores Verdes' }]
 ]
+
+var menu = 
+[
+    { 'id': 'Home', 'link': 'index.html' },
+    { 'id': 'Contato', 'link': '' },
+    { 'id': 'Contribua', 'link': '' },
+    { 'id': 'Downloads', 'link': 'downloads.html' }
+]
+
+var downloads = 
+[
+    {
+        'item': 'O que é Fé',
+        'link': 'https://drive.google.com/file/d/1b8Dy-8u-JMbNJhmOfu6AE8Np-aA-P98u/view?usp=sharing'
+    }
+]
