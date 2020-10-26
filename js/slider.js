@@ -3,7 +3,6 @@ var plataformas = [
         'id': 'carouselmobile',
         'class': 'slide-mobile',
         'imgs': [
-
             '<img class="d-block w-100" src="imagens/mobile-slide-1.jpg" alt="First slide">',
             '<img class="d-block w-100" src="imagens/mobile-slide-2.jpg" alt="Second slide">'
         ]
