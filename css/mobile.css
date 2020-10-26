@@ -27,31 +27,36 @@
         position: relative;
         z-index: 1;
     }
-    
-    .bemvindo > p {
-        font-size: 20px;
-        text-align: center;
-    }
     .bemvindo-dia {
         background: #be0606;
-        font-weight: 600;
-        font-size: 18px;
         color: #fff;
         text-align: center;
-        line-height: 40px;
-        width: 50px;
-        height: 40px;
-        margin-bottom: 10px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: 500;
+        margin-right: 10px;
+
     }
     .bemvindo-titulo {
         font-size: 18px;
     }
     .bemvindo a {
         color: #be0606;
+        font-size: 14px;
+        padding: 10px 0;
     }
     .item-programacao {
+        display: flex;
         margin: 10px 0 30px;
     }
+    .item-programacao-detalhes {
+        margin: 5px;
+    }
+    .item-programacao span {
+        font-size: 14px;
+    }
+
     footer {
         padding-top: 10px;
     }
@@ -106,6 +111,7 @@
         background-color: #ddddffd7;
         color: #000;
     }
+
 
 }
 

@@ -37,9 +37,15 @@
         </nav>
     </header>
 
+    <div class="paddin mt-5 mb-5 text-center">
+        <p>
+            Confira nossa agenda de cultos e eventos para todo o restante do mês e venha, para juntos adorarmos a nosso Deus.
+        </p>
+    </div>
+
     <div class="bemvindo paddin">
         <div class="verTudo"></div>
-      </div>
+    </div>
 
     <!-- Rodape -->
     <footer class="page-footer font-small blue-grey lighten-5">
@@ -106,12 +112,13 @@
             agenda[i].map((item) => {
                 var post = `
             <div class="item-programacao">
-            <div class="bemvindo-dia">${item.dia}</div>
-            <h6 class="bemvindo-titulo">${item.evento}</h6>
-            <i class="fas fa-map-marker-alt"></i><span>${item.local}</span><br>
-            <i class="far fa-calendar-alt"></i><span>${item.dia == diaDoMesComp ? 'Hoje' : item.semana}</span> - <span>${item.hora}</span>
+                <div class="bemvindo-dia">${item.dia}</div>
+                <div class="item-programacao-detalhes">
+                    <h6 class="bemvindo-titulo">${item.evento}</h6>
+                    <span>${item.local}</span><br>
+                    <span>${item.dia == diaDoMesComp ? 'Hoje' : item.semana}</span> - <span>${item.hora}</span>
+                </div>
             </div>
-            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px"">
             `
                 $('.verTudo').append(post)
             })
@@ -119,4 +126,5 @@
     </script>
 
 </body>
+
 </html>
