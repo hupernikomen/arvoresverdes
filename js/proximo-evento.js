@@ -13,6 +13,7 @@ for (var i = 0; i < agenda[diaDoMes].length; i++) {
         <i class="fas fa-map-marker-alt"></i><span>${agenda[diaDoMes][i].local}</span><br>
         <i class="far fa-calendar-alt"></i><span>${agenda[diaDoMes][i].dia == diaDoMesComp ? 'Hoje' : agenda[diaDoMes][i].semana}</span> - <span>${agenda[diaDoMes][i].hora}</span>
     </div>
+    
     `
     $('.programacao').append(post)
 }

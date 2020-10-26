@@ -95,7 +95,7 @@
     <script src="js/variaveis.js"></script>
     <script src="js/jsons.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/back-up.js"></script>
+    <script src="js/back-to-top.js"></script>
 
     <script>
         var data = new Date()
@@ -111,6 +111,7 @@
             <i class="fas fa-map-marker-alt"></i><span>${item.local}</span><br>
             <i class="far fa-calendar-alt"></i><span>${item.dia == diaDoMesComp ? 'Hoje' : item.semana}</span> - <span>${item.hora}</span>
             </div>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px"">
             `
                 $('.verTudo').append(post)
             })
