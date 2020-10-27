@@ -1,3 +1,7 @@
+var data = new Date()
+var diaDoMesComp = data.getDate()
+var diaDoMes = data.getDate()
+
 while (agenda[diaDoMes] == '') {
     diaDoMes++
     if (agenda[diaDoMes] == null) {

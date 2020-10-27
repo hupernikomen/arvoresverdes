@@ -38,7 +38,8 @@
     </header>
 
     <div class="paddin mt-5 mb-5 text-center">
-        <p>Confira nossa agenda de cultos e eventos para todo o restante do mês e venha para juntos nos alegrarmos e adorarmos a nosso Deus.</p>
+        <p>Confira nossa agenda de cultos e eventos para todo o restante do mês e venha para juntos nos alegrarmos e
+            adorarmos a nosso Deus.</p>
     </div>
 
     <div class="bemvindo paddin">
@@ -96,15 +97,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <script src="js/variaveis.js"></script>
     <script src="js/jsons.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/back-to-top.js"></script>
+    <script src="js/next-event.js"></script>
 
     <script>
-        var data = new Date()
-        var diaDoMesComp = data.getDate()
-        var diaDoMes = data.getDate()
         for (var i = diaDoMes; i < agenda.length; i++) {
 
             agenda[i].map((item) => {

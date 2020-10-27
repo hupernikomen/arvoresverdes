@@ -1,44 +1,25 @@
-var plataformas = [
-    mobile = {
-        'id': 'carouselmobile',
-        'class': 'slide-mobile',
-        'imgs': [
-            '<img class="d-block w-100" src="imagens/mobile-slide-1.jpg" alt="First slide">',
-            '<img class="d-block w-100" src="imagens/mobile-slide-2.jpg" alt="Second slide">'
-        ]
-    },
-    desktop = {
-        'id': 'carouseldesktop',
-        'class': 'slide-desktop',
-        'imgs': [
-            '<img class="d-block w-100" src="imagens/ban1.jpg" alt="First slide">',
-            '<img class="d-block w-100" src="imagens/ban2.jpg" alt="Second slide">'
-        ]
-    }
-]
-
-var item, aidi, clas;
+var i, a, c
 
 if (screen.width < 1199) {
-    item = 0;
-    aidi = 'carouselmobile'
-    clas = 'slide-mobile'
+    i = 0;
+    a = 'carouselmobile'
+    c = 'slide-mobile'
 } else {
-    item = 1
-    aidi = 'carouseldesktop'
-    clas = 'slide-desktop'
+    i = 1
+    a = 'carouseldesktop'
+    c = 'slide-desktop'
 }
 
-for (var f = 0; f < plataformas[item].imgs.length; f++) {
+for (var classe = 0; classe < plataformas[i].imgs.length; classe++) {
     var slide = `
-        <div class="carousel-item ${f == 0 ? 'active' : ''}">
-            ${plataformas[item].imgs[f]}
+        <div class="carousel-item ${classe == 0 ? 'active' : ''}">
+            ${plataformas[i].imgs[classe]}
         </div>
         `
     $('.carousel-inner').append(slide)
 }
 
-$('#mudarid').attr('id', aidi)
-$('.carousel').addClass(clas)
-$('.carousel a').attr('href', '#' + aidi)
+$('#mudarid').attr('id', a)
+$('.carousel').addClass(c)
+$('.carousel a').attr('href', '#' + a)
 

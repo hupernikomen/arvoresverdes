@@ -32,26 +32,45 @@ agenda = [[],
 [{ 'dia': 31, 'semana': 'Sexta-Feira', 'evento': 'Culto - Exemplo', 'hora': '19:20h', 'local': 'Templo Batista em Arvores Verdes' }]
 ]
 
-var menu = 
-[
-    { 'id': 'Home', 'link': 'index.html' },
-    { 'id': 'Contato', 'link': '' },
-    { 'id': 'Contribua', 'link': '' },
-    { 'id': 'Downloads', 'link': 'downloads.html' }
-]
+var menu =
+    [
+        { 'id': 'Home', 'link': 'index.html' },
+        { 'id': 'Contato', 'link': '' },
+        { 'id': 'Contribua', 'link': '' },
+        { 'id': 'Downloads', 'link': 'downloads.html' }
+    ]
 
-var downloads = 
-[
-    {
-        'item': 'O que é Fé - R. C. Sproul',
-        'link': 'https://drive.google.com/file/d/1b8Dy-8u-JMbNJhmOfu6AE8Np-aA-P98u/view?usp=sharing'
+var downloads =
+    [
+        {
+            'item': 'O que é Fé - R. C. Sproul',
+            'link': 'https://drive.google.com/file/d/1b8Dy-8u-JMbNJhmOfu6AE8Np-aA-P98u/view?usp=sharing'
+        },
+        {
+            'item': 'Como ser Salvo - J. C. Ryle',
+            'link': 'https://drive.google.com/file/d/1T3l-hWlgq6Z2HiU43a8oZL0y9_8oCwQi/view?usp=sharing'
+        },
+        {
+            'item': 'O que significa ser nascido de novo - J. C. Ryle',
+            'link': 'https://drive.google.com/file/d/1BjHjTGfL2J7YnnTUOGbLiFK50XpDocrW/view?usp=sharing'
+        }
+    ]
+
+var plataformas = [
+    mobile = {
+        'id': 'carouselmobile',
+        'class': 'slide-mobile',
+        'imgs': [
+            '<img class="d-block w-100" src="imagens/mobile-slide-1.jpg" alt="First slide">',
+            '<img class="d-block w-100" src="imagens/mobile-slide-2.jpg" alt="Second slide">'
+        ]
     },
-    {
-        'item': 'Como ser Salvo - J. C. Ryle',
-        'link': 'https://drive.google.com/file/d/1T3l-hWlgq6Z2HiU43a8oZL0y9_8oCwQi/view?usp=sharing'
-    },
-    {
-        'item': 'O que significa ser nascido de novo - J. C. Ryle',
-        'link': 'https://drive.google.com/file/d/1BjHjTGfL2J7YnnTUOGbLiFK50XpDocrW/view?usp=sharing'
+    desktop = {
+        'id': 'carouseldesktop',
+        'class': 'slide-desktop',
+        'imgs': [
+            '<img class="d-block w-100" src="imagens/ban1.jpg" alt="First slide">',
+            '<img class="d-block w-100" src="imagens/ban2.jpg" alt="Second slide">'
+        ]
     }
 ]
