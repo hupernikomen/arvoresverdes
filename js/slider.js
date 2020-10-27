@@ -13,7 +13,8 @@ if (screen.width < 1199) {
 for (var classe = 0; classe < plataformas[i].imgs.length; classe++) {
     var slide = `
         <div class="carousel-item ${classe == 0 ? 'active' : ''}">
-            ${plataformas[i].imgs[classe]}
+            ${plataformas[i].imgs[classe].img}
+            <h2 class="texto-slide">${plataformas[i].imgs[classe].text}</h2>
         </div>
         `
     $('.carousel-inner').append(slide)

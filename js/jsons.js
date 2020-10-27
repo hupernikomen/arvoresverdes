@@ -61,16 +61,28 @@ var plataformas = [
         'id': 'carouselmobile',
         'class': 'slide-mobile',
         'imgs': [
-            '<img class="d-block w-100" src="imagens/mobile-slide-1.jpg" alt="First slide">',
-            '<img class="d-block w-100" src="imagens/mobile-slide-2.jpg" alt="Second slide">'
+            {
+                'img':'<img class="d-block w-100" src="imagens/mobile-slide-1.jpg" alt="First slide">',
+                'text': 'FOTO UM'
+            },
+            {
+                'img':'<img class="d-block w-100" src="imagens/mobile-slide-2.jpg" alt="Second slide">',
+                'text': 'FOTO DOIS'
+            }
         ]
     },
     desktop = {
         'id': 'carouseldesktop',
         'class': 'slide-desktop',
         'imgs': [
-            '<img class="d-block w-100" src="imagens/ban1.jpg" alt="First slide">',
-            '<img class="d-block w-100" src="imagens/ban2.jpg" alt="Second slide">'
+            {
+                'img':'<img class="d-block w-100" src="imagens/mobile-slide-1.jpg" alt="First slide">',
+                'text': 'UM'
+            },
+            {
+                'img':'<img class="d-block w-100" src="imagens/mobile-slide-2.jpg" alt="Second slide">',
+                'text': 'DOIS'
+            }
         ]
     }
 ]
