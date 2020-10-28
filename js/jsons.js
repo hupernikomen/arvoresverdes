@@ -66,12 +66,14 @@ var plataformas = [
                 'h3': 'EVANGELISMO',
                 'p':'Dia 25/01 no Morro do Papagaio',
                 'button':'PARTICIPE',
+                'link':"https://google.com"
             },
             {
                 'img':'<img class="d-block w-100" src="imagens/mobile-slide-2.jpg" alt="Second slide">',
                 'h3': 'Ebd INFANTIL',
                 'p':'Traga seus filhos e filhas para a Escola Bíblica Dominical',
                 'button':'SAIBA MAIS',
+                'link':'downloads.html'
             }
         ]
     },

@@ -126,6 +126,10 @@
         color: #fff;
 
     }
+    .carousel-control-next, 
+    .carousel-control-prev {
+        width: 10% !important;
+    }
     .carousel-item h3 {
         text-transform: uppercase;
         animation: identifier 1.5s .5s forwards;
@@ -147,7 +151,7 @@
         line-height: 1.5rem;
         text-shadow: 0px 1px 2px #464646a8;
     }
-    .carousel-item button {
+    .carousel-item a {
         text-transform: uppercase;
         margin-left: 0;
         opacity: 0;

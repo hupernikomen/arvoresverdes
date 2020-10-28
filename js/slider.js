@@ -1,12 +1,12 @@
-var i, a, c
+var i, y, c
 
 if (screen.width < 1199) {
     i = 0;
-    a = 'carouselmobile'
+    y = 'carouselmobile'
     c = 'slide-mobile'
 } else {
     i = 1
-    a = 'carouseldesktop'
+    y = 'carouseldesktop'
     c = 'slide-desktop'
 }
 
@@ -17,14 +17,15 @@ for (var classe = 0; classe < plataformas[i].imgs.length; classe++) {
             <div class="text-slide">
                 <h3 class="texto-slide">${plataformas[i].imgs[classe].h3}</h3>
                 <p>${plataformas[i].imgs[classe].p}</p>
-                <button>${plataformas[i].imgs[classe].button}</button>
+                <a href="${plataformas[i].imgs[classe].link}">
+                ${plataformas[i].imgs[classe].button}</a>
             </div>
         </div>
         `
     $('.carousel-inner').append(slide)
 }
 
-$('#mudarid').attr('id', a)
+$('#mudarid').attr('id', y)
 $('.carousel').addClass(c)
-$('.carousel a').attr('href', '#' + a)
+$('.carousel a.control').attr('href', '#' + y)
 
