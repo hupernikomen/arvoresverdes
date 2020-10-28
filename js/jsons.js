@@ -63,11 +63,15 @@ var plataformas = [
         'imgs': [
             {
                 'img':'<img class="d-block w-100" src="imagens/mobile-slide-1.jpg" alt="First slide">',
-                'text': 'FOTO UM'
+                'h3': 'TITULO',
+                'p':'Texto',
+                'button':'DGH'
             },
             {
                 'img':'<img class="d-block w-100" src="imagens/mobile-slide-2.jpg" alt="Second slide">',
-                'text': 'FOTO DOIS'
+                'h3': 'TITULO',
+                'p':'Lorem Ipsum Dalet Rour Teste de mais tetses',
+                'button':'ACESSE'
             }
         ]
     },
@@ -77,11 +81,11 @@ var plataformas = [
         'imgs': [
             {
                 'img':'<img class="d-block w-100" src="imagens/mobile-slide-1.jpg" alt="First slide">',
-                'text': 'UM'
+                'h3': 'UM'
             },
             {
                 'img':'<img class="d-block w-100" src="imagens/mobile-slide-2.jpg" alt="Second slide">',
-                'text': 'DOIS'
+                'h3': 'DOIS'
             }
         ]
     }

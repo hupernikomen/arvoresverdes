@@ -14,7 +14,11 @@ for (var classe = 0; classe < plataformas[i].imgs.length; classe++) {
     var slide = `
         <div class="carousel-item ${classe == 0 ? 'active' : ''}">
             ${plataformas[i].imgs[classe].img}
-            <h2 class="texto-slide">${plataformas[i].imgs[classe].text}</h2>
+            <div class="text-slide">
+                <h3 class="texto-slide">${plataformas[i].imgs[classe].h3}</h3>
+                <p>${plataformas[i].imgs[classe].p}</p>
+                <button>${plataformas[i].imgs[classe].button}</button>
+            </div>
         </div>
         `
     $('.carousel-inner').append(slide)
