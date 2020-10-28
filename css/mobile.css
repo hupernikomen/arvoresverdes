@@ -1,14 +1,17 @@
 @media (max-width: 1199px) {
-    .container-topo {
-        padding: 0 20px;
-    }
-    .voltar {
-        width: 50px;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
     .topo,
     .slide-desk,
     .navbar-text {
         display: none;
+    }
+    .voltar {
+        width: 50px;
+    }
+    button:focus{
+        outline: none;
     }
     .navbar-nav {
         margin-top: 20px;
@@ -17,19 +20,20 @@
         font-size: 1rem;
     }
     .carousel-inner, 
-    .carousel-item {
+    .carousel-item,
+    .carousel-item img {
         max-height: 400px;
     }
 
-    .bemvindo {
+    .c-programacao {
         margin-top: -10px;
         padding: 20px 20px;
         background: #fff;
         position: relative;
         z-index: 1;
     }
-    .bemvindo-dia {
-        background: #be0606;
+    .c-programacao-dia {
+        background: red;
         color: #fff;
         text-align: center;
         width: 30px;
@@ -39,14 +43,18 @@
         margin-right: 10px;
 
     }
-
-    .bemvindo-titulo {
+    .c-programacao-titulo {
         font-size: 18px;
     }
-    .bemvindo a {
-        color: #be0606;
-        font-size: 14px;
-        padding: 10px 0;
+    .btn-ver-todos {
+        padding: 8px 10px;
+        color: #fff;
+        font-size: 12px;
+        border-radius: 5px;
+        background: #a7bfc5;
+    }
+    .btn-ver-todos:focus {
+        color: #fff;
     }
     .item-programacao {
         display: flex;
@@ -76,7 +84,7 @@
         font-size: 20px;
     }
     .logo {
-        height: 40px;
+        height: 50px;
     }
     .container-download {
         display: flex;
@@ -114,29 +122,35 @@
         color: #000;
     }
     .carousel-item h3,
-    .carousel-item p,
-    .carousel-item button {
+    .carousel-item p {
         color: #fff;
-        text-shadow: 1px 1px 5px #00000075;
+
     }
     .carousel-item h3 {
+        text-transform: uppercase;
         animation: identifier 1s forwards;
         margin-left: 0;
         font-size: 45px;
-        font-weight: 800;
+        font-weight: 900;
+        text-shadow: 1px 1px 5px #00000050;
     }
     .carousel-item p {
         margin-left: 0;
+        margin-top: -10px;
+        margin-bottom: 40px;
         animation: identifier 1.5s forwards;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
         width: 80%;
-        line-height: 1rem;
+        line-height: 1.5rem;
+        text-shadow: 0px 1px 2px #464646a8;
     }
     .carousel-item button {
+        text-transform: uppercase;
         margin-left: 0;
         background: red;
-        padding: 5px 10px;
+        color: #fff;
+        padding: 8px 15px;
         border: 0;
         animation: identifier 2s forwards;
         box-shadow: 2px 2px 5px #00000050;
@@ -149,10 +163,10 @@
     @keyframes identifier {
         from{
             opacity: 0;
-            margin-left: -40px;
+            margin-left: -50px;
         }
         to {
-            opacity:1;
+            opacity: 1;
             margin-left: 40px;
         }
     }
