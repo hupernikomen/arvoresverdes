@@ -1,10 +1,12 @@
 @media (max-width: 1199px) {
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-
     .topo,
     .slide-desk,
-    .navbar-text {
+    .navbar-text,
+    .sr-only,
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
         display: none;
     }
     .voltar {

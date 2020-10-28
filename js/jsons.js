@@ -82,12 +82,18 @@ var plataformas = [
         'class': 'slide-desktop',
         'imgs': [
             {
-                'img':'<img class="d-block w-100" src="imagens/mobile-slide-1.jpg" alt="First slide">',
-                'h3': 'UM'
+                'img':'<img class="d-block w-100" src="imagens/ban1.jpg" alt="First slide">',
+                'h3': 'UM',
+                'p':'Dia 25/01 no Morro do Papagaio',
+                'button':'PARTICIPE',
+                'link':''
             },
             {
-                'img':'<img class="d-block w-100" src="imagens/mobile-slide-2.jpg" alt="Second slide">',
-                'h3': 'DOIS'
+                'img':'<img class="d-block w-100" src="imagens/ban2.jpg" alt="Second slide">',
+                'h3': 'DOIS',
+                'p':'Traga seus filhos e filhas para a Escola Bíblica Dominical',
+                'button':'SAIBA MAIS',
+                'link':''
             }
         ]
     }

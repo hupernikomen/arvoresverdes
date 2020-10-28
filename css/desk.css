@@ -1,5 +1,14 @@
 @media (min-width: 1200px) {
-    
- 
+
+    .logo {
+        height: 60px;
+    }
+    .carousel-inner, 
+    .carousel-item {
+        max-height: 400px;
+    }
+    .navbar {
+        padding: 0 10%;
+    }
 
 }
