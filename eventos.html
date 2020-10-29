@@ -29,7 +29,7 @@
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <i class="fas fa-arrow-left voltar" onclick="history.go(-1);"></i>
-            <a class="navbar-brand" href="index.html"><img class="logo" src="imagens/logo.png" alt=""></a>
+            <a class="navbar-brand" href="index.html"><img class="logo" src="imagens/logo-igreja-batista-arvores-verdes.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,8 +46,8 @@
             adorarmos a nosso Deus.</p>
     </div>
 
-    <div class="c-programacao paddin">
-        <div class="verTudo"></div>
+    <div class="c-prog paddin">
+        <div class="itens-prog"></div>
     </div>
 
     <!-- Rodape -->
@@ -99,29 +99,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <script src="js/jsons.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/back-to-top.js"></script>
-    <script src="js/next-event.js"></script>
+    <script src="js/evento.js"></script>
+    <script src="js/eventos.js"></script>
 
-    <script>
-        for (var i = diaDoMes; i < agenda.length; i++) {
-
-            agenda[i].map((item) => {
-                var post = `
-            <div class="item-programacao">
-                <div class="c-programacao-dia">${item.dia}</div>
-                <div class="item-programacao-detalhes">
-                    <h6 class="c-programacao-titulo">${item.evento}</h6>
-                    <span>${item.local}</span><br>
-                    <span>${item.dia == diaDoMesComp ? 'Hoje' : item.semana}</span> - <span>${item.hora}</span>
-                </div>
-            </div>
-            `
-                $('.verTudo').append(post)
-            })
-        }
-    </script>
 
 </body>
 

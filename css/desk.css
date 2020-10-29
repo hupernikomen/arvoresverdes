@@ -2,13 +2,14 @@
 
     .logo {
         height: 60px;
+        margin-right: 50px;
     }
     .carousel-inner, 
     .carousel-item {
         max-height: 400px;
     }
     .navbar {
-        padding: 0 10%;
+        padding: 10px 10%;
     }
 
 }
