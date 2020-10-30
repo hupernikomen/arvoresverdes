@@ -140,7 +140,7 @@
     }
     .carousel-item h3 {
         text-transform: uppercase;
-        animation: identifier 1s .5s forwards;
+        animation: identifier 2s .5s forwards;
         margin-left: 0;
         font-size: 45px;
         font-weight: 900;
@@ -151,7 +151,7 @@
         margin-left: 0;
         margin-top: -10px;
         margin-bottom: 40px;
-        animation: identifier 1.5s .5s forwards;
+        animation: identifier 2.5s .5s forwards;
         font-size: 18px;
         font-weight: 300;
         width: 80%;
@@ -167,7 +167,7 @@
         color: #fff;
         padding: 8px 15px;
         border: 0;
-        animation: identifier 2.5s .5s forwards;
+        animation: identifier 3.5s .5s forwards;
         box-shadow: 2px 2px 5px #00000050;
     }
     .conteudo-slide {
