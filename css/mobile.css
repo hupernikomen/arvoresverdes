@@ -14,10 +14,6 @@
     .voltar {
         width: 50px;
     }
-    .navbar-collapse {
-        background: url("../imagens/map-bg.png");
-        background-repeat: no-repeat;
-    }
     .navbar-toggler:focus{
         outline: none;
     }
@@ -26,6 +22,9 @@
     }
     .navbar-toggler-icon {
         font-size: 1rem;
+    }
+    .navbar-brand {
+        margin: 0;
     }
     .carousel-inner, 
     .carousel-item,
@@ -60,7 +59,7 @@
         justify-content: center;
         padding: 5px;
         color: #222;
-        font-size: 22px;
+        font-size: 20px;
         border-radius: 5px;
     }
     .btn-ver-todos:focus {
@@ -96,7 +95,7 @@
         font-size: 20px;
     }
     .logo {
-        height: 50px;
+        height: 60px;
     }
     .container-download {
         display: flex;

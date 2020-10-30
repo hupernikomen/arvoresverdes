@@ -59,7 +59,7 @@ for (var i = 0; i < prog[dMes].length; i++) {
 
 }
 var btnMore = `
-<a href="eventos.html" class="more"><i class="fas fa-angle-down"></i></a>`
+<a href="eventos.html" class="more"><i class="fas fa-plus"></i></a>`
 
 $('.prog').append(btnMore)
 
