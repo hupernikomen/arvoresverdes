@@ -16,33 +16,3 @@ header {
     z-index: 9999;
     box-shadow: 0 1px 3px 0 #00000041;
 }
-header a {
-    color: #222 !important;
-}
-
-.navbar-text a {
-    display: flex;
-    align-content: center;
-}
-.navbar-text i {
-    font-size: 22px;
-    color: red;
-}
-footer {
-    background: #222;
-}
-footer p {
-    margin-bottom: 5px;
-}
-.footer-copyright{
-    font-size: 13px;
-}
-.teal {
-    background: rgb(126, 126, 126);
-}
-.paddin {
-    margin: 0 20px;
-}
-hr {
-    margin: 0 !important;
-}

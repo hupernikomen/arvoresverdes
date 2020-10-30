@@ -1,6 +1,8 @@
 @media (max-width: 1199px) {
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
+    body, html {
+        font-family: 'Roboto', sans-serif;
+    }
     .topo,
     .slide-desk,
     .navbar-text,
@@ -12,7 +14,11 @@
     .voltar {
         width: 50px;
     }
-    button:focus{
+    .navbar-collapse {
+        background: url("../imagens/map-bg.png");
+        background-repeat: no-repeat;
+    }
+    .navbar-toggler:focus{
         outline: none;
     }
     .navbar-nav {
@@ -29,11 +35,11 @@
 
     .c-prog {
         margin-top: -10px;
-        padding: 20px;
         background: #fff;
         position: relative;
         z-index: 1;
     }
+
     .tag-dia {
         background: red;
         color: #fff;
@@ -64,22 +70,27 @@
         display: flex;
         margin-bottom: 20px;
     }
-    .item-prog span {
-        font-size: 14px;
+    .tag-hora::after {
+        content: 'h';
     }
-
+    .tag-loc {
+        display: block;
+    }
     footer {
         padding-top: 10px;
+        background: #3e6a88 url('../imagens/bg-footer.jpg');
+        background-repeat: no-repeat;
     }
     footer h6, 
     footer p, 
+    footer a,
+    footer i,
     .footer-copyright {
         color: #fff;
     }
-    .fa-calendar-alt,
-    .fa-map-marker-alt {
-        margin-right: 10px;
-        color: #999;
+    .flex-center {
+        display: flex;
+        justify-content: center;
     }
     .fa-arrow-left {
         font-size: 20px;
@@ -104,23 +115,20 @@
     }
     .back2Top {
         width: 40px;
-        line-height: 40px;
         overflow: hidden;
         z-index: 999;
         display: none;
-        cursor: pointer;
         position: fixed;
         bottom: 30px;
         right: 10px;
-        background-color: #ddddffaf;
+        background-color: #fff;
         color: #555;
         text-align: center;
         font-size: 30px;
         text-decoration: none;
     }
     .back2Top:hover {
-        background-color: #ddddffd7;
-        color: #000;
+        background-color: #fff7;
     }
     .carousel-item h3,
     .carousel-item p {
@@ -163,10 +171,13 @@
         animation: identifier 2.5s .5s forwards;
         box-shadow: 2px 2px 5px #00000050;
     }
-    .text-slide {
+    .conteudo-slide {
         width: 100%;
         position: absolute;
         top: 30%;
+    }
+    .conteudo-slide h3 {
+        font-size: 35px;
     }
     @keyframes identifier {
         from{
@@ -178,5 +189,13 @@
             margin-left: 40px;
         }
     }
-
+    .c-mapa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0000009d;
+        top: 0;
+        position: fixed;
+        z-index: 9999;
+    }
 }

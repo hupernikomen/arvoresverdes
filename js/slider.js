@@ -56,8 +56,8 @@ for (var classe = 0; classe < plataformas[i].imgs.length; classe++) {
     var slide = `
         <div class="carousel-item ${classe == 0 ? 'active' : ''}">
             ${item.img}
-            <div class="text-slide">
-                <h3 class="texto-slide">${item.h3}</h3>
+            <div class="conteudo-slide">
+                <h3>${item.h3}</h3>
                 <p>${item.p}</p>
                 <a href="${item.link}">
                 ${item.button}</a>
