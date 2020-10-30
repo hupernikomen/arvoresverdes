@@ -41,23 +41,25 @@
 
     .tag-dia {
         background: red;
+        border-radius: 2px;
         color: #fff;
         text-align: center;
         width: 35px;
         height: 35px;
         line-height: 35px;
-        font-weight: 500;
         margin-right: 10px;
-
+        font-size: 16px;
+        font-weight: 600;
     }
     .item-prog h6 {
         font-size: 18px;
         margin-top: 5px;
     }
     a.more {
-        display: flex;
-        justify-content: center;
-        padding: 5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0 0 10px 10px;
         color: #222;
         font-size: 20px;
         border-radius: 5px;
@@ -67,10 +69,11 @@
     }
     .item-prog {
         display: flex;
+        position: relative;
         margin-bottom: 20px;
     }
     .tag-hora::after {
-        content: 'h';
+        content: 'hs';
     }
     .tag-loc {
         display: block;
@@ -140,7 +143,7 @@
     }
     .carousel-item h3 {
         text-transform: uppercase;
-        animation: identifier 1s 1.5s forwards;
+        animation: identifier 1s 1s forwards;
         margin-left: -20px;
         font-size: 45px;
         font-weight: 900;
@@ -151,7 +154,7 @@
         margin-left: -20px;
         margin-top: -10px;
         margin-bottom: 40px;
-        animation: identifier 1s 1.7s forwards;
+        animation: identifier 1s 1.2s forwards;
         font-size: 18px;
         font-weight: 300;
         width: 80%;
@@ -177,6 +180,11 @@
     }
     .conteudo-slide h3 {
         font-size: 35px;
+    }
+    .conteudo-slide a {
+        border-radius: 2px;
+        font-size: 14px;
+        font-weight: 600;
     }
     @keyframes identifier {
         to {

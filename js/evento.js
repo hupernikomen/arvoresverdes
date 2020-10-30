@@ -47,21 +47,22 @@ for (var i = 0; i < prog[dMes].length; i++) {
     var post = `
     <div class="item-prog">
         <span class="tag-dia">${item.dia}</span>
-        <div class="ml-3">
+        <div class="ml-2">
             <h6 class="tag-evt">${item.evt}</h6>
             <span class="tag-loc">${item.loc}</span>
             <span class="tag-diaD">${item.dia == dMesComp ? 'Hoje' : semana[dSem(item.dia)]}</span> - 
             <span class="tag-hora">${item.hr}</span>
         </div>
+
     </div>
     `
     $('.prog').append(post)
 
 }
 var btnMore = `
-<a href="eventos.html" class="more"><i class="fas fa-plus"></i></a>`
+<a href="eventos.html" class="more"><i class="far fa-calendar-plus"></i></a>`
 
-$('.prog').append(btnMore)
+$('.item-prog').append(btnMore)
 
 function dSem(dia) {
     var d = new Date(data.getFullYear(), data.getMonth(), dia)
