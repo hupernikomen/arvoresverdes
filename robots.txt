@@ -1,3 +1,1 @@
 Sitemap: https://www.ibavthe.com/sitemap.xml
-User-agent: *
-Disallow: /manutencao.html

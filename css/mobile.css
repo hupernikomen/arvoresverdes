@@ -31,20 +31,32 @@
     .carousel-item img {
         max-height: 400px;
     }
+    .tag-evt {
+        display: flex;
+        align-items: center;
+    }
     .tag-dia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: #fff;
-        font-size: 16px;
-        font-weight: 600;
-        padding: 5px 8px;
+        font-size: 1rem;
+        width: 1.7rem;
+        height: 1.7rem;
+        border-radius: .1rem;
     }
     .item-prog h6,
     .itens-prog h6 {
-        font-size: 18px;
+        font-size: 1.2rem;
         margin-top: 5px;
     }
     .item-prog div:first-child,
     .itens-prog div {
         margin-bottom: 30px;
+    }
+    .item-prog span,
+    .itens-prog span {
+        font-size: .9rem;
     }
     a.more {
         position: absolute;
@@ -63,6 +75,9 @@
     }
     .tag-loc {
         display: block;
+    }
+    h5 {
+        font-size: 1.2rem;
     }
     footer {
         padding-top: 10px;
@@ -162,7 +177,7 @@
     .conteudo-slide {
         width: 100%;
         position: absolute;
-        top: 30%;
+        top: 35%;
     }
     .conteudo-slide h3 {
         font-size: 35px;

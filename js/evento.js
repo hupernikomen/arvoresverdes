@@ -75,12 +75,10 @@ var mes = data.getMonth()
 var fimStatus = false
 
 function fimMes() {
-    for (var j = dMes; j < prog.length; j++) {
-        prog[j].length == 0 && fimStatus === false ? fimStatus = false : fimStatus = true
+    for (var f = dMes; f < prog.length; f++) {
+        prog[f].length == 0 && fimStatus === false ? fimStatus = false : fimStatus = true
     }
     fimStatus == false ? mes++ : mes
-    console.log('ainda ha eventos esse mes?', fimStatus)
-    console.log('mes atual', mes)
 }
 fimMes()
 
@@ -94,7 +92,7 @@ var index = Object.keys(prog)
 prog[dMes].map((i) => {
     var post = `
     <div>
-        <h6 class="tag-evt mb-3">
+        <h6 class="tag-evt mb-2">
             <span class="tag-dia mr-3" style="background: ${i.bg}">${index[dMes]}</span>
             ${i.evt}
         </h6>
