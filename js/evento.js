@@ -70,7 +70,8 @@ prog = [[], //00
 ]
 
 var data = new Date()
-var dMesComp, dMes = data.getDate()
+var dMesComp = data.getDate()
+var dMes = data.getDate()
 var mes = data.getMonth()
 var fimStatus = false
 
@@ -89,6 +90,7 @@ while (prog[dMes] == '') {
     }
 }
 var index = Object.keys(prog)
+
 prog[dMes].map((i) => {
     var post = `
     <div>
@@ -102,8 +104,8 @@ prog[dMes].map((i) => {
     </div>
 `
     $('.item-prog').append(post)
+    console.log(dMesComp)
 })
-
 
 function dSem(dia) {
     return new Date(data.getFullYear(), mes, dia).getDay()
