@@ -31,29 +31,20 @@
     .carousel-item img {
         max-height: 400px;
     }
-
-    .c-prog {
-        margin-top: -10px;
-        background: #fff;
-        position: relative;
-        z-index: 1;
-    }
-
     .tag-dia {
-        background: red;
-        border-radius: 2px;
         color: #fff;
-        text-align: center;
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-        margin-right: 10px;
         font-size: 16px;
         font-weight: 600;
+        padding: 5px 8px;
     }
-    .item-prog h6 {
+    .item-prog h6,
+    .itens-prog h6 {
         font-size: 18px;
         margin-top: 5px;
+    }
+    .item-prog div:first-child,
+    .itens-prog div {
+        margin-bottom: 30px;
     }
     a.more {
         position: absolute;
@@ -66,11 +57,6 @@
     }
     .btn-ver-todos:focus {
         color: #fff;
-    }
-    .item-prog {
-        display: flex;
-        position: relative;
-        margin-bottom: 20px;
     }
     .tag-hora::after {
         content: 'hs';
