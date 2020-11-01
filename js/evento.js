@@ -1,36 +1,36 @@
 var semana = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
 var cultoDominical = {
-    'bg':'#5a9dc9',
+    'bg':'#659EA3',
     'evt': 'Culto - Louvor e Pregação',
     'hr': '18:00',
     'loc': 'Templo Batista Arvores Verdes'
 }
 var ebd = {
-    'bg':'#b0c940',
+    'bg':'#A38976',
     'evt': 'EBD',
     'hr': '17:00',
     'loc': 'Templo Batista Arvores Verdes'
 }
 var oracao = {
-    'bg':'#4cc25c',
+    'bg':'#d6a277',
     'evt': 'Oração e Doutrina',
     'hr': '19:30',
     'loc': 'Templo Batista Arvores Verdes'
 }
 var pizza = {
-    'bg':'#4c58c2',
+    'bg':'#bad677',
     'evt': 'Festival de Pizza',
     'hr': '18:30',
     'loc': 'Templo Batista Arvores Verdes'
 }
 var reuniaoH = {
-    'bg':'#4c71c2',
+    'bg':'#92bcc9',
     'evt': 'Reuniao dos Homens',
     'hr': '18:30',
     'loc': 'Casa do Irmão ...'
 }
 var reuniaoM = {
-    'bg':'#8d4cc2',
+    'bg':'#da9b9d',
     'evt': 'Reuniao das Mulheres',
     'hr': '18:30',
     'loc': 'Casa da Irmã ...'
@@ -73,13 +73,13 @@ var data = new Date()
 var dMesComp = data.getDate()
 var dMes = data.getDate()
 var mes = data.getMonth()
-var fimStatus = false
+var fimStatus = []
 
 function fimMes() {
-    for (var f = dMes; f < prog.length; f++) {
-        prog[f].length == 0 && fimStatus === false ? fimStatus = false : fimStatus = true
+    for (var i = dMes; i < prog.length; i++) {
+        prog[i].length == 0 ? fimStatus.push('false') : fimStatus.push('true')
     }
-    fimStatus == false ? mes++ : mes
+    fimStatus.find(i=> i == 'true') ? mes++ : mes
 }
 fimMes()
 
@@ -93,9 +93,9 @@ var index = Object.keys(prog)
 
 prog[dMes].map((i) => {
     var post = `
-    <div>
-        <h6 class="tag-evt mb-2">
-            <span class="tag-dia mr-3" style="background: ${i.bg}">${index[dMes]}</span>
+    <div class="mb-4">
+        <h6 class="tag-evt my-2">
+            <span class="tag-dia mr-3" style="background: ${i.bg}">${index[dMes]} / ${mes}</span>
             ${i.evt}
         </h6>
         <span class="tag-loc">${i.loc}</span>
@@ -104,7 +104,6 @@ prog[dMes].map((i) => {
     </div>
 `
     $('.item-prog').append(post)
-    console.log(dMesComp)
 })
 
 function dSem(dia) {

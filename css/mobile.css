@@ -14,22 +14,92 @@
     .voltar {
         width: 50px;
     }
+
+    h4 {
+        margin: 1.5rem 0;
+        font-weight: 300;
+        color: #333;
+        font-size: 1.5rem;
+    }
+
+
+    /* NavBars  */
+    .navbar-brand {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        height: 50px;
+    }
+    .navbar-toggler {
+        border: 0;
+    }
     .navbar-toggler:focus{
         outline: none;
-    }
-    .navbar-nav {
-        margin-top: 20px;
     }
     .navbar-toggler-icon {
         font-size: 1rem;
     }
-    .navbar-brand {
-        margin: 0;
+    .navbar-nav {
+        margin-top: 2rem;
     }
+    .nav-link {
+        font-size: .9rem;
+    }
+
+    /* Carousel  */
     .carousel-inner, 
     .carousel-item,
     .carousel-item img {
         max-height: 400px;
+    }
+    .carousel-control-next, 
+    .carousel-control-prev {
+        width: 10% !important;
+    }
+    .carousel-item h3 {
+        text-transform: uppercase;
+        animation: identifier 1s 1s forwards;
+        font-size: 2rem !important;
+        font-weight: 900;
+        color: #fff;
+        opacity: 0;
+        text-shadow: 1px 1px 3px #00000050;
+    }
+    .carousel-item p {
+        margin-top: -.8rem;
+        margin-bottom: 2rem;
+        animation: identifier 1s 1.2s forwards;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #fff;
+        width: 80%;
+        opacity: 0;
+        line-height: 1.5rem;
+        text-shadow: 1px 1px 2px #00000080;
+    }
+    .carousel-item a {
+        text-transform: uppercase;
+        opacity: 0;
+        background: red;
+        color: #fff;
+        padding: .8rem;
+        border: 0;
+        animation: identifier 1s 1.5s forwards;
+        box-shadow: 1px 1px 3px #00000050;
+    }
+    @keyframes identifier {
+        to {
+            opacity: 1;
+            margin-left: 30px;
+        }
+    }
+    
+    /* Proximos Eventos  */
+    .c-prog {
+        background: #f1f1f1;
     }
     .tag-evt {
         display: flex;
@@ -39,46 +109,40 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #fff;
-        font-size: 1rem;
-        width: 1.7rem;
-        height: 1.7rem;
+        color: #fff !important;
+        font-size: .7rem !important;
+        height: 1.8rem;
         border-radius: .1rem;
+        padding: 0 .3rem;
     }
+    .tag-loc {
+        display: block;
+    }
+    .tag-hora::after {
+        content: 'hs';
+    }
+
     .item-prog h6,
     .itens-prog h6 {
         font-size: 1.2rem;
-        margin-top: 5px;
-    }
-    .item-prog div:first-child,
-    .itens-prog div {
-        margin-bottom: 30px;
+        font-weight: normal;
+        color: #333;
     }
     .item-prog span,
     .itens-prog span {
-        font-size: .9rem;
+        font-size: 1rem;
+        color: #333;
     }
     a.more {
         position: absolute;
         right: 0;
         top: 0;
-        padding: 0 0 10px 10px;
-        color: #222;
+        color: #333;
         font-size: 20px;
         border-radius: 5px;
     }
-    .btn-ver-todos:focus {
-        color: #fff;
-    }
-    .tag-hora::after {
-        content: 'hs';
-    }
-    .tag-loc {
-        display: block;
-    }
-    h5 {
-        font-size: 1.2rem;
-    }
+
+    /* Rodapé  */
     footer {
         padding-top: 10px;
         background: #3e6a88 url('../imagens/bg-footer.jpg');
@@ -95,27 +159,8 @@
         display: flex;
         justify-content: center;
     }
-    .fa-arrow-left {
-        font-size: 20px;
-    }
-    .logo {
-        height: 60px;
-    }
-    .container-download {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 60px;
-        padding: 10px 20px;
-    }
-    .link-download {
-        padding: 10px;
-        text-decoration: none;
-        color: #222;
-    }
-    .link-download i {
-        font-size: 24px;
-    }
+
+    /* Voltar para o topo  */
     .back2Top {
         width: 40px;
         overflow: hidden;
@@ -133,47 +178,23 @@
     .back2Top:hover {
         background-color: #fff7;
     }
-    .carousel-item h3,
-    .carousel-item p {
-        color: #fff;
+    /* Pagina Downloads  */
+    .container-download {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 10px 20px;
+    }
+    .link-download {
+        padding: 10px;
+        text-decoration: none;
+        color: #222;
+    }
+    .link-download i {
+        font-size: 24px;
+    }
 
-    }
-    .carousel-control-next, 
-    .carousel-control-prev {
-        width: 10% !important;
-    }
-    .carousel-item h3 {
-        text-transform: uppercase;
-        animation: identifier 1s 1s forwards;
-        margin-left: -20px;
-        font-size: 45px;
-        font-weight: 900;
-        opacity: 0;
-        text-shadow: 1px 1px 5px #00000050;
-    }
-    .carousel-item p {
-        margin-left: -20px;
-        margin-top: -10px;
-        margin-bottom: 40px;
-        animation: identifier 1s 1.2s forwards;
-        font-size: 18px;
-        font-weight: 300;
-        width: 80%;
-        opacity: 0;
-        line-height: 1.5rem;
-        text-shadow: 0px 1px 2px #464646a8;
-    }
-    .carousel-item a {
-        text-transform: uppercase;
-        margin-left: -20px;
-        opacity: 0;
-        background: red;
-        color: #fff;
-        padding: 8px 15px;
-        border: 0;
-        animation: identifier 1s 2s forwards;
-        box-shadow: 2px 2px 5px #00000050;
-    }
     .conteudo-slide {
         width: 100%;
         position: absolute;
@@ -187,19 +208,5 @@
         font-size: 14px;
         font-weight: 600;
     }
-    @keyframes identifier {
-        to {
-            opacity: 1;
-            margin-left: 40px;
-        }
-    }
-    .c-mapa {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #0000009d;
-        top: 0;
-        position: fixed;
-        z-index: 9999;
-    }
+
 }
