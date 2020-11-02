@@ -11,8 +11,4 @@
 p, span {
     font-weight: 300;
 }
-header {
-    background: #fff;
-    z-index: 9999;
-    box-shadow: 0 1px 3px 0 #00000041;
-}
+

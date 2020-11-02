@@ -32,6 +32,11 @@
 
 
     /* NavBars  */
+    header {
+        background: #fff;
+        z-index: 9999;
+        box-shadow: 0 1px 3px 0 #00000041;
+    }
     .navbar-brand {
         padding: 0;
         margin: 0;
@@ -39,10 +44,11 @@
         align-items: center;
     }
     .logo {
-        height: 40px;
+        height: 50px;
     }
     .navbar-toggler {
         border: 0;
+        padding: 0;
     }
     .navbar-toggler:focus{
         outline: none;
@@ -95,7 +101,7 @@
     .carousel-item a {
         text-transform: uppercase;
         opacity: 0;
-        background: #c51919;
+        background: #df2b2b;
         color: #fff;
         padding: .8rem;
         border: 0;
