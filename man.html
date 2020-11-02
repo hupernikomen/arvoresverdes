@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b5ef16ceb0.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        i, a, strong{
+            color:  #3e6a88;
+        }
+        strong {
+            font-size: 18px;
+        }
+    </style>
+
+    <div class="container">
+        <i class="fas fa-tools" style="margin-bottom: 30px; font-size: 32px;"></i>
+        <span>Em Breve</span>
+        <span style="margin-top: 10px;">Site da <strong>IBAV</strong></span>
+        <span>Igreja Batista em Arvores Verdes</span>
+        <a href="https://www.instagram.com/ibavthe" style="margin-top: 50px;">
+            <i class="fab fa-instagram fa-2x white-text"> </i>
+          </a>
+          <span style="margin-top: 10px; text-align: center;">Segue a gente <br> no Instagram</span>
+    </div>
+
+    <script>
+        var container = document.querySelector('.container')
+        console.log(container)
+        container.style.height = window.screen.height + 'px'
+
+    </script>
+
+</body>
+
+</html>
