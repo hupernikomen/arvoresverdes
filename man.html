@@ -28,21 +28,21 @@
             align-items: center;
             justify-content: center;
         }
+
         .container div {
             display: flex;
             flex-direction: column;
             text-align: center;
         }
 
-        i,
-        a,
-        strong {
+        a {
             color: #3e6a88;
         }
 
         strong {
             font-size: 18px;
         }
+
         .primeiro-item {
             border-right: 1px solid #000;
             margin-right: 20px;
@@ -53,8 +53,8 @@
     <div class="container">
         <div class="primeiro-item">
 
-            <span>Em Breve Site da <strong>IBAV</strong></span>
-            <span>Igreja Batista em Arvores Verdes</span>
+            <span>Em Breve, Site da <strong>IBAV</strong></span>
+            <span><i>Igreja Batista em Arvores Verdes<i></span>
         </div>
         <div>
             <a href="https://www.instagram.com/ibavthe">
@@ -65,7 +65,7 @@
 
     <script>
         var container = document.querySelector('.container')
-        container.style.height = window.screen.height -100 + 'px'
+        container.style.height = window.screen.height - 100 + 'px'
 
     </script>
 
