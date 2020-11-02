@@ -1,6 +1,14 @@
 @media (max-width: 1199px) {
-
+    *{
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
     body, html {
+        color: #333;
         font-family: 'Roboto', sans-serif;
     }
     .topo,
@@ -12,7 +20,7 @@
         display: none;
     }
     .voltar {
-        width: 50px;
+        padding: 10px 10px 10px 0;
     }
 
     h4 {
@@ -31,7 +39,7 @@
         align-items: center;
     }
     .logo {
-        height: 50px;
+        height: 40px;
     }
     .navbar-toggler {
         border: 0;
@@ -54,6 +62,10 @@
     .carousel-item,
     .carousel-item img {
         max-height: 400px;
+       
+    }
+    .carousel-item img {
+        animation: identifier2 4s forwards;
     }
     .carousel-control-next, 
     .carousel-control-prev {
@@ -62,7 +74,7 @@
     .carousel-item h3 {
         text-transform: uppercase;
         animation: identifier 1s 1s forwards;
-        font-size: 2rem !important;
+        font-size: 2.5rem !important;
         font-weight: 900;
         color: #fff;
         opacity: 0;
@@ -70,10 +82,10 @@
     }
     .carousel-item p {
         margin-top: -.8rem;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
         animation: identifier 1s 1.2s forwards;
         font-size: 1rem;
-        font-weight: 400;
+        font-weight: 300;
         color: #fff;
         width: 80%;
         opacity: 0;
@@ -83,7 +95,7 @@
     .carousel-item a {
         text-transform: uppercase;
         opacity: 0;
-        background: red;
+        background: #c51919;
         color: #fff;
         padding: .8rem;
         border: 0;
@@ -96,11 +108,26 @@
             margin-left: 30px;
         }
     }
+    @keyframes identifier2 {
+        to {
+            filter: brightness(60%);
+        }
+    }
+    .conteudo-slide {
+        width: 100%;
+        position: absolute;
+        top: 30%;
+    }
+    .conteudo-slide h3 {
+        font-size: 35px;
+    }
+    .conteudo-slide a {
+        border-radius: 2px;
+        font-size: 14px;
+        font-weight: 600;
+    }
     
     /* Proximos Eventos  */
-    .c-prog {
-        background: #f1f1f1;
-    }
     .tag-evt {
         display: flex;
         align-items: center;
@@ -113,7 +140,7 @@
         font-size: .7rem !important;
         height: 1.8rem;
         border-radius: .1rem;
-        padding: 0 .3rem;
+        padding: 0 .5rem;
     }
     .tag-loc {
         display: block;
@@ -195,18 +222,6 @@
         font-size: 24px;
     }
 
-    .conteudo-slide {
-        width: 100%;
-        position: absolute;
-        top: 35%;
-    }
-    .conteudo-slide h3 {
-        font-size: 35px;
-    }
-    .conteudo-slide a {
-        border-radius: 2px;
-        font-size: 14px;
-        font-weight: 600;
-    }
+
 
 }

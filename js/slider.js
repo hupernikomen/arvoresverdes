@@ -12,8 +12,8 @@ var plataformas = [
             },
             {
                 'img':'<img class="d-block w-100" src="imagens/mobile-slide-2.jpg" alt="Second slide">',
-                'h3': 'Ebd INFANTIL',
-                'p':'Traga seus filhos e filhas para a Escola Bíblica Dominical',
+                'h3': 'CULTO INFANTIL',
+                'p':'"Deixai vir a Mim as criancinhas - Mt 19:14". Traga seu filho ao culto infantil',
                 'button':'SAIBA MAIS',
                 'link':''
             }

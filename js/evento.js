@@ -79,9 +79,9 @@ function fimMes() {
     for (var i = dMes; i < prog.length; i++) {
         prog[i].length == 0 ? fimStatus.push('false') : fimStatus.push('true')
     }
-    fimStatus.find(i=> i == 'true') ? mes++ : mes
+    var res = fimStatus.find(i=> i == 'true') ? mes : mes++
+    return res
 }
-fimMes()
 
 while (prog[dMes] == '') {
     dMes++
@@ -93,7 +93,7 @@ var index = Object.keys(prog)
 
 prog[dMes].map((i) => {
     var post = `
-    <div class="mb-4">
+    <a href="eventos.html" class="mb-4">
         <h6 class="tag-evt my-2">
             <span class="tag-dia mr-3" style="background: ${i.bg}">${index[dMes]} / ${mes}</span>
             ${i.evt}
@@ -101,11 +101,11 @@ prog[dMes].map((i) => {
         <span class="tag-loc">${i.loc}</span>
         <span class="tag-diaD">${index[dMes] == dMesComp ? 'Hoje' : semana[dSem(index[dMes])]}</span> - 
         <span class="tag-hora">${i.hr}</span>
-    </div>
+    </a>
 `
     $('.item-prog').append(post)
 })
 
 function dSem(dia) {
-    return new Date(data.getFullYear(), mes, dia).getDay()
+    return new Date(data.getFullYear(), fimMes(), dia).getDay()
 }
