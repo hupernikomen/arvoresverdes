@@ -19,13 +19,19 @@
         body,
         html {
             font-family: 'Roboto', sans-serif;
+            font-size: .9em;
+            color: #333;
         }
 
         .container {
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        .container div {
+            display: flex;
             flex-direction: column;
+            text-align: center;
         }
 
         i,
@@ -37,17 +43,24 @@
         strong {
             font-size: 18px;
         }
+        .primeiro-item {
+            border-right: 1px solid #000;
+            margin-right: 20px;
+            padding-right: 20px;
+        }
     </style>
 
     <div class="container">
-        <i class="fas fa-tools" style="margin-bottom: 30px; font-size: 32px;"></i>
-        <span>Em Breve</span>
-        <span style="margin-top: 10px;">Site da <strong>IBAV</strong></span>
-        <span>Igreja Batista em Arvores Verdes</span>
-        <a href="https://www.instagram.com/ibavthe" style="margin-top: 50px;">
-            <i class="fab fa-instagram fa-2x white-text"> </i>
-        </a>
-        <span style="margin-top: 10px; text-align: center;">Segue a gente <br> no Instagram</span>
+        <div class="primeiro-item">
+
+            <span>Em Breve Site da <strong>IBAV</strong></span>
+            <span>Igreja Batista em Arvores Verdes</span>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/ibavthe">
+                <i class="fab fa-instagram fa-2x white-text"> </i>
+            </a>
+        </div>
     </div>
 
     <script>
