@@ -11,10 +11,10 @@
 <body>
 
     <script>
-        if(localStorage.getItem('senhaIBAV') == '123') {
-          window.location = 'index.html'
+        if (localStorage.getItem('senhaIBAV') == '123') {
+            window.location = 'index.html'
         }
-      </script>
+    </script>
 
     <style>
         * {
@@ -33,12 +33,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
         }
 
-        .container div {
+        .aviso {
             display: flex;
-            flex-direction: column;
             text-align: center;
+            margin: 100px 0px;
         }
 
         a {
@@ -54,12 +55,20 @@
             margin-right: 20px;
             padding-right: 20px;
         }
+        .senha {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 20px;
+        }
         input {
-            width: 100px;
             height: 30px;
             outline: none;
             padding: 0 10px;
         }
+
         button {
             height: 30px;
             border: 0;
@@ -71,30 +80,33 @@
     </style>
 
     <div class="container">
-        <div class="primeiro-item">
-
-            <span>Em Breve, Site da <strong>IBAV</strong></span>
-            <span><i>Igreja Batista em Arvores Verdes<i></span>
+        <div class="aviso">
+            <div class="primeiro-item">
+                <span>Em Breve, Site da <strong>IBAV</strong></span><br>
+                <span><i>Igreja Batista em Arvores Verdes<i></span>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/ibavthe">
+                    <i class="fab fa-instagram fa-2x white-text"> </i>
+                </a>
+            </div>
         </div>
-        <div>
-            <a href="https://www.instagram.com/ibavthe">
-                <i class="fab fa-instagram fa-2x white-text"> </i>
-            </a>
-        </div>
 
+        <div class="senha">
+            <label for="">Deseja ver o site em desenvolvimento?</label>
+            <input type="text" placeholder="Digite a senha">
+            <button>Entrar</button>
+        </div>
     </div>
-    <div class="container">
-        <input type="text">
-        <button>Entrar</button>
-    </div>
+
 
 
 
     <script>
         var valor = document.querySelector('input')
         var button = document.querySelector('button')
-        
-        button.addEventListener('click', (e)=> {
+
+        button.addEventListener('click', (e) => {
             e.preventDefault()
             localStorage.setItem('senhaIBAV', valor.value)
             window.location = 'index.html'
