@@ -8,7 +8,7 @@ var plataformas = [
                 'h3': 'EVANGELISMO',
                 'p':'Dia 25/01 no Morro do Papagaio',
                 'button':'PARTICIPE',
-                'link':''
+                'link':'blog.html'
             },
             {
                 'img':'<img class="d-block w-100" src="imagens/mobile-slide-2.jpg" alt="Second slide">',

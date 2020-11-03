@@ -1,3 +1,9 @@
+var hoje = new Date()
+var dMesComp = hoje.getDate()
+var diaDoMes = hoje.getDate()
+var mes = hoje.getMonth()
+var fimStatus = []
+
 var arrDiasDaSemana = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
 var cultoDominical = {
     'bg': '#659EA3',
@@ -75,13 +81,6 @@ progs = [[], //00
 [] //31
 ]
 
-var hoje = new Date()
-var dMesComp = hoje.getDate()
-var diaDoMes = hoje.getDate()
-var mes = hoje.getMonth()
-var fimStatus = []
-
-
 while (progs[diaDoMes] == '' || hoje > dataHoraDoEvento(progs[diaDoMes][progs[diaDoMes].length -1])) {
     diaDoMes++
     if (progs[diaDoMes] == null) {
@@ -92,19 +91,21 @@ while (progs[diaDoMes] == '' || hoje > dataHoraDoEvento(progs[diaDoMes][progs[di
 progs[diaDoMes].map((prog) => {
     var post = `
         <a href="eventos.html" class="mb-4">
-        <h6 class="tag-evt my-2">
-        <span class="tag-dia mr-3" style="background: ${prog.bg}">${Object.keys(progs)[diaDoMes]} / ${mes}</span>
-        ${prog.evt}
-        </h6>
-        <span class="tag-loc">${prog.loc}</span>
-        <span class="tag-diaD">${Object.keys(progs)[diaDoMes] == dMesComp ? 'Hoje' : arrDiasDaSemana[diaDaSemana(Object.keys(progs)[diaDoMes])]}</span> - 
-        <span class="tag-hora">${prog.hr}:${prog.min}</span>
+            <h6 class="tag-evt my-2">
+                <span class="tag-dia mr-3" style="background: ${prog.bg}">${Object.keys(progs)[diaDoMes]} / ${mes}</span>
+                ${prog.evt}
+            </h6>
+            <span class="tag-loc">${prog.loc}</span>
+            <span class="tag-diaD">
+                ${Object.keys(progs)[diaDoMes] == dMesComp ? 'Hoje' : 
+                arrDiasDaSemana[diaDaSemana(Object.keys(progs)[diaDoMes])]}
+            </span> - 
+            <span class="tag-hora">${prog.hr}:${prog.min}</span>
         </a>
         `
     $('.item-prog').append(post)
 
 })
-
 
 function diaDaSemana(dia) {
     return new Date(hoje.getFullYear(), fimMes(), dia).getDay()

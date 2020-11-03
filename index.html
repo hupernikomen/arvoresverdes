@@ -22,11 +22,15 @@
 
   <title>IBAV | Igreja Batista em Arvores Verdes</title>
 
-  <script>window.location = 'man.html'</script>
-
+  
 </head>
 
 <body>
+  <script>
+    if(localStorage.getItem('senhaIBAV') != 'ibav123') {
+      window.location = 'man.html'
+    }
+  </script>
 
   <div class="topo">
     <div class="container-topo"></div>
@@ -42,8 +46,8 @@
           Igreja Batista em Arvores Verdes
         </span>
         <h1 class="sub-logo">
-          <span>IBAV </span>
-          <strong> Igreja Batista em Arvores Verdes</strong> 
+          <span>IBAV</span><br>
+          <strong>Igreja Batista em Arvores Verdes</strong> 
         </h1>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -158,7 +162,7 @@
   <script src="js/back-to-top.js"></script>
   <script src="js/slider.js"></script>
 
-  <!-- <script src="js/mapa.js"></script> -->
+
 
 </body>
 
