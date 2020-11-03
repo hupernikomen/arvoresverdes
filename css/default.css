@@ -8,11 +8,21 @@
     /* box-shadow: 0 0 1px 0 #000; */
 }
 
-p, span {
-    font-weight: 300;
-}
 header {
     background: #fff;
     z-index: 9999;
     box-shadow: 0 1px 1px 0 #00000041;
+}
+.fHel1 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+.fHel2 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    font-weight: 300;
+}
+.fRel {
+    font-family: 'Raleway', sans-serif;
 }

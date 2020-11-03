@@ -13,7 +13,7 @@ var plataformas = [
             {
                 'img':'<img class="d-block w-100" src="imagens/mobile-slide-2.jpg" alt="Second slide">',
                 'h3': 'CULTO INFANTIL',
-                'p':'"Deixai vir a mim as criancinhas - Mt 19:14". Traga seu filho ao culto infantil',
+                'p':'"Deixai vir a mim as criancinhas" - Mt 19:14. Traga seu filho ao culto infantil',
                 'button':'SAIBA MAIS',
                 'link':''
             }
@@ -56,7 +56,7 @@ for (var classe = 0; classe < plataformas[i].imgs.length; classe++) {
     var slide = `
         <div class="carousel-item ${classe == 0 ? 'active' : ''}">
             ${item.img}
-            <div class="conteudo-slide">
+            <div class="conteudo-slide mx-4">
                 <h3>${item.h3}</h3>
                 <p>${item.p}</p>
                 <a href="${item.link}">

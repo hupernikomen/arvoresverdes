@@ -91,16 +91,16 @@ while (progs[diaDoMes] == '' || hoje > dataHoraDoEvento(progs[diaDoMes][progs[di
 progs[diaDoMes].map((prog) => {
     var post = `
         <a href="eventos.html" class="mb-4">
-            <h6 class="tag-evt my-2">
+            <h6 class="tag-evt my-2 fHel">
                 <span class="tag-dia mr-3" style="background: ${prog.bg}">${Object.keys(progs)[diaDoMes]} / ${mes}</span>
                 ${prog.evt}
             </h6>
-            <span class="tag-loc">${prog.loc}</span>
-            <span class="tag-diaD">
+            <span class="tag-loc fHel2">${prog.loc}</span>
+            <span class="tag-diaD fHel2">
                 ${Object.keys(progs)[diaDoMes] == dMesComp ? 'Hoje' : 
                 arrDiasDaSemana[diaDaSemana(Object.keys(progs)[diaDoMes])]}
             </span> - 
-            <span class="tag-hora">${prog.hr}:${prog.min}</span>
+            <span class="tag-hora fHel2">${prog.hr}:${prog.min}</span>
         </a>
         `
     $('.item-prog').append(post)
