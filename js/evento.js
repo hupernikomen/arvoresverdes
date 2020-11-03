@@ -22,8 +22,8 @@ var ebd = {
 var oracao = {
     'bg': '#d6a277',
     'evt': 'Oração e Doutrina',
-    'hr': '15',
-    'min': '40',
+    'hr': '19',
+    'min': '30',
     'loc': 'Templo Batista Arvores Verdes'
 }
 var pizza = {
