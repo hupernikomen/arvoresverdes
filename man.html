@@ -11,7 +11,7 @@
 <body>
 
     <script>
-        if (localStorage.getItem('senhaIBAV') == 'ibav321') {
+        if (sessionStorage.getItem('senhaIBAV') == 'ibav321') {
             window.location = 'index.html'
         }
     </script>
@@ -70,7 +70,7 @@
         }
 
         button {
-            height: 30px;
+            height: 35px;
             border: 0;
             background: #3e6a88;
             padding: 0 10px;
@@ -108,7 +108,7 @@
 
         button.addEventListener('click', (e) => {
             e.preventDefault()
-            localStorage.setItem('senhaIBAV', valor.value)
+            sessionStorage.setItem('senhaIBAV', valor.value)
             window.location = 'index.html'
         })
     </script>
