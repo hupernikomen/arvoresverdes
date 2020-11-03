@@ -10,12 +10,6 @@
 
 <body>
 
-    <script>
-        if (sessionStorage.getItem('senhaIBAV') == 'ibav321') {
-            window.location = 'index.html'
-        }
-    </script>
-
     <style>
         * {
             margin: 0;
@@ -39,53 +33,57 @@
         .aviso {
             display: flex;
             text-align: center;
-            margin: 100px 0px;
+            margin-bottom: 100px;
         }
 
         a {
-            color: #3e6a88;
+            color: #444;
         }
 
         strong {
-            font-size: 18px;
+            font-size: 16px;
+            font-weight: normal;
+            color: #3e6a88;
         }
 
         .primeiro-item {
             border-right: 1px solid #000;
             margin-right: 20px;
             padding-right: 20px;
+            color: #444;
+            font-weight: 300;
         }
-        .senha {
+
+        .c-senha {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
+
         label {
             margin-bottom: 20px;
         }
-        input, button {
-            width: 150px;
+
+        input,
+        button {
+            width: 100px;
         }
+
         input {
-            height: 35px;
+            height: 45px;
             outline: none;
             box-sizing: border-box;
             padding: 0 10px;
-            font-size: 1rem;
+            font-size: .8rem;
+            font-weight: 300;
+            color: #444;
             text-align: center;
             margin-bottom: 2px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
         }
 
-        button {
-            height: 40px;
-            border: 0;
-            background: #3e6a88;
-            padding: 0 10px;
-            line-height: 30px;
-            color: #fff;
-            font-size: 1rem;
-        }
     </style>
 
     <div class="container">
@@ -96,38 +94,32 @@
             </div>
             <div>
                 <a href="https://www.instagram.com/ibavthe">
-                    <i class="fab fa-instagram fa-2x white-text"> </i>
+                    <i class="fab fa-instagram fa-2x white-text"></i>
                 </a>
             </div>
         </div>
 
-        <div class="senha">
-            <label for="">Deseja ver o site em desenvolvimento?</label>
-            <input type="text" placeholder="Digite a senha">
-            <button>Entrar</button>
+        <div class="c-senha">
+            <input class='senha' type="text" placeholder="Key">
         </div>
     </div>
 
-
-
-
-    <script>
-        var valor = document.querySelector('input')
-        var button = document.querySelector('button')
-
-        button.addEventListener('click', (e) => {
-            e.preventDefault()
-            sessionStorage.setItem('senhaIBAV', valor.value)
-            window.location = 'index.html'
-        })
-    </script>
-
-    <script>
-        var container = document.querySelector('.container')
-        container.style.height = window.screen.height - 100 + 'px'
-
-    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+
+        $('.senha').keyup(() => {
+            if ($('.senha').val() == 'ibav321') {
+                sessionStorage.setItem('senhaIBAV', $('.senha').val())
+                window.location = 'index.html'
+            }
+        })
+        $('.container').css('height', window.screen.height - 100 + 'px')
+        $('input').focusin(()=> {
+            $('input').attr("placeholder", "");
+        })
+
+    </script>
+
 </body>
 
 </html>
