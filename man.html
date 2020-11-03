@@ -63,6 +63,8 @@
 
         label {
             margin-bottom: 20px;
+            color: red;
+            margin-top: 10px;
         }
 
         input,
@@ -100,6 +102,7 @@
 
         <div class="c-senha">
             <input class='senha' type="text" placeholder="Chave">
+            <label for=""></label>
         </div>
     </div>
 
@@ -107,15 +110,24 @@
     <script>
 
         $('.senha').keyup(() => {
-            if ($('.senha').val() == 'ibav321') {
+
+            if ($('.senha').val() == 'ibav321' && window.screen.width < 550) {
                 sessionStorage.setItem('senhaIBAV', $('.senha').val())
                 window.location = 'index.html'
+            } else if ($('.senha').val() != '' && window.screen.width >= 550) {
+                alerta('Acessivel apenas para smartphones')
+            } else if ($('.senha').val() == ''){
+                $('input').attr("placeholder", "Chave")
+                alerta('')
             }
         })
         $('.container').css('height', window.screen.height - 100 + 'px')
         $('input').focusin(() => {
             $('input').attr("placeholder", "");
         })
+        function alerta(texto) {
+            $('label').text(texto)
+        }
 
     </script>
 
