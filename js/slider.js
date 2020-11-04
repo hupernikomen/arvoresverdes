@@ -1,3 +1,10 @@
+var materias = [
+    {
+        'titulo':'Titularidade',
+        'conteudo':'Materia'
+    }
+]
+
 var plataformas = [
     mobile = {
         'id': 'carouselmobile',
@@ -59,15 +66,14 @@ for (var classe = 0; classe < plataformas[i].imgs.length; classe++) {
             <div class="conteudo-slide mx-4">
                 <h3>${item.h3}</h3>
                 <p>${item.p}</p>
-                <a href="${item.link}">
-                ${item.button}</a>
+                <a>
+                ${item.button}
+                </a>
             </div>
         </div>
         `
     $('.carousel-inner').append(slide)
 }
-
 $('#mudarid').attr('id', y)
 $('.carousel').addClass(c)
 $('.carousel a.control').attr('href', '#' + y)
-

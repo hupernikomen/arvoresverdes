@@ -11,7 +11,9 @@
         color: #000;
         font-weight: 200;
     }
-
+    .fas {
+        line-height: 1.5 !important;
+    }
     .topo,
     .slide-desk,
     .navbar-text,
@@ -23,6 +25,8 @@
     .voltar {
         padding: 10px 10px 10px 0;
         margin-right: 10px;
+        height: 50px;
+        vertical-align: middle;
     }
 
     h4 {
@@ -45,7 +49,7 @@
         align-items: center;
     }
     .logo {
-        height: 50px;
+        max-height: 50px;
     }
     .sub-logo {
         margin: 0 10px;
@@ -63,6 +67,7 @@
     .navbar-nav {
         margin-top: 2rem;
     }
+
 
     /* Carousel  */
     .carousel-inner, 
