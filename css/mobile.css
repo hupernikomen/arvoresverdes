@@ -8,7 +8,7 @@
         user-select: none;
     }
     body, html, h6, span, i {
-        color: #222;
+        color: #000;
         font-weight: 200;
     }
 
@@ -22,6 +22,7 @@
     }
     .voltar {
         padding: 10px 10px 10px 0;
+        margin-right: 10px;
     }
 
     h4 {
@@ -79,7 +80,7 @@
     }
     .carousel-item h3 {
         text-transform: uppercase;
-        animation: identifier 1s 1s forwards;
+        animation: identifier 1s 1.5s forwards;
         margin-left: -30px;
         font-size: 2.5rem !important;
         font-weight: 900;
@@ -91,7 +92,7 @@
         margin-top: -.8rem;
         margin-left: -30px;
         margin-bottom: 2.5rem;
-        animation: identifier 1s 1.2s forwards;
+        animation: identifier 1s 1.7s forwards;
         font-size: 1rem;
         font-weight: 300;
         color: #fff;
@@ -108,7 +109,7 @@
         color: #fff;
         padding: .8rem;
         border: 0;
-        animation: identifier 1s 1.5s forwards;
+        animation: identifier 1s 2s forwards;
         box-shadow: 1px 1px 3px #00000050;
     }
     @keyframes identifier {
@@ -137,9 +138,21 @@
     }
     
     /* Proximos Eventos  */
+    .modal-prog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+      }
+      .modal-prog h2 {
+        font-size: 1.2rem;
+      }
     .tag-evt {
         display: flex;
         align-items: center;
+        text-transform: uppercase;
+        font-weight: normal;
     }
     .tag-dia {
         display: flex;

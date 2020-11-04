@@ -20,7 +20,7 @@ var ebd = {
     'loc': 'Templo Batista Arvores Verdes'
 }
 var oracao = {
-    'bg': '#d6a277',
+    'bg': '#b6723a',
     'evt': 'Oração e Doutrina',
     'hr': '19',
     'min': '30',
@@ -81,7 +81,7 @@ progs = [[], //00
 [] //31
 ]
 
-while (progs[diaDoMes] == '' || hoje > dataHoraDoEvento(progs[diaDoMes][progs[diaDoMes].length -1])) {
+while (progs[diaDoMes] == '' || hoje > dataHoraDoEvento(progs[diaDoMes][progs[diaDoMes].length - 1])) {
     diaDoMes++
     if (progs[diaDoMes] == null) {
         diaDoMes = 0
@@ -90,18 +90,13 @@ while (progs[diaDoMes] == '' || hoje > dataHoraDoEvento(progs[diaDoMes][progs[di
 
 progs[diaDoMes].map((prog) => {
     var post = `
-        <a href="eventos.html" class="mb-4">
-            <h6 class="tag-evt my-2 fHel">
-                <span class="tag-dia mr-3" style="background: ${prog.bg}">${Object.keys(progs)[diaDoMes]} / ${mes}</span>
-                ${prog.evt}
-            </h6>
-            <span class="tag-loc fHel2">${prog.loc}</span>
-            <span class="tag-diaD fHel2">
-                ${Object.keys(progs)[diaDoMes] == dMesComp ? 'Hoje' : 
-                arrDiasDaSemana[diaDaSemana(Object.keys(progs)[diaDoMes])]}
-            </span> - 
-            <span class="tag-hora fHel2">${prog.hr}:${prog.min}</span>
-        </a>
+    <a href="eventos.html">
+    <div class="modal-prog">
+    <h2 class="mb-3" style="color: ${prog.bg}"><i class="far fa-calendar-alt mr-3"></i>${prog.evt}</h2>
+      <span class="fHel1">${Object.keys(progs)[diaDoMes] == dMesComp ? '<strong>Hoje</strong>' : 
+      arrDiasDaSemana[diaDaSemana(Object.keys(progs)[diaDoMes])]} [ ${Object.keys(progs)[diaDoMes]}/${mes} ], às ${prog.hr}:${prog.min}hs</span>
+      <span class="fHel1">${prog.loc}</span>
+    </div></a>
         `
     $('.item-prog').append(post)
 
@@ -121,5 +116,4 @@ function fimMes() {
 function dataHoraDoEvento(evento) {
     return new Date(hoje.getFullYear(), fimMes(), diaDaSemana(Object.keys(progs)[diaDoMes]) + 1, evento.hr, evento.min)
 }
-
 

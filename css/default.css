@@ -16,11 +16,11 @@ header {
 .fHel1 {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: .9rem;
 }
 .fHel2 {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 300;
 }
 .fRel {

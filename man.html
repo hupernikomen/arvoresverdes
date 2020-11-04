@@ -114,8 +114,10 @@
             if ($('.senha').val() == 'ibav321' && window.screen.width < 550) {
                 sessionStorage.setItem('senhaIBAV', $('.senha').val())
                 window.location = 'index.html'
+
             } else if ($('.senha').val() != '' && window.screen.width >= 550) {
                 alerta('Acessivel apenas para smartphones')
+                
             } else if ($('.senha').val() == ''){
                 $('input').attr("placeholder", "Chave")
                 alerta('')
