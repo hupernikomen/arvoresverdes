@@ -76,8 +76,14 @@
         max-height: 400px;
        
     }
-    .carousel-item img {
-        animation: identifier2 4s forwards;
+    .black {
+        animation: identifier2 4s 1.5s forwards;
+        background: #000;
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+        opacity: 0;
     }
     .carousel-control-next, 
     .carousel-control-prev {
@@ -123,9 +129,10 @@
             margin-left: 0px;
         }
     }
+    
     @keyframes identifier2 {
         to {
-            filter: brightness(60%);
+            opacity: .4;
         }
     }
     .conteudo-slide {
@@ -140,6 +147,7 @@
         border-radius: 2px;
         font-size: 14px;
         font-weight: 600;
+        color: #fff !important;
     }
     
     /* Proximos Eventos  */
@@ -152,6 +160,18 @@
       }
       .modal-prog h2 {
         font-size: 1.2rem;
+      }
+      .agenda {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .agenda a {
+          border: 0;
+          padding: 10px;
+          border-radius: 4px;
+          color: #222;
       }
 
     /* Rodapé  */
