@@ -35,14 +35,14 @@ var pizza = {
 }
 var reuniaoH = {
     'bg': '#3F95E0',
-    'evt': 'Reuniao dos Homens',
+    'evt': 'Reunião dos Homens',
     'hr': '18',
     'min': '30',
     'loc': 'Casa do Irmão ...'
 }
 var reuniaoM = {
     'bg': '#F3A0B4',
-    'evt': 'Reuniao das Mulheres',
+    'evt': 'Reunião das Mulheres',
     'hr': '18',
     'min': '30',
     'loc': 'Casa da Irmã ...'
@@ -91,12 +91,13 @@ while (progs[diaDoMes] == '' || hoje > dataHoraDoEvento(progs[diaDoMes][progs[di
 progs[diaDoMes].map((prog) => {
     var post = `
     <a href="eventos.html">
-    <div class="modal-prog">
-    <h2 class="mb-3" style="color: ${prog.bg}"><i class="far fa-calendar-alt mr-3"></i>${prog.evt}</h2>
-      <span class="fHel1">${Object.keys(progs)[diaDoMes] == dMesComp ? '<strong>Hoje</strong>' : 
-      arrDiasDaSemana[diaDaSemana(Object.keys(progs)[diaDoMes])]} [ ${Object.keys(progs)[diaDoMes]}/${mes} ], às ${prog.hr}:${prog.min}hs</span>
-      <span class="fHel1">${prog.loc}</span>
-    </div></a>
+        <div class="modal-prog">
+            <h2 class="mb-3" style="color: ${prog.bg}"><i class="far fa-calendar-alt mr-3"></i>${prog.evt}</h2>
+            <span class="fHel1">${Object.keys(progs)[diaDoMes] == dMesComp ? '<strong>Hoje</strong>' : 
+            arrDiasDaSemana[diaDaSemana(Object.keys(progs)[diaDoMes])]} [ ${Object.keys(progs)[diaDoMes]}/${mes} ], às ${prog.hr}:${prog.min}hs</span>
+            <span class="fHel1">${prog.loc}</span>
+        </div>
+    </a>
         `
     $('.item-prog').append(post)
 

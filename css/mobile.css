@@ -148,34 +148,6 @@
       .modal-prog h2 {
         font-size: 1.2rem;
       }
-    .tag-evt {
-        display: flex;
-        align-items: center;
-        text-transform: uppercase;
-        font-weight: normal;
-    }
-    .tag-dia {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff !important;
-        font-size: .7rem !important;
-        height: 1.8rem;
-        border-radius: .1rem;
-        padding: 0 .5rem;
-    }
-    .tag-loc {
-        display: block;
-    }
-    .tag-hora::after {
-        content: 'hs';
-    }
-
-    .item-prog h6,
-    .itens-prog h6 {
-        font-size: 1.2rem;
-        font-weight: 500;
-    }
 
     /* Rodapé  */
     footer {
@@ -197,17 +169,21 @@
 
     /* Voltar para o topo  */
     .back2Top {
-        width: 40px;
+        width: 35px;
         overflow: hidden;
         z-index: 999;
         display: none;
         position: fixed;
-        bottom: 30px;
+        bottom: 20px;
         right: 10px;
-        background-color: #fff;
+        background: #be2a2adc;
         text-align: center;
         font-size: 30px;
         text-decoration: none;
+    }
+    .fa-angle-up {
+        color: #fff;
+
     }
     .back2Top:hover {
         background-color: #fff7;
