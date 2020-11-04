@@ -6,6 +6,7 @@ var fimStatus = []
 
 var arrDiasDaSemana = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
 var cultoDominical = {
+    'ic':'<i class="fas fa-hands mr-3"></i>',
     'bg': '#659EA3',
     'evt': 'Culto | Louvor e Pregação',
     'hr': '18',
@@ -13,13 +14,15 @@ var cultoDominical = {
     'loc': 'Templo Batista Arvores Verdes'
 }
 var ebd = {
-    'bg': '#ABD904',
+    'ic':'<i class="fas fa-bible mr-3"></i>',
+    'bg': '#8caf0c',
     'evt': 'EBD',
     'hr': '17',
     'min': '00',
     'loc': 'Templo Batista Arvores Verdes'
 }
 var oracao = {
+    'ic':'<i class="fas fa-praying-hands mr-3"></i>',
     'bg': '#b6723a',
     'evt': 'Culto | Oração e Doutrina',
     'hr': '19',
@@ -27,6 +30,7 @@ var oracao = {
     'loc': 'Templo Batista Arvores Verdes'
 }
 var pizza = {
+    'ic':'<i class="fas fa-pizza-slice mr-3"></i>',
     'bg': '#B32929',
     'evt': 'Festival de Pizza',
     'hr': '18',
@@ -34,6 +38,7 @@ var pizza = {
     'loc': 'Templo Batista Arvores Verdes'
 }
 var reuniaoH = {
+    'ic':'<i class="fas fa-male mr-3"></i>',
     'bg': '#3F95E0',
     'evt': 'Reunião dos Homens',
     'hr': '18',
@@ -41,6 +46,7 @@ var reuniaoH = {
     'loc': 'Casa do Irmão ...'
 }
 var reuniaoM = {
+    'ic':'<i class="fas fa-female mr-3"></i>',
     'bg': '#F3A0B4',
     'evt': 'Reunião das Mulheres',
     'hr': '18',
@@ -92,7 +98,7 @@ progs[diaDoMes].map((prog) => {
     var post = `
     <a href="eventos.html">
         <div class="modal-prog">
-            <h2 class="mb-3" style="color: ${prog.bg}"><i class="far fa-calendar-alt mr-3"></i>${prog.evt}</h2>
+            <h2 class="mb-3" style="color: ${prog.bg}">${prog.ic}${prog.evt}</h2>
             <span class="fHel1">${Object.keys(progs)[diaDoMes] == dMesComp ? '<strong>Hoje</strong>' : 
             arrDiasDaSemana[diaDaSemana(Object.keys(progs)[diaDoMes])]} [ ${Object.keys(progs)[diaDoMes]}/${mes} ], às ${prog.hr}:${prog.min}hs</span>
             <span class="fHel1">${prog.loc}</span>
