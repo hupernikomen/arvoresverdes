@@ -1,10 +1,3 @@
-var materias = [
-    {
-        'titulo':'Titularidade',
-        'conteudo':'Materia'
-    }
-]
-
 var plataformas = [
     mobile = {
         'id': 'carouselmobile',
