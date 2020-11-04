@@ -223,8 +223,8 @@
         justify-content: flex-start;
     }
     .container-down a {
-        margin: 3px;
-        box-shadow: 0 1px 3px 0 #ddd;
+        margin: 5px;
+        box-shadow: 0 1px 4px  #bbbbbbb2;
         min-width: 150px;
         border-radius: 4px;
     }
@@ -233,7 +233,7 @@
         color: #3e6a88;
         font-size: 1rem;
         font-weight: normal;
-        margin-top: 10px;
+        margin: 0;
     }
     
     .container-down img {
@@ -241,12 +241,9 @@
         width: 100%;
     }
 
-    .container-down p {
-        margin-top: -5px;
-        font-size: .8rem;
-    }
     .container-down span{
         font-size: .8rem;
+        margin-top: -10px;
     }
 
 

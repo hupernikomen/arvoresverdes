@@ -26,10 +26,9 @@ for (var i = 0; i < downloads.length; i++) {
     
     <a href="${downloads[i].link}" class="col p-0">
         ${downloads[i].capa}
-        <div class="px-3">
+        <div class="p-3">
             <h2>${downloads[i].titulo}</h2>
             <span>${downloads[i].autor}</span>
-            <p>Legenda</p>
         </div>
     </a>
 
