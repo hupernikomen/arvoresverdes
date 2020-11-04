@@ -100,7 +100,7 @@ progs[diaDoMes].map((prog) => {
     
         <div class="modal-prog">
             <h2 class="mb-3" style="color: ${prog.bg}">${prog.ic}${prog.evt}</h2>
-            <span class="fHel1">${Object.keys(progs)[diaDoMes] == dMesComp ? '<strong>Hoje</strong>' :
+            <span class="fHel1">${Object.keys(progs)[diaDoMes] == dMesComp ? '<span style="font-weight: 500">Hoje</span>' :
             arrDiasDaSemana[diaDaSemana(Object.keys(progs)[diaDoMes])]} [ ${Object.keys(progs)[diaDoMes]}/${mes} ], às ${prog.hr}:${prog.min}hs</span>
             <span class="fHel1">${prog.loc}</span>
         </div>
