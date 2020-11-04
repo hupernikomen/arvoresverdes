@@ -1,15 +1,21 @@
 var downloads =
     [
         {
-            'item': 'O que é Fé - R. C. Sproul',
+            'capa':'<img src="../imagens/livros/o_que_e_fe.jpg">',
+            'titulo': 'O que é Fé',
+            'autor':'R. C. Sproul',
             'link': 'https://drive.google.com/file/d/1b8Dy-8u-JMbNJhmOfu6AE8Np-aA-P98u/view?usp=sharing'
         },
         {
-            'item': 'Como ser Salvo - J. C. Ryle',
+            'capa':'',
+            'titulo': 'Como ser Salvo',
+            'autor':'J. C. Ryle',
             'link': 'https://drive.google.com/file/d/1T3l-hWlgq6Z2HiU43a8oZL0y9_8oCwQi/view?usp=sharing'
         },
         {
-            'item': 'O que significa ser nascido de novo - J. C. Ryle',
+            'capa':'',
+            'titulo': 'O que significa ser nascido de novo',
+            'autor':'J. C. Ryle',
             'link': 'https://drive.google.com/file/d/1BjHjTGfL2J7YnnTUOGbLiFK50XpDocrW/view?usp=sharing'
         }
     ]
@@ -17,11 +23,17 @@ var downloads =
 for (var i = 0; i < downloads.length; i++) {
 
     var download = `
-    <div class="container-download">
-        <span>${downloads[i].item}</span>
-        <a class="link-download" href="${downloads[i].link}"><i class="fas fa-download"></i></a>
-    </div>
-    <hr>
+    
+    <a href="${downloads[i].link}" class="col p-0">
+        ${downloads[i].capa}
+        <div class="px-3">
+            <h2>${downloads[i].titulo}</h2>
+            <span>${downloads[i].autor}</span>
+            <p>Legenda</p>
+        </div>
+    </a>
+
+
     `
-    $('main').append(download)
+    $('.container-down').append(download)
 }

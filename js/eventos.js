@@ -9,6 +9,7 @@ for (var i = diaDoMes; i < progs.length; i++) {
             </span>
             <span class="fHel1">${item.loc}</span>
         </div>
+        <hr>
     `
         $('.itens-prog').append(post)
     })

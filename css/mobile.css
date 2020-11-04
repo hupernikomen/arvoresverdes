@@ -173,6 +173,9 @@
           border-radius: 4px;
           color: #222;
       }
+      .text-agenda {
+          text-align: center;
+      }
 
     /* Rodapé  */
     footer {
@@ -214,19 +217,37 @@
         background-color: #fff7;
     }
     /* Pagina Downloads  */
-    .container-download {
+    .container-down {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 60px;
-        padding: 10px 20px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
-    .link-download {
-        padding: 10px;
-        text-decoration: none;
+    .container-down a {
+        margin: 3px;
+        box-shadow: 0 1px 3px 0 #ddd;
+        min-width: 150px;
+        border-radius: 4px;
     }
-    .link-download i {
-        font-size: 24px;
+
+    .container-down h2 {
+        color: #3e6a88;
+        font-size: 1rem;
+        font-weight: normal;
+        margin-top: 10px;
     }
+    
+    .container-down img {
+        border-radius: 4px 4px 0 0;
+        width: 100%;
+    }
+
+    .container-down p {
+        margin-top: -5px;
+        font-size: .8rem;
+    }
+    .container-down span{
+        font-size: .8rem;
+    }
+
 
 }
