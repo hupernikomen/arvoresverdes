@@ -1,9 +1,9 @@
 var menu =
     [
-        { 'id': 'Home', 'link': 'https://www.ibavthe.com' },
+        { 'id': 'Home', 'link': 'index.html' },
         { 'id': 'Contato', 'link': '' },
         { 'id': 'Contribua', 'link': '' },
-        { 'id': 'Downloads', 'link': 'https://www.ibavthe.com/downloads' }
+        { 'id': 'Downloads', 'link': 'downloads.html' }
     ]
 
 for (var i = 0; i < menu.length; i++) {
