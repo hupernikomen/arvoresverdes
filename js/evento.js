@@ -7,7 +7,7 @@ var fimStatus = []
 var arrDiasDaSemana = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
 var cultoDominical = {
     'bg': '#659EA3',
-    'evt': 'Culto - Louvor e Pregação',
+    'evt': 'Culto | Louvor e Pregação',
     'hr': '18',
     'min': '00',
     'loc': 'Templo Batista Arvores Verdes'
@@ -21,7 +21,7 @@ var ebd = {
 }
 var oracao = {
     'bg': '#b6723a',
-    'evt': 'Oração e Doutrina',
+    'evt': 'Culto | Oração e Doutrina',
     'hr': '19',
     'min': '30',
     'loc': 'Templo Batista Arvores Verdes'
