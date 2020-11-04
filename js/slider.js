@@ -4,18 +4,18 @@ var plataformas = [
         'class': 'slide-mobile',
         'imgs': [
             {
-                'img':'<img class="d-block w-100" src="imagens/mobile-slide-1.jpg" alt="First slide">',
+                'img':'<img class="d-block w-100" src="imagens/mobile-slide-1.jpg">',
                 'h3': 'EVANGELISMO',
                 'p':'Dia 25/01 no Morro do Papagaio',
                 'button':'PARTICIPE',
-                'link':'blog.html'
+                'link':'',
             },
             {
-                'img':'<img class="d-block w-100" src="imagens/mobile-slide-2.jpg" alt="Second slide">',
+                'img':'<img class="d-block w-100" src="imagens/mobile-slide-2.jpg">',
                 'h3': 'CULTO INFANTIL',
                 'p':'"Deixai vir a mim as criancinhas" - Mt 19:14. Traga seu filho ao culto infantil',
                 'button':'SAIBA MAIS',
-                'link':''
+                'link':'',
             }
         ]
     },
@@ -24,18 +24,18 @@ var plataformas = [
         'class': 'slide-desktop',
         'imgs': [
             {
-                'img':'<img class="d-block w-100" src="imagens/ban1.jpg" alt="First slide">',
+                'img':'<img class="d-block w-100" src="imagens/ban1.jpg">',
                 'h3': 'UM',
                 'p':'Dia 25/01 no Morro do Papagaio',
                 'button':'PARTICIPE',
-                'link':''
+                'link':'',
             },
             {
-                'img':'<img class="d-block w-100" src="imagens/ban2.jpg" alt="Second slide">',
+                'img':'<img class="d-block w-100" src="imagens/ban2.jpg">',
                 'h3': 'DOIS',
                 'p':'Traga seus filhos e filhas para a Escola Bíblica Dominical',
                 'button':'SAIBA MAIS',
-                'link':''
+                'link':'',
             }
         ]
     }
@@ -51,6 +51,7 @@ if (screen.width > 1199) {
     c = 'slide-desktop'
 }
 
+
 for (var classe = 0; classe < plataformas[i].imgs.length; classe++) {
     var item = plataformas[i].imgs[classe]
     var slide = `
@@ -60,7 +61,7 @@ for (var classe = 0; classe < plataformas[i].imgs.length; classe++) {
             <div class="conteudo-slide mx-4">
                 <h3>${item.h3}</h3>
                 <p>${item.p}</p>
-                <a>
+                <a href="${item.link}">
                 ${item.button}
                 </a>
             </div>
