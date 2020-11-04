@@ -120,7 +120,7 @@
     }
     @keyframes identifier2 {
         to {
-            filter: brightness(60%) grayscale(60%);
+            filter: brightness(60%);
         }
     }
     .conteudo-slide {
