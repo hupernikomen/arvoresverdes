@@ -2,20 +2,20 @@ var downloads =
     [
         {
             'capa':'<img src="../imagens/livros/o_que_e_fe.jpg">',
-            'titulo': 'O que é Fé',
+            'titulo': 'O que é Fé?',
             'autor':'R. C. Sproul',
             'link': 'https://drive.google.com/file/d/1b8Dy-8u-JMbNJhmOfu6AE8Np-aA-P98u/view?usp=sharing'
         },
         {
             'capa':'',
-            'titulo': 'Como ser Salvo',
+            'titulo': 'Como ser Salvo?',
             'autor':'J. C. Ryle',
             'link': 'https://drive.google.com/file/d/1T3l-hWlgq6Z2HiU43a8oZL0y9_8oCwQi/view?usp=sharing'
         },
         {
-            'capa':'',
-            'titulo': 'O que significa ser nascido de novo',
-            'autor':'J. C. Ryle',
+            'capa':'<img src="../imagens/livros/o_que_significa_ser_nascido_de_novo.jpg">',
+            'titulo': 'O que significa ser nascido de novo?',
+            'autor':'R. C. Sproul',
             'link': 'https://drive.google.com/file/d/1BjHjTGfL2J7YnnTUOGbLiFK50XpDocrW/view?usp=sharing'
         }
     ]
