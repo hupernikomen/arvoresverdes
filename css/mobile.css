@@ -1,16 +1,4 @@
 @media (max-width: 1199px) {
-    *{
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
-    body, html, h6, span{
-        color: #000;
-        font-weight: 200;
-    }
     .fas {
         line-height: 1.5 !important;
     }
@@ -25,16 +13,7 @@
     .voltar {
         padding: 10px 10px 10px 0;
         margin-right: 10px;
-        height: 50px;
-        vertical-align: middle;
     }
-
-    h4 {
-        margin: 1.5rem 0;
-        font-weight: 300;
-        font-size: 1.5rem;
-    }
-
 
     /* NavBars  */
     header {
@@ -42,21 +21,19 @@
         z-index: 9999;
         box-shadow: 0 1px 3px 0 #00000041;
     }
-    .navbar-brand {
-        padding: 0;
-        margin: 0;
+    .navbar-brand { /*Logo e H1 do nome da igreja*/
         display: flex;
         align-items: center;
     }
     .logo {
         max-height: 50px;
+        margin-right: 10px;
     }
     .sub-logo {
-        margin: 0 10px;
+        margin: 0;
     }
     .navbar-toggler {
         border: 0;
-        padding: 0;
     }
     .navbar-toggler:focus{
         outline: none;
@@ -74,7 +51,6 @@
     .carousel-item,
     .carousel-item img {
         max-height: 400px;
-       
     }
     .black {
         animation: identifier2 4s 1.5s forwards;
@@ -88,6 +64,11 @@
     .carousel-control-next, 
     .carousel-control-prev {
         width: 10% !important;
+    }
+    .conteudo-slide {
+        width: 100%;
+        position: absolute;
+        top: 30%;
     }
     .carousel-item h3 {
         text-transform: uppercase;
@@ -121,6 +102,7 @@
         padding: .8rem;
         border: 0;
         animation: identifier 1s 2s forwards;
+        border-radius: 2px;
         box-shadow: 1px 1px 3px #00000050;
     }
     @keyframes identifier {
@@ -135,21 +117,7 @@
             opacity: .4;
         }
     }
-    .conteudo-slide {
-        width: 100%;
-        position: absolute;
-        top: 30%;
-    }
-    .conteudo-slide h3 {
-        font-size: 35px;
-    }
-    .conteudo-slide a {
-        border-radius: 2px;
-        font-size: 14px;
-        font-weight: 600;
-        color: #fff !important;
-    }
-    
+
     /* Proximos Eventos  */
     .modal-prog {
         display: flex;
@@ -162,19 +130,9 @@
         font-size: 1.2rem;
       }
       .agenda {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+          display: flex;
         align-items: center;
-      }
-      .agenda a {
-          border: 0;
-          padding: 10px;
-          border-radius: 4px;
-          color: #222;
-      }
-      .text-agenda {
-          text-align: center;
+          flex-direction: column;
       }
 
     /* Rodapé  */
@@ -208,10 +166,6 @@
         text-align: center;
         font-size: 30px;
         text-decoration: none;
-    }
-    .fa-angle-up {
-        color: #fff;
-
     }
     .back2Top:hover {
         background-color: #fff7;

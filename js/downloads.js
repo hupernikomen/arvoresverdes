@@ -32,7 +32,6 @@ for (var i = 0; i < downloads.length; i++) {
         </div>
     </a>
 
-
     `
     $('.container-down').append(download)
 }

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none !important;
     list-style: none;
+    user-select: none;
 
     /* box-shadow: 0 0 1px 0 #000; */
 }

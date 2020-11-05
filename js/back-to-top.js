@@ -1,5 +1,5 @@
 var back_up = `<a class="back2Top"><i class="fas fa-angle-up"></i></a>`
-$('body').append(back_up)
+$('footer').append(back_up)
 
 $(window).scroll(function () {
     var height = $(window).scrollTop();

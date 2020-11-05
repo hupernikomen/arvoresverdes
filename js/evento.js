@@ -7,7 +7,7 @@ var fimStatus = []
 var arrDiasDaSemana = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
 var cultoDominical = {
     'ic': '<i class="fas fa-hands mr-3"></i>',
-    'bg': '#659EA3',
+    'cor': '#659EA3',
     'evt': 'Culto | Louvor e Pregação',
     'hr': '18',
     'min': '00',
@@ -15,7 +15,7 @@ var cultoDominical = {
 }
 var ebd = {
     'ic': '<i class="fas fa-bible mr-3"></i>',
-    'bg': '#8caf0c',
+    'cor': '#8caf0c',
     'evt': 'EBD',
     'hr': '17',
     'min': '00',
@@ -23,7 +23,7 @@ var ebd = {
 }
 var oracao = {
     'ic': '<i class="fas fa-praying-hands mr-3"></i>',
-    'bg': '#b6723a',
+    'cor': '#b6723a',
     'evt': 'Culto | Oração e Doutrina',
     'hr': '19',
     'min': '30',
@@ -31,7 +31,7 @@ var oracao = {
 }
 var pizza = {
     'ic': '<i class="fas fa-pizza-slice mr-3"></i>',
-    'bg': '#B32929',
+    'cor': '#B32929',
     'evt': 'Festival de Pizza',
     'hr': '18',
     'min': '00',
@@ -39,7 +39,7 @@ var pizza = {
 }
 var reuniaoH = {
     'ic': '<i class="fas fa-male mr-3"></i>',
-    'bg': '#3F95E0',
+    'cor': '#3F95E0',
     'evt': 'Reunião dos Homens',
     'hr': '18',
     'min': '30',
@@ -47,7 +47,7 @@ var reuniaoH = {
 }
 var reuniaoM = {
     'ic': '<i class="fas fa-female mr-3"></i>',
-    'bg': '#F3A0B4',
+    'cor': '#F3A0B4',
     'evt': 'Reunião das Mulheres',
     'hr': '18',
     'min': '30',
@@ -95,20 +95,29 @@ while (progs[diaDoMes] == '' || hoje > dataHoraDoEvento(progs[diaDoMes][progs[di
     }
 }
 
-progs[diaDoMes].map((prog) => {
-    var post = `
-    
-        <div class="modal-prog">
-            <h2 class="mb-3" style="color: ${prog.bg}">${prog.ic}${prog.evt}</h2>
-            <span class="fHel1">${Object.keys(progs)[diaDoMes] == dMesComp ? '<span style="font-weight: 500">Hoje</span>' :
-            arrDiasDaSemana[diaDaSemana(Object.keys(progs)[diaDoMes])]} [ ${Object.keys(progs)[diaDoMes]}/${mes} ], às ${prog.hr}:${prog.min}hs</span>
-            <span class="fHel1">${prog.loc}</span>
-        </div>
-  
-        `
-    $('.item-prog').append(post)
+var page = window.location.pathname
 
-})
+if (page == '/eventos.html') {
+    for (diaDoMes; diaDoMes < progs.length; diaDoMes++) {
+        programacao('.itens-prog')
+    }
+} else if (page == '/index.html' || page == '/'){
+    programacao('.item-prog')
+}
+
+function programacao(el) {
+    progs[diaDoMes].map((prog) => {
+        var post = `
+        <div class="modal-prog">
+        <h2 class="mb-3" style="color: ${prog.cor}">${prog.ic}${prog.evt}</h2>
+        <span class="fHel1">${Object.keys(progs)[diaDoMes] == dMesComp ? '<span style="font-weight: 500">Hoje</span>' :
+                arrDiasDaSemana[diaDaSemana(Object.keys(progs)[diaDoMes])]} [ ${Object.keys(progs)[diaDoMes]}/${mes} ], às ${prog.hr}:${prog.min}hs</span>
+        <span class="fHel1">${prog.loc}</span>
+        </div>
+        `
+        $(el).append(post)
+    })
+}
 
 function diaDaSemana(dia) {
     return new Date(hoje.getFullYear(), fimMes(), dia).getDay()
