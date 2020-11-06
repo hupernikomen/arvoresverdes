@@ -23,19 +23,19 @@ var bibliotecas =
         }
     ]
 
-    for (var i = 0; i < downloads.length; i++) {
+    for (var i = 0; i < bibliotecas.length; i++) {
 
-        var download = `
+        var livro = `
         
-        <a href="${downloads[i].link}" class="download-item">
-            ${downloads[i].capa}
+        <a href="${bibliotecas[i].link}" class="download-item">
+            ${bibliotecas[i].capa}
             <div>
-                <h2>${downloads[i].titulo}</h2>
-                <span>Autor: ${downloads[i].autor}</span>
-                <span>Categoria: ${downloads[i].categoria}</span>
+                <h2>${bibliotecas[i].titulo}</h2>
+                <span>Autor: ${bibliotecas[i].autor}</span>
+                <span>Categoria: ${bibliotecas[i].categoria}</span>
             </div>
         </a>
     
         `
-        $('.container-down').append(download)
+        $('.container-down').append(livro)
     }
