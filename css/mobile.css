@@ -173,11 +173,9 @@
     }
     /* Pagina Downloads  */
     
-
-    
     .download-item {
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .download-item img {
         height: 120px;
