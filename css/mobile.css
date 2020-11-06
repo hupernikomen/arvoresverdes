@@ -178,7 +178,7 @@
     .download-item {
         display: flex;
         margin-bottom: 15px;
-        box-shadow: 1px 1px 3px #00000030;
+        box-shadow: 1px 1px 2px 0 #00000030;
     }
     .download-item div{
         display: flex;
