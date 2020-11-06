@@ -1,4 +1,4 @@
-var bibliotecas =
+var biblioteca =
     [
         {
             'categoria': 'livros',
@@ -23,19 +23,19 @@ var bibliotecas =
         }
     ]
 
-    for (var i = 0; i < bibliotecas.length; i++) {
+    for (var i = 0; i < biblioteca.length; i++) {
 
         var livro = `
         
-        <a href="${bibliotecas[i].link}" class="download-item">
-            ${bibliotecas[i].capa}
+        <a href="${biblioteca[i].link}" class="download-item">
+            ${biblioteca[i].capa}
             <div>
-                <h2>${bibliotecas[i].titulo}</h2>
-                <span>Autor: ${bibliotecas[i].autor}</span>
-                <span>Categoria: ${bibliotecas[i].categoria}</span>
+                <h2>${biblioteca[i].titulo}</h2>
+                <span>Autor: ${biblioteca[i].autor}</span>
+                <span>Categoria: ${biblioteca[i].categoria}</span>
             </div>
         </a>
     
         `
-        $('.container-down').append(livro)
+        $('.arquivos').append(livro)
     }
