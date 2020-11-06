@@ -177,6 +177,10 @@
         display: flex;
         margin-bottom: 10px;
     }
+    .download-item div{
+        display: flex;
+        flex-direction: column;
+    }
     .download-item img {
         height: 120px;
         min-width: 90px;
@@ -184,7 +188,7 @@
     }
     .download-item h2 {
         font-size: 1rem;
-        margin: 10px 0 0;
+        margin: 10px 0;
     }
     .download-item span {
         color: #777;
