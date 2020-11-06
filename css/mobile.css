@@ -173,11 +173,9 @@
     }
     /* Pagina Downloads  */
     
-
-    
     .download-item {
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .download-item img {
         height: 120px;
@@ -185,11 +183,13 @@
         margin-right: 20px;
     }
     .download-item h2 {
-        font-size: 1.2rem;
-        margin-top: 10px;
+        font-size: 1rem;
+        margin: 10px 0 0;
     }
     .download-item span {
         color: #777;
+        font-weight: 300;
+        font-size: .8rem;
     }
 
 

@@ -12,6 +12,9 @@
 a {
     color: #117a8b;
 }
+a:active, a:hover {
+    color: #bbb;
+}
 
 header {
     background: #fff;
