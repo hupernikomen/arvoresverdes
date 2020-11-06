@@ -13,6 +13,7 @@
     .voltar {
         padding: 10px 10px 10px 0;
         margin-right: 10px;
+        width: 50px;
     }
 
     /* NavBars  */
@@ -171,33 +172,24 @@
         background-color: #fff7;
     }
     /* Pagina Downloads  */
-    .container-down {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-    .container-down a {
-        margin: 7px;
-        box-shadow: 0 1px 4px  #bbbbbbb2;
-        min-width: 150px;
-        border-radius: 4px;
-    }
-
-    .container-down h2 {
-        color: #3e6a88;
-        font-size: 1rem;
-        font-weight: normal;
-        margin: 0;
-    }
     
-    .container-down img {
-        border-radius: 4px 4px 0 0;
-        width: 100%;
-    }
 
-    .container-down span{
-        font-size: .8rem;
-        margin-top: -10px;
+    
+    .download-item {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .download-item img {
+        height: 120px;
+        min-width: 90px;
+        margin-right: 20px;
+    }
+    .download-item h2 {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    .download-item span {
+        color: #777;
     }
 
 
