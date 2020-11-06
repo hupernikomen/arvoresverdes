@@ -101,15 +101,15 @@ if (page == '/eventos.html') {
     for (diaDoMes; diaDoMes < progs.length; diaDoMes++) {
         programacao('.itens-prog')
     }
-} else if (page == '/index.html' || page == '/'){
+} else if (page == '/index.html' || page == '/') {
     programacao('.item-prog')
 }
 
 function programacao(el) {
     progs[diaDoMes].map((prog) => {
         var post = `
-        <div class="modal-prog">
-        <h2 class="mb-3" style="color: ${prog.cor}">${prog.ic}${prog.evt}</h2>
+        <div class="modal-prog"  ${el == '.itens-prog' ? `style="border-left: 5px solid ${prog.cor}`:""}">
+        <h2 class="mb-3" style="color: ${prog.cor}"> ${el == '.item-prog' ? prog.ic : ""}${prog.evt}</h2>
         <span class="fHel1">${Object.keys(progs)[diaDoMes] == dMesComp ? '<span style="font-weight: 500">Hoje</span>' :
                 arrDiasDaSemana[diaDaSemana(Object.keys(progs)[diaDoMes])]} [ ${Object.keys(progs)[diaDoMes]}/${mes} ], às ${prog.hr}:${prog.min}hs</span>
         <span class="fHel1">${prog.loc}</span>

@@ -10,10 +10,10 @@
 }
 
 a {
-    color: #117a8b;
+    color: #222;
 }
 a:active, a:hover {
-    color: #bbb;
+    color: #777;
 }
 
 header {

@@ -10,6 +10,7 @@
     .carousel-control-prev-icon {
         display: none;
     }
+
     .voltar {
         padding: 10px 10px 10px 0;
         margin-right: 10px;
@@ -126,6 +127,7 @@
         justify-content: center;
         align-items: center;
         padding: 20px 0;
+        margin-bottom: 3px;
       }
       .modal-prog h2 {
         font-size: 1.2rem;
@@ -175,7 +177,8 @@
     
     .download-item {
         display: flex;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        box-shadow: 1px 1px 3px #00000030;
     }
     .download-item div{
         display: flex;
@@ -185,6 +188,7 @@
         height: 120px;
         min-width: 90px;
         margin-right: 20px;
+        border: 1px solid #fff;
     }
     .download-item h2 {
         font-size: 1rem;
