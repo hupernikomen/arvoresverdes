@@ -57,16 +57,7 @@ for (var i = 0; i < plataformas[tela ? 1 : 0].imgs.length; i++) {
         </div>
         `
     $('.carousel-inner').append(slide)
-    console.log(slide)
 }
-
-// var res = []
-// $('.ut').on('click', (e) => {
-//     e.preventDefault()
-//     res.pop()
-//     res.push(e.target.id)
-// })
-
 
 
 $('#mudarid').attr('id', tela ? 'carouseldesktop' : 'carouselmobile')

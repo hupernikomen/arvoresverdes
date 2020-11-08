@@ -8,13 +8,6 @@ var biblioteca =
             'link': 'https://drive.google.com/file/d/1b8Dy-8u-JMbNJhmOfu6AE8Np-aA-P98u/view?usp=sharing'
         },
         {
-            'categoria':'livros',
-            'capa': '<img>',
-            'titulo': 'Como ser Salvo?',
-            'autor': 'J. C. Ryle',
-            'link': 'https://drive.google.com/file/d/1T3l-hWlgq6Z2HiU43a8oZL0y9_8oCwQi/view?usp=sharing'
-        },
-        {
             'categoria':'ebd',
             'capa': '<img src="../imagens/livros/o_que_significa_ser_nascido_de_novo.jpg">',
             'titulo': 'O que significa ser nascido de novo?',
@@ -27,7 +20,7 @@ var biblioteca =
 
         var livro = `
         
-        <a href="${biblioteca[i].link}" class="download-item">
+        <a href="${biblioteca[i].link}" class="livro">
             ${biblioteca[i].capa}
             <div>
                 <h2>${biblioteca[i].titulo}</h2>

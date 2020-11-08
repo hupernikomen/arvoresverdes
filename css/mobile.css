@@ -2,28 +2,22 @@
     .fas {
         line-height: 1.5 !important;
     }
-    .topo,
-    .slide-desk,
-    .navbar-text,
-    .sr-only,
-    .carousel-control-next-icon,
-    .carousel-control-prev-icon {
+    .topo, .slide-desk, .navbar-text, .sr-only, .carousel-control-next-icon, .carousel-control-prev-icon {
         display: none;
     }
-
     .voltar {
         padding: 10px 10px 10px 0;
         margin-right: 10px;
         width: 50px;
     }
-
     /* NavBars  */
     header {
         background: #fff;
         z-index: 9999;
         box-shadow: 0 1px 3px 0 #00000041;
     }
-    .navbar-brand { /*Logo e H1 do nome da igreja*/
+    .navbar-brand {
+        /*Logo e H1 do nome da igreja*/
         display: flex;
         align-items: center;
     }
@@ -36,8 +30,9 @@
     }
     .navbar-toggler {
         border: 0;
+        padding-right: 0;
     }
-    .navbar-toggler:focus{
+    .navbar-toggler:focus {
         outline: none;
     }
     .navbar-toggler-icon {
@@ -46,12 +41,8 @@
     .navbar-nav {
         margin-top: 2rem;
     }
-
-
     /* Carousel  */
-    .carousel-inner, 
-    .carousel-item,
-    .carousel-item img {
+    .carousel-inner, .carousel-item, .carousel-item img {
         max-height: 400px;
     }
     .black {
@@ -63,8 +54,7 @@
         top: 0;
         opacity: 0;
     }
-    .carousel-control-next, 
-    .carousel-control-prev {
+    .carousel-control-next, .carousel-control-prev {
         width: 10% !important;
     }
     .conteudo-slide {
@@ -113,13 +103,11 @@
             margin-left: 0px;
         }
     }
-    
     @keyframes identifier2 {
         to {
             opacity: .4;
         }
     }
-
     /* Proximos Eventos  */
     .modal-prog {
         display: flex;
@@ -127,35 +115,36 @@
         justify-content: center;
         align-items: center;
         padding: 20px 0;
-        margin-bottom: 3px;
-      }
-      .modal-prog h2 {
-        font-size: 1.2rem;
-      }
-      .agenda {
-          display: flex;
+        margin-bottom: 2px;
+    }
+    .modal-prog h2 {
+        font-size: 1.1rem;
+    }
+    .modal-prog i {
+        font-size: 1rem;
+        margin-right: 8px;
+    }
+    .agenda {
+        display: flex;
         align-items: center;
-          flex-direction: column;
-      }
-
+        flex-direction: column;
+    }
     /* Rodapé  */
     footer {
         padding-top: 10px;
         background: #3e6a88 url('../imagens/bg-footer.jpg');
         background-repeat: no-repeat;
     }
-    footer h6, 
-    footer p, 
-    footer a,
-    footer i,
-    .footer-copyright {
+    footer h6, footer p, footer a, footer i, .footer-copyright {
         color: #fff;
+    }
+    footer p {
+        font-weight: 300;
     }
     .flex-center {
         display: flex;
         justify-content: center;
     }
-
     /* Voltar para o topo  */
     .back2Top {
         width: 35px;
@@ -174,31 +163,28 @@
         background-color: #fff7;
     }
     /* Pagina Downloads  */
-    
-    .download-item {
+    .livro {
         display: flex;
-        margin-bottom: 15px;
-        box-shadow: 1px 1px 2px 0 #00000030;
+        margin-bottom: 10px;
+        box-shadow: 1px 1px 3px 0 #00000020;
     }
-    .download-item div{
+    .livro div {
         display: flex;
         flex-direction: column;
     }
-    .download-item img {
+    .livro img {
         height: 120px;
         min-width: 90px;
         margin-right: 20px;
-        border: 1px solid #fff;
+        border: 2px solid #fff;
     }
-    .download-item h2 {
+    .livro h2 {
         font-size: 1rem;
         margin: 10px 0;
     }
-    .download-item span {
+    .livro span {
         color: #777;
         font-weight: 300;
         font-size: .8rem;
     }
-
-
 }
