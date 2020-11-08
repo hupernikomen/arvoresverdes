@@ -152,7 +152,7 @@
         margin-bottom: 2px;
     }
     .modal-prog h2 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .modal-prog i {
         font-size: 1rem;
@@ -163,6 +163,11 @@
         align-items: center;
         flex-direction: column;
     }
+    .agenda a {
+        width: 100%;
+        text-align: center;
+    }
+
     /* Rodapé  */
     footer {
         padding-top: 10px;

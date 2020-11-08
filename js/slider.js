@@ -75,7 +75,6 @@ for (var i = 0; i < plataformas[tela ? 1 : 0].imgs.length; i++) {
         </div>
         `
     $('.carousel-inner').append(slide)
-    console.log(slide)
 }
 
 function blog(id) {

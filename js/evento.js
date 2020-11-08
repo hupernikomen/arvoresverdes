@@ -2,7 +2,7 @@ var diaDeFeira = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Q
 var cultoDominical = {
     'ic': '<i class="fas fa-bible"></i>',
     'cor': '#659EA3',
-    'evt': 'Culto | Louvor e Pregação',
+    'evt': 'Louvor e Pregação',
     'hr': '18',
     'min': '00',
     'loc': 'Templo Batista Arvores Verdes'
@@ -18,7 +18,7 @@ var ebd = {
 var oracao = {
     'ic': '<i class="fas fa-praying-hands"></i>',
     'cor': '#b6723a',
-    'evt': 'Culto | Oração e Doutrina',
+    'evt': 'Oração e Doutrina',
     'hr': '19',
     'min': '30',
     'loc': 'Templo Batista Arvores Verdes'
@@ -86,6 +86,7 @@ var ano = data.getFullYear()
 var mes = data.getMonth() + 1
 var dia = data.getDate()
 var diaComp = data.getDate()
+
 fimStatus = []
 
 while (progs[dia] == '') {
@@ -114,11 +115,12 @@ function programacao(el) {
     var index = Object.keys(progs)[dia]
 
     progs[dia].map((prog) => {
+
         var post = `
         <div class="modal-prog" ${el == '.itens-prog' ? `style="border-left: 8px solid ${prog.cor}` : ""}">
-            <h2 class="mb-2" style="color: ${prog.cor}"> ${el == '.item-prog' ? prog.ic : ""}${prog.evt}</h2>
+            <h2 class="mb-2" style="color: ${prog.cor}"> ${el == '.item-prog' ? prog.ic : ""} ${prog.evt}</h2>
             <span class="fHel1">${index == diaComp ? '<span style="font-weight: 500">Hoje</span>' :
-                diaDeFeira[diaDaSemana(index)]} [ ${index}/${mes} ], às ${prog.hr}:${prog.min}hs</span>
+                diaDeFeira[diaDaSemana(index)]} ( ${index}/${mes} ) às ${prog.hr}:${prog.min}hs</span>
             <span class="fHel1">${prog.loc}</span>
         </div>
         `
