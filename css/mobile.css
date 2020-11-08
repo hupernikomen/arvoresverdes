@@ -90,7 +90,7 @@
         margin-left: -30px;
         opacity: 0;
         background: #be2a2a;
-        color: #fff;
+        color: #fff !important;
         padding: .8rem;
         border: 0;
         animation: identifier 1s 2s forwards;
@@ -107,6 +107,40 @@
         to {
             opacity: .4;
         }
+    }
+    .blog {
+        position: fixed;
+        width: 100%;
+        min-height: 100%;
+        background: #00000067;
+        top: 0;
+        z-index: 9999;
+        display: none;
+    }
+    .blog-item {
+        width: 90%;
+        height: auto;
+        max-height: 500px;
+        border-radius: 4px;
+        background: #fff;
+        overflow: auto;
+        margin: 20% auto;
+
+    }
+    .blog-item h2, .blog-item p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .blog-item h2 {
+        font-size: 1.3rem;
+    }
+    .blog i {
+        font-size: 30px;
+        display: flex;
+        position: sticky;
+        top: 0;
+        justify-content: center;
+        background: #fff;
     }
     /* Proximos Eventos  */
     .modal-prog {
