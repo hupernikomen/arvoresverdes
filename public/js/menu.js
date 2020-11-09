@@ -16,3 +16,8 @@ for (var i = 0; i < menu.length; i++) {
     `
     $('.navbar-nav').append(compmenu)
 }
+
+if (window.location.pathname != '/') {
+    var btnvoltar = `'<i class="fas fa-arrow-left voltar" onclick="window.history.go(-1); return false"></i>'` 
+    $('.navbar-brand').prepend(btnvoltar)
+}
