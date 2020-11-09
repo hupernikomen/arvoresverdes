@@ -103,11 +103,11 @@ if (data > dataEvento) {
 }
 
 
-if (window.location.pathname == '/eventos.html') {
+if (window.location.pathname == '/eventos') {
     for (dia; dia < progs.length; dia++) {
         programacao('.itens-prog')
     }
-} else if (window.location.pathname == '/index.html' || window.location.pathname == '/') {
+} else if (window.location.pathname == '/') {
     programacao('.item-prog')
 }
 
