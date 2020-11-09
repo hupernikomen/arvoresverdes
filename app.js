@@ -1,12 +1,12 @@
 const express = require('express')
 const app = express()
 
-app.use((req, res, next) => { 
-    if ((req.headers["x-forwarded-proto"] || "").endsWith("http")) 
-        res.redirect(`https://${req.headers.host}${req.url}`);
-    else  
-        next(); 
-});
+// app.use((req, res, next) => { 
+//     if ((req.headers["x-forwarded-proto"] || "").endsWith("http")) 
+//         res.redirect(`https://${req.headers.host}${req.url}`);
+//     else  
+//         next(); 
+// });
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
