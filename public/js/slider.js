@@ -52,7 +52,7 @@ for (var i = 0; i < plataformas[tela ? 1 : 0].imgs.length; i++) {
             <div class="conteudo-slide mx-4">
                 <h3>${item.imgs[i].h3}</h3>
                 <p>${item.imgs[i].p}</p>
-                <a>
+                <a onclick="blog('${item.imgs[i].id}')">
                 ${item.imgs[i].button}
                 </a>
             </div>
