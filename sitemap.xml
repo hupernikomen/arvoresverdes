@@ -4,35 +4,32 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
-  <loc>https://www.ibavthe.com/</loc>
-  <lastmod>2020-10-26T20:36:08+00:00</lastmod>
+  <loc>https://ibavthe.com/</loc>
+  <lastmod>2020-11-09T17:12:59+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.ibavthe.com/index.html</loc>
-  <lastmod>2020-10-26T20:36:08+00:00</lastmod>
+  <loc>https://ibavthe.com/eventos</loc>
+  <lastmod>2020-11-09T17:12:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ibavthe.com/downloads.html</loc>
-  <lastmod>2020-10-26T20:36:08+00:00</lastmod>
+  <loc>https://ibavthe.com/biblioteca</loc>
+  <lastmod>2020-11-09T17:12:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ibavthe.com/eventos.html</loc>
-  <lastmod>2020-10-26T20:36:08+00:00</lastmod>
+  <loc>https://ibavthe.com/sobre</loc>
+  <lastmod>2020-11-09T17:12:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ibavthe.com/contato.html</loc>
-  <lastmod>2020-10-26T20:36:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ibavthe.com/sobre.html</loc>
-  <lastmod>2020-10-26T20:36:08+00:00</lastmod>
+  <loc>https://ibavthe.com/contato</loc>
+  <lastmod>2020-11-09T17:12:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
