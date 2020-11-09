@@ -116,7 +116,7 @@ function programacao(el) {
 
     progs[dia].map((prog) => {
 
-        var evento = `
+        var eventoitem = `
         <div class="modal-prog">
             <h2 class="mb-2" style="color: ${prog.cor}"> ${prog.ic} ${prog.evt}</h2>
             <span class="fHel1">${index == diaComp ? '<span style="font-weight: 500">Hoje</span>' :
@@ -125,7 +125,7 @@ function programacao(el) {
         </div>
         `
 
-        var eventos = `
+        var eventositens = `
         <div class="modal-prog" style="border-left: 8px solid ${prog.cor}">
             <h2 class="mb-2" style="color: ${prog.cor}">${prog.evt}</h2>
             <span class="fHel1">${index == diaComp ? '<span style="font-weight: 500">Hoje</span>' :
@@ -134,7 +134,7 @@ function programacao(el) {
         </div>
         `
 
-        $(el).append(el == '.item-prog' ? evento : eventos)
+        $(el).append(el == '.item-prog' ? eventoitem : eventositens)
     })
 }
 
