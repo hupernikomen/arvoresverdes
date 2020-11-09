@@ -1,9 +1,9 @@
 var menu =
     [
-        { 'id': 'Home', 'link': 'index.html' },
-        { 'id': 'Contato', 'link': 'contato.html' },
+        { 'id': 'Home', 'link': '/' },
+        { 'id': 'Contato', 'link': '/contato' },
         { 'id': 'Contribua', 'link': '' },
-        { 'id': 'Biblioteca', 'link': 'biblioteca.html' }
+        { 'id': 'Biblioteca', 'link': '/biblioteca' }
     ]
 
 for (var i = 0; i < menu.length; i++) {

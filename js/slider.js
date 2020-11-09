@@ -39,23 +39,7 @@ var plataformas = [
     }
 ]
 
-var noticia = [
-    evangelismo = {
-        'id': 'evangelismo',
-        'titulo': 'Evangelismo',
-        'texto': `
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        `
-    },
-    cultoinfantil = {
-        'id': 'cultoinfantil',
-        'titulo': 'Como é o culto infantil?',
-        'texto': `
-        Texto sobre Culto infantil
-        `
-    }
-]
+
 
 var tela = screen.width > 1199
 var item = plataformas[tela ? 1 : 0]
@@ -77,24 +61,6 @@ for (var i = 0; i < plataformas[tela ? 1 : 0].imgs.length; i++) {
     $('.carousel-inner').append(slide)
 }
 
-function blog(id) {
-    var item = noticia.find(i => i.id == id)
-    post = `
-    <div class="blog-item px-4">
-        <i class="fas fa-times" onclick="fechar()"></i>
-        <h2>${item.titulo}</h2>
-        <p>${item.texto}</p>
-        </div>
-    `
-    $('.blog').html("")
-    $('.blog').css('display', 'block')
-    $('.blog').append(post)
-
-}
-
-function fechar() {
-    $('.blog').css('display', 'none')
-}
 
 
 $('#mudarid').attr('id', tela ? 'carouseldesktop' : 'carouselmobile')
