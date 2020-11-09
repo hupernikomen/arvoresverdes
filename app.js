@@ -12,8 +12,8 @@ app.use(express.static('public'))
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/html/index.html')
 })
-app.get('/eventos', (req, res) => {
-    res.sendFile(__dirname + '/html/eventos.html')
+app.get('/agenda', (req, res) => {
+    res.sendFile(__dirname + '/html/agenda.html')
 })
 app.get('/sobre', (req, res) => {
     res.sendFile(__dirname + '/html/sobre.html')

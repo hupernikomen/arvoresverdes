@@ -103,7 +103,7 @@ if (data > dataEvento) {
 }
 
 
-if (window.location.pathname == '/eventos') {
+if (window.location.pathname == '/agenda') {
     for (dia; dia < progs.length; dia++) {
         programacao('.itens-prog')
     }
