@@ -1,7 +1,7 @@
 var menu =
     [
         { 'id': 'Home', 'link': '/' },
-        { 'id': 'Agenda', 'link': '/agenda' },
+        { 'id': 'Agenda', 'link': '/eventos' },
         { 'id': 'Contato', 'link': '/contato' },
         { 'id': 'Contribua', 'link': '' },
         { 'id': 'Biblioteca', 'link': '/biblioteca' }
