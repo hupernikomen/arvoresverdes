@@ -227,4 +227,14 @@
         font-weight: 300;
         font-size: .8rem;
     }
+
+
+    .agenda-t {
+        display: flex;
+        justify-content: space-between;
+    }
+    .agenda-t div {
+        border: 1px solid #ddd;
+        height: 50px;
+    }
 }

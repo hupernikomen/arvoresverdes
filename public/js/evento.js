@@ -116,15 +116,25 @@ function programacao(el) {
 
     progs[dia].map((prog) => {
 
-        var post = `
-        <div class="modal-prog" ${el == '.itens-prog' ? `style="border-left: 8px solid ${prog.cor}` : ""}">
-            <h2 class="mb-2" style="color: ${prog.cor}"> ${el == '.item-prog' ? prog.ic : ""} ${prog.evt}</h2>
+        var evento = `
+        <div class="modal-prog">
+            <h2 class="mb-2" style="color: ${prog.cor}"> ${prog.ic} ${prog.evt}</h2>
+            <span class="fHel1">${index == diaComp ? '<span style="font-weight: 500">Hoje</span>' :
+                diaDeFeira[diaDaSemana(index)]} ( ${index}/${mes} ) às ${prog.hr}:${prog.min}hs</span>
+            
+        </div>
+        `
+
+        var eventos = `
+        <div class="modal-prog" style="border-left: 8px solid ${prog.cor}">
+            <h2 class="mb-2" style="color: ${prog.cor}">${prog.evt}</h2>
             <span class="fHel1">${index == diaComp ? '<span style="font-weight: 500">Hoje</span>' :
                 diaDeFeira[diaDaSemana(index)]} ( ${index}/${mes} ) às ${prog.hr}:${prog.min}hs</span>
             <span class="fHel1">${prog.loc}</span>
         </div>
         `
-        $(el).append(post)
+
+        $(el).append(el == '.item-prog' ? evento : eventos)
     })
 }
 
