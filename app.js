@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 
-app.use(express.static('/css'))
+app.use(express.static('css'))
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/html/index.html')
