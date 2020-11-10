@@ -241,6 +241,7 @@
     .msg h3 {
         font-size: 1.1rem;
         margin-bottom: 10px;
+        text-align: center;
     }
     .msg i {
         text-align: center;

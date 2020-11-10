@@ -116,13 +116,13 @@ function evento(prog, index, qi) {
     <div class="c-programacao w-100 p-4">
       <h3>Você é nosso convidado,</h3> 
       <p>${index == diaComp ? '<span>Hoje</span>' :
-            diaDeFeira[diaDaSemana(index)]} ( ${index} ) 
+            diaDeFeira[diaDaSemana(index)]} (${index}) 
       
       teremos ${prog[0].evt} às ${prog[0].hr}:${prog[0].min} 
       ${prog[0].loc}</p>
       
       ${qi > 1 ? `<p class="my-2">E ainda ${index == diaComp ? '<span>Hoje</span>' :
-            'na ' + diaDeFeira[diaDaSemana(index)]} ( ${index} ) às ${prog[1].hr}:${prog[1].min} também teremos ${prog[1].evt} ${prog[1].loc}</p>` : ""}
+            'na ' + diaDeFeira[diaDaSemana(index)]} (${index}) às ${prog[1].hr}:${prog[1].min} também teremos ${prog[1].evt} ${prog[1].loc}</p>` : ""}
       
     </div>
     `
