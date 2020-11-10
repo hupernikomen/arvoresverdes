@@ -2,7 +2,7 @@ var diaDeFeira = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Q
 var cultoDominical = {
     'ic': '<i class="fas fa-bible"></i>',
     'cor': '#659EA3',
-    'evt': 'Louvor e Pregação',
+    'evt': 'Culto de Louvor e Pregação',
     'hr': '18',
     'min': '00',
     'loc': 'no Templo'
@@ -18,7 +18,7 @@ var ebd = {
 var oracao = {
     'ic': '<i class="fas fa-praying-hands"></i>',
     'cor': '#b6723a',
-    'evt': 'Oração e Doutrina',
+    'evt': 'Culto de Oração e Doutrina',
     'hr': '19',
     'min': '30',
     'loc': 'no Templo'
@@ -121,7 +121,7 @@ function evento(prog, index, qi) {
       teremos ${prog[0].evt} às ${prog[0].hr}:${prog[0].min}h 
       ${prog[0].loc}.</p>
       
-      ${qi > 1 ? `<p style="border-left: 5px solid ${prog[1].cor}" class="my-2">E ainda ${index == diaComp ? '<span>Hoje</span>' :
+      ${qi > 1 ? `<p style="border-left: 5px solid ${prog[1].cor}">E ainda ${index == diaComp ? '<span>Hoje</span>' :
             'na ' + diaDeFeira[diaDaSemana(index)]} (${index}) às ${prog[1].hr}:${prog[1].min}h também teremos ${prog[1].evt} ${prog[1].loc}</p>` : ""}
       
     </div>
