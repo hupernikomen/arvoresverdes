@@ -83,7 +83,7 @@ progs = [[], //00
 
 var data = new Date()
 var ano = data.getFullYear()
-var mes = data.getMonth() + 1
+var mes = data.getMonth()
 var dia = data.getDate()
 var diaComp = data.getDate()
 
