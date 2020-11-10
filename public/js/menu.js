@@ -1,9 +1,9 @@
 var menu =
     [
         { 'id': 'Home', 'link': '/' },
-        { 'id': 'Agenda', 'link': '/agenda' },
-        { 'id': 'Contato', 'link': '/contato' },
-        { 'id': 'Contribua', 'link': '' },
+        { 'id': 'Nossa Agenda', 'link': '/agenda' },
+        { 'id': 'Entre em Contato', 'link': '/contato' },
+        { 'id': 'Contribua com o Evangelho', 'link': '' },
         { 'id': 'Biblioteca', 'link': '/biblioteca' }
     ]
 

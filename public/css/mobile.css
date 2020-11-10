@@ -230,5 +230,26 @@
         font-size: .8rem;
     }
 
+    .msg {
 
+        position: fixed;
+        left: -100%;
+        top: 200px;
+        z-index: 9999;
+        width: 100%;
+    }
+    .msg h3 {
+        font-size: 1.2rem;
+    }
+    .msg-text {
+        border-radius: 6px;
+        width: 95%;
+        background: #ffffff;
+        margin: 0 auto;
+        box-shadow: 2px 2px 5px #00000075;
+    }
+    .msg button {
+        border: 0;
+        background: transparent;
+    }
 }

@@ -13,7 +13,7 @@ var plataformas = [
                 'id': 'cultoinfantil',
                 'img': '<img class="d-block w-100" src="../imagens/mobile-slide-2.jpg">',
                 'h3': 'CULTO INFANTIL',
-                'p': '"Deixai vir a mim as criancinhas" - Mt 19:14. Traga seu filho ao culto infantil',
+                'p': 'Jesus disse: "Deixai vir a mim as criancinhas" - Mt 19:14. Traga seu filho ao culto infantil',
                 'button': 'SAIBA MAIS',
                 'link': '',
             }
