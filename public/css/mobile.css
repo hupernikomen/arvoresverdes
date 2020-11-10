@@ -275,6 +275,7 @@
     .c-programacao p{
         margin: 0;
         font-size: .9rem;
-        color: #222;      
+        color: #222;  
+        padding-left: 15px;    
     }
 }

@@ -115,13 +115,13 @@ function evento(prog, index, qi) {
     return `
     <div class="c-programacao w-100 p-4">
       <h3>Você é nosso convidado</h3> 
-      <p>${index == diaComp ? '<span>Hoje</span>' :
+      <p style="border-left: 5px solid ${prog[0].cor}">${index == diaComp ? '<span>Hoje</span>' :
             diaDeFeira[diaDaSemana(index)]} (${index}) 
       
       teremos ${prog[0].evt} às ${prog[0].hr}:${prog[0].min}h 
       ${prog[0].loc}.</p>
       
-      ${qi > 1 ? `<p class="my-2">E ainda ${index == diaComp ? '<span>Hoje</span>' :
+      ${qi > 1 ? `<p style="border-left: 5px solid ${prog[1].cor}" class="my-2">E ainda ${index == diaComp ? '<span>Hoje</span>' :
             'na ' + diaDeFeira[diaDaSemana(index)]} (${index}) às ${prog[1].hr}:${prog[1].min}h também teremos ${prog[1].evt} ${prog[1].loc}</p>` : ""}
       
     </div>
@@ -142,7 +142,7 @@ function programacao(local) {
             <div class="modal-prog" style="border-left: 8px solid ${prog.cor}">
             <h2 class="mb-2" style="color: ${prog.cor}">${prog.evt}</h2>
             <span class="fHel1">${index == diaComp ? '<span>Hoje</span>' :
-            diaDeFeira[diaDaSemana(index)]} ( ${index} ) às ${prog.hr}:${prog.min}hs</span>
+            diaDeFeira[diaDaSemana(index)]} (${index}) às ${prog.hr}:${prog.min}hs</span>
             <span class="fHel1">${prog.loc}</span>
             </div>
             `
