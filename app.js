@@ -24,6 +24,10 @@ app.get('/biblioteca', (req, res) => {
 app.get('/contato', (req, res) => {
     res.sendFile(__dirname + '/html/contato.html')
 })
+app.get('/blog/:id' , (req, res) => {
+    res.json(req.params)
+    
+})
 app.get('/sitemap', (req, res) => {
     res.sendFile(__dirname + '/sitemap.xml')
 })
