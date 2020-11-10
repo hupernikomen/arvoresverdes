@@ -83,10 +83,9 @@ progs = [[], //00
 
 var data = new Date()
 var ano = data.getFullYear()
-var mes = data.getMonth() + 1
+var mes = data.getMonth() 
 var dia = data.getDate()
 var diaComp = data.getDate()
-
 fimStatus = []
 
 while (progs[dia] == '') {
@@ -121,7 +120,7 @@ function evento(prog, index, qi) {
       ${prog[0].loc}.</p>
       
       ${qi > 1 ? `<p style="border-left: 2px solid ${prog[1].cor}">E ainda ${index == diaComp ? '<span>Hoje</span>' :
-            'na ' + diaDeFeira[diaDaSemana(index)]} (${index}) às ${prog[1].hr}:${prog[1].min}h também teremos ${prog[1].evt} ${prog[1].loc}</p>` : ""}
+            diaDeFeira[diaDaSemana(index)]} (${index}) às ${prog[1].hr}:${prog[1].min}h também teremos ${prog[1].evt} ${prog[1].loc}</p>` : ""}
       
     </div>
     `
@@ -138,7 +137,7 @@ function programacao(local) {
         progs[dia].map((prog) => {
             
             var eventos = `
-            <div class="modal-prog" style="border-left: 8px solid ${prog.cor}">
+            <div class="modal-prog" style="border-left: 5px solid ${prog.cor}">
             <h2 class="mb-2" style="color: ${prog.cor}">${prog.evt}</h2>
             <span class="fHel1">${index == diaComp ? '<span>Hoje</span>' :
             diaDeFeira[diaDaSemana(index)]} (${index}) às ${prog.hr}:${prog.min}hs</span>
@@ -149,9 +148,8 @@ function programacao(local) {
         })
     }
 }
-
 function diaDaSemana(dia) {
-    return new Date(fimMes(), dia).getDay()
+    return new Date(ano, mes, dia).getDay()
 }
 
 function fimMes() {
