@@ -119,7 +119,7 @@ function evento(prog, index, qi) {
             diaDeFeira[diaDaSemana(index)]} (${index}) 
       
       teremos ${prog[0].evt} às ${prog[0].hr}:${prog[0].min} 
-      ${prog[0].loc}</p>
+      ${prog[0].loc}.</p>
       
       ${qi > 1 ? `<p class="my-2">E ainda ${index == diaComp ? '<span>Hoje</span>' :
             'na ' + diaDeFeira[diaDaSemana(index)]} (${index}) às ${prog[1].hr}:${prog[1].min} também teremos ${prog[1].evt} ${prog[1].loc}</p>` : ""}
