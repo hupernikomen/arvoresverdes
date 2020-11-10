@@ -6,7 +6,7 @@ $('.msg').append(`
 <p>
 Nosso site ainda está em construção, mas você pode ficar a vontade.
 
-É só não se incomodar com a bagunça, que logo logo vamos organizar tudo, 
+Só não se incomode com a bagunça, que logo logo vamos organizar tudo, 
 combinado?
 </p>
 <button class="my-3" onclick=fechar()>Fechar Janela</button>
