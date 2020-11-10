@@ -149,8 +149,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px 0;
-        margin-bottom: 2px;
+        padding: 20px 0;
+        margin-bottom: 1px;
     }
     .modal-prog h2 {
         font-size: 1.2rem;
@@ -239,29 +239,41 @@
         width: 100%;
     }
     .msg h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-bottom: 10px;
     }
     .msg i {
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 2rem;
         margin-bottom: 20px;
     }
     .msg p {
-        text-align: justify;
+        text-align: center;
+        font-size: .9rem;
     }
     .msg-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         border-radius: 6px;
-        width: 97%;
+        width: 90%;
         background: #ffffff;
         margin: 0 auto;
         box-shadow: 2px 2px 5px #00000075;
     }
     .msg button {
         border: 0;
+        font-size: .9rem;
         background: transparent;
+    }
+
+    .c-programacao h3{
+        font-size: 1.6rem;
+        margin-bottom: 20px;        
+    }
+    .c-programacao p{
+        margin: 0;
+        font-size: 1rem;
+        color: #777;      
     }
 }

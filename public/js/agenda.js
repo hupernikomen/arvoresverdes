@@ -5,7 +5,7 @@ var cultoDominical = {
     'evt': 'Louvor e Pregação',
     'hr': '18',
     'min': '00',
-    'loc': 'Templo Batista Arvores Verdes'
+    'loc': 'no Templo'
 }
 var ebd = {
     'ic': '<i class="fas fa-graduation-cap"></i>',
@@ -13,7 +13,7 @@ var ebd = {
     'evt': 'EBD',
     'hr': '17',
     'min': '00',
-    'loc': 'Templo Batista Arvores Verdes'
+    'loc': 'no Templo'
 }
 var oracao = {
     'ic': '<i class="fas fa-praying-hands"></i>',
@@ -21,7 +21,7 @@ var oracao = {
     'evt': 'Oração e Doutrina',
     'hr': '19',
     'min': '30',
-    'loc': 'Templo Batista Arvores Verdes'
+    'loc': 'no Templo'
 }
 var pizza = {
     'ic': '<i class="fas fa-pizza-slice"></i>',
@@ -29,7 +29,7 @@ var pizza = {
     'evt': 'Festival de Pizza',
     'hr': '18',
     'min': '00',
-    'loc': 'Templo Batista Arvores Verdes'
+    'loc': 'no Templo'
 }
 var reuniaoH = {
     'ic': '<i class="fas fa-male"></i>',
@@ -37,7 +37,7 @@ var reuniaoH = {
     'evt': 'Reunião dos Homens',
     'hr': '18',
     'min': '30',
-    'loc': 'Casa do Irmão ...'
+    'loc': 'na Casa do Irmão ...'
 }
 var reuniaoM = {
     'ic': '<i class="fas fa-female"></i>',
@@ -45,7 +45,7 @@ var reuniaoM = {
     'evt': 'Reunião das Mulheres',
     'hr': '18',
     'min': '30',
-    'loc': 'Casa da Irmã ...'
+    'loc': 'na Casa da Irmã ...'
 }
 progs = [[], //00
 [ebd, cultoDominical],
@@ -111,31 +111,44 @@ if (window.location.pathname == '/agenda') {
     programacao('.item-prog')
 }
 
-function programacao(el) {
+function evento(prog, index, qi) {
+    return `
+    <div class="c-programacao w-100 p-4">
+      <h3>Você é nosso convidado,</h3> 
+      <p>${index == diaComp ? '<span>Hoje</span>' :
+            diaDeFeira[diaDaSemana(index)]} ( ${index} ) 
+      
+      teremos ${prog[0].evt} às ${prog[0].hr}:${prog[0].min} 
+      ${prog[0].loc}</p>
+      
+      ${qi > 1 ? `<p class="my-2">E ainda ${index == diaComp ? '<span>Hoje</span>' :
+            'na ' + diaDeFeira[diaDaSemana(index)]} ( ${index} ) às ${prog[1].hr}:${prog[1].min} também teremos ${prog[1].evt} ${prog[1].loc}</p>` : ""}
+      
+    </div>
+    `
+}
+
+
+function programacao(local) {
     var index = Object.keys(progs)[dia]
 
-    progs[dia].map((prog) => {
+    if(local == '.item-prog') {
+        $(local).append(evento(progs[dia], index, progs[dia].length))
 
-        var eventoitem = `
-        <div class="modal-prog">
-            <h2 class="mb-2" style="color: ${prog.cor}"> ${prog.ic} ${prog.evt}</h2>
-            <span class="fHel1">${index == diaComp ? '<span style="font-weight: 500">Hoje</span>' :
-                diaDeFeira[diaDaSemana(index)]} ( ${index}/${mes} ) às ${prog.hr}:${prog.min}hs</span>
+    } else {
+        progs[dia].map((prog) => {
             
-        </div>
-        `
-
-        var eventositens = `
-        <div class="modal-prog" style="border-left: 8px solid ${prog.cor}">
+            var eventos = `
+            <div class="modal-prog" style="border-left: 8px solid ${prog.cor}">
             <h2 class="mb-2" style="color: ${prog.cor}">${prog.evt}</h2>
-            <span class="fHel1">${index == diaComp ? '<span style="font-weight: 500">Hoje</span>' :
-                diaDeFeira[diaDaSemana(index)]} ( ${index}/${mes} ) às ${prog.hr}:${prog.min}hs</span>
+            <span class="fHel1">${index == diaComp ? '<span>Hoje</span>' :
+            diaDeFeira[diaDaSemana(index)]} ( ${index} ) às ${prog.hr}:${prog.min}hs</span>
             <span class="fHel1">${prog.loc}</span>
-        </div>
-        `
-
-        $(el).append(el == '.item-prog' ? eventoitem : eventositens)
-    })
+            </div>
+            `
+            $(local).append(eventos)
+        })
+    }
 }
 
 function diaDaSemana(dia) {
