@@ -83,7 +83,7 @@ progs = [[], //00
 
 var data = new Date()
 var ano = data.getFullYear()
-var mes = data.getMonth()
+var mes = data.getMonth() + 1
 var dia = data.getDate()
 var diaComp = data.getDate()
 
@@ -95,7 +95,6 @@ while (progs[dia] == '') {
         dia = 0
     }
 }
-
 
 var dataEvento = new Date(ano, mes, dia, progs[dia][progs[dia].length - 1].hr, progs[dia][progs[dia].length - 1].min)
 if (data > dataEvento) {
@@ -115,13 +114,13 @@ function evento(prog, index, qi) {
     return `
     <div class="c-programacao w-100 p-4">
       <h3>Você é nosso convidado</h3> 
-      <p style="border-left: 5px solid ${prog[0].cor}">${index == diaComp ? '<span>Hoje</span>' :
+      <p style="border-left: 2px solid ${prog[0].cor}">${index == diaComp ? '<span>Hoje</span>' :
             diaDeFeira[diaDaSemana(index)]} (${index}) 
       
       teremos ${prog[0].evt} às ${prog[0].hr}:${prog[0].min}h 
       ${prog[0].loc}.</p>
       
-      ${qi > 1 ? `<p style="border-left: 5px solid ${prog[1].cor}">E ainda ${index == diaComp ? '<span>Hoje</span>' :
+      ${qi > 1 ? `<p style="border-left: 2px solid ${prog[1].cor}">E ainda ${index == diaComp ? '<span>Hoje</span>' :
             'na ' + diaDeFeira[diaDaSemana(index)]} (${index}) às ${prog[1].hr}:${prog[1].min}h também teremos ${prog[1].evt} ${prog[1].loc}</p>` : ""}
       
     </div>
@@ -156,7 +155,7 @@ function diaDaSemana(dia) {
 }
 
 function fimMes() {
-    for (var i = dia; i < progs.length; i++) {
+    for (var i = dia; i < progs.length - diaComp; i++) {
         progs[i].length == 0 ? fimStatus.push('false') : fimStatus.push('true')
     }
     return fimStatus.find(i => i == 'true') ? mes : mes++
