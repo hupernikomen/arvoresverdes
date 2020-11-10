@@ -13,7 +13,7 @@ combinado?
 </div>
 `)  
 
-if(!sessionStorage.getItem('alert')){
+if(!sessionStorage.getItem('semalert')){
     setTimeout(() => {
         $('.msg').animate({left: 0}, 700)
     }, 3000);
