@@ -3,7 +3,7 @@ var plataformas = [
         'imgs': [
             {
                 'id': 'evangelismo',
-                'img': '<img class="d-block w-100" src="../imagens/mobile-slide-1.jpg">',
+                'img': '<img class="d-block w-100" src="../imagens/mobile-slide-1.webp">',
                 'h3': 'EVANGELISMO',
                 'p': 'Dia 25/01 no Morro do Papagaio',
                 'button': 'PARTICIPE',
@@ -11,7 +11,7 @@ var plataformas = [
             },
             {
                 'id': 'cultoinfantil',
-                'img': '<img class="d-block w-100" src="../imagens/mobile-slide-2.jpg">',
+                'img': '<img class="d-block w-100" src="../imagens/mobile-slide-2.webp">',
                 'h3': 'CULTO INFANTIL',
                 'p': 'Jesus disse: "Deixai vir a mim as criancinhas" - Mt 19:14. Traga seu filho ao culto infantil',
                 'button': 'SAIBA MAIS',
@@ -22,14 +22,14 @@ var plataformas = [
     desktop = {
         'imgs': [
             {
-                'img': '<img class="d-block w-100" src="../imagens/ban1.jpg">',
+                'img': '<img class="d-block w-100" src="../imagens/ban1.webp">',
                 'h3': '',
                 'p': '',
                 'button': '',
                 'link': '',
             },
             {
-                'img': '<img class="d-block w-100" src="../imagens/ban2.jpg">',
+                'img': '<img class="d-block w-100" src="../imagens/ban2.webp">',
                 'h3': '',
                 'p': '',
                 'button': '',

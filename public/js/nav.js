@@ -1,4 +1,4 @@
-var logo = `<img class="logo" src="imagens/logo-igreja-batista-arvores-verdes.png"
+var logo = `<img class="logo" src="imagens/logo-igreja-batista-arvores-verdes.webp"
 alt="Logo Igreja Batista em Arvores Verdes">`
 
 var nav =
