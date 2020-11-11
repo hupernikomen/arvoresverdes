@@ -287,8 +287,7 @@ header {
     /* Rodapé  */
     footer {
         padding-top: 10px;
-        background: #3e6a88 url('../imagens/bg-footer.jpg');
-        background-repeat: no-repeat;
+        background: #3e6a88;
     }
     footer h6, footer p, footer a, footer i, .footer-copyright {
         color: #fff;
