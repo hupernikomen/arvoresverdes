@@ -13,7 +13,7 @@ combinado?
 </div>
 `)  
 
-if(!sessionStorage.getItem('semalert')){
+if(!sessionStorage.getItem('salt')){
     setTimeout(() => {
         $('.msg').animate({left: 0}, 700)
     }, 3000);
@@ -21,5 +21,5 @@ if(!sessionStorage.getItem('semalert')){
     
 function fechar() {
     $('.msg').css('display', 'none')
-    sessionStorage.setItem('semalert','true')
+    sessionStorage.setItem('salt','true')
 }
