@@ -24,9 +24,8 @@ app.get('/biblioteca', (req, res) => {
 app.get('/contato', (req, res) => {
     res.sendFile(__dirname + '/html/contato.html')
 })
-app.get('/blog' , (req, res) => {
+app.get('/blog', (req, res) => {
     res.sendFile(__dirname + '/html/blog.html')
-    
 })
 app.get('/sitemap', (req, res) => {
     res.sendFile(__dirname + '/sitemap.xml')
