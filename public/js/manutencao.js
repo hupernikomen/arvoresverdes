@@ -15,7 +15,7 @@ combinado?
 
 if(!sessionStorage.getItem('salt')){
     setTimeout(() => {
-        $('.msg').animate({left: 0}, 700)
+        $('.msg').animate({left: 0}, "fast")
     }, 3000);
 }
     

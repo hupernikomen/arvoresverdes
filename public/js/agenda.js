@@ -1,4 +1,4 @@
-var diaDeFeira = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
+var week = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
 var cultoDominical = {
     'ic': '<i class="fas fa-bible"></i>',
     'cor': '#659EA3',
@@ -48,115 +48,106 @@ var reuniaoM = {
     'loc': 'na Casa da Irmã ...'
 }
 progs = [[], //00
-[ebd, cultoDominical],
+[], //01
 [], //02
 [], //03
 [], //04
 [], //05
-[oracao], //06
+[], //06
 [], //07
 [ebd, cultoDominical], //08
 [], //09
 [], //10
-[reuniaoH, reuniaoM], //11
+[], //11
 [], //12
-[oracao], //13
-[],//14
-[ebd, cultoDominical], //15
+[], //13
+[], //14
+[], //15
 [], //16
 [], //17
 [], //18
 [], //19
-[oracao], //20
-[pizza], //21
-[ebd, cultoDominical], //22
-[], //23
+[], //20
+[], //21
+[], //22
+[ebd], //23
 [], //24
-[], //25
+[pizza], //25
 [], //26
-[oracao],//27
+[], //27
 [], //28
-[ebd, cultoDominical], //29
+[], //29
 [], //30
 [] //31
 ]
 
 var data = new Date()
-var ano = data.getFullYear()
-var mes = data.getMonth() 
-var dia = data.getDate()
+var year = data.getFullYear()
+var month = data.getMonth()
+var day = data.getDate()
 var diaComp = data.getDate()
 fimStatus = []
+fimMes(day)
 
-while (progs[dia] == '') {
-    dia++
-    if (progs[dia] == null) {
-        dia = 0
+while (progs[day] == '') {
+    day++
+    if (progs[day] == null) {
+        day = 0
     }
 }
 
-var dataEvento = new Date(ano, mes, dia, progs[dia][progs[dia].length - 1].hr, progs[dia][progs[dia].length - 1].min)
-if (data > dataEvento) {
-    dia++
+// Pega o primeiro item do day 
+var dateFirstEvent = new Date(year, month, day, progs[day][progs[day].length - 1].hr, progs[day][progs[day].length - 1].min)
+if (data > dateFirstEvent) {
+    day++
 }
 
-
 if (window.location.pathname == '/agenda') {
-    for (dia; dia < progs.length; dia++) {
+    for (day; day < progs.length; day++) {
         programacao('.itens-prog')
     }
 } else if (window.location.pathname == '/') {
     programacao('.item-prog')
 }
 
-function evento(prog, index, qtdItens) {
+function evento(prog, index, qItems) {
     return `
-    <div class="c-programacao w-100 p-4">
-      <h3>Você é nosso convidado</h3> 
-      <p style="border-left: 5px solid ${prog[0].cor}">${index == diaComp ? '<span>Hoje</span>' :
-            diaDeFeira[diaDaSemana(index)]} (${index}) 
+    <p class="pl-4" style="border-left: 5px solid ${prog[0].cor}">${index == diaComp ? '<span>Hoje</span>' : week[dayOfWeek(index)]} (${index}) 
       
-      teremos ${prog[0].evt} às ${prog[0].hr}:${prog[0].min}h 
-      ${prog[0].loc}.</p>
-      
-      ${qtdItens > 1 ? `<p style="border-left: 5px solid ${prog[1].cor}">E ainda ${index == diaComp ? '<span>Hoje</span>' :
-            diaDeFeira[diaDaSemana(index)]} (${index}) às ${prog[1].hr}:${prog[1].min}h também teremos ${prog[1].evt} ${prog[1].loc}</p>` : ""}
-      
-    </div>
+    teremos ${prog[0].evt} às ${prog[0].hr}:${prog[0].min}hs
+        ${prog[0].loc}.</p>
+
+        ${qItems > 1 ? `<p class="pl-4" style="border-left: 5px solid ${prog[1].cor}">E ainda ${index == diaComp ? '<span>Hoje</span>' : week[dayOfWeek(index)]} (${index}) às ${prog[1].hr}:${prog[1].min}hs também teremos ${prog[1].evt} ${prog[1].loc}</p>` : ""}
     `
 }
 
+function programacao(selector) {
+    var index = Object.keys(progs)[day]
 
-function programacao(local) {
-    var index = Object.keys(progs)[dia]
-
-    if(local == '.item-prog') {
-        $(local).append(evento(progs[dia], index, progs[dia].length))
-
+    if (selector == '.item-prog') {
+        $(selector).append(evento(progs[day], index, progs[day].length))
     } else {
-        progs[dia].map((prog) => {
-            
+        progs[day].map((prog) => {
             var eventos = `
             <div class="modal-prog" style="border-left: 5px solid ${prog.cor}">
             <h2 class="mb-2" style="color: ${prog.cor}">${prog.evt}</h2>
-            <span class="fHel1">${index == diaComp ? '<span>Hoje</span>' :
-            diaDeFeira[diaDaSemana(index)]} (${index}) às ${prog.hr}:${prog.min}hs</span>
-            <span class="fHel1">${prog.loc}</span>
+            <span class="fHel1">${index == diaComp ? '<span>Hoje</span>' : week[dayOfWeek(index)]} (${index}) às ${prog.hr}:${prog.min}hs</span><span class="fHel1">${prog.loc}</span>
             </div>
             `
-            $(local).append(eventos)
+            $(selector).append(eventos)
         })
     }
 }
-function diaDaSemana(dia) {
-    return new Date(ano, mes, dia).getDay()
+function dayOfWeek(day) {
+    return new Date(year, month, day).getDay()
 }
 
-function fimMes() {
-    for (var i = dia; i < progs.length - diaComp; i++) {
-        progs[i].length == 0 ? fimStatus.push('false') : fimStatus.push('true')
+function fimMes(day) {
+    while (day < progs.length - 1) {
+        progs[day].length == 0 ? fimStatus.push('noEvent') : fimStatus.push('yesEvent')
+        day++
     }
-    return fimStatus.find(i => i == 'true') ? mes : mes++
+    return fimStatus.find(i => i == 'yesEvent') ? month : month++
 }
 
 

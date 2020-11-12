@@ -2,7 +2,7 @@ var logo = `<img class="logo" src="imagens/logo-igreja-batista-arvores-verdes.we
 alt="Logo Igreja Batista em Arvores Verdes">`
 
 var nav =
-    `<nav class="navbar navbar-light bg-white py-2 mx-2">
+    `<nav class="navbar navbar-light bg-white">
 
       <a class="navbar-brand" href="/">
         ${window.location.pathname == '/' ? logo: ""}
@@ -20,9 +20,7 @@ var nav =
 
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mb-3"></ul>
-        <span class="navbar-text">
-          teto
-        </span>
+        <span class="navbar-text"></span>
       </div>
 
     </nav>`
