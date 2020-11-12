@@ -25,9 +25,9 @@ var footer = `
 <div class="row d-flex text-center justify-content-center mb-md-0 mb-3">
 
   <div class="col-md-8 col-12 mt-3">
-    <p style="line-height: 1.7rem">A <b>IBAV</b> é uma Igreja Batista localizada na região de Árvores Verdes a 20km de Teresina-PI.
+    <h3 style="line-height: 1.7rem">A <b>IBAV</b> é uma Igreja Batista localizada na região de Árvores Verdes a 20km de Teresina-PI.
       Uma igreja bíblica que se empenha na divulgação do evangelho de Jesus Cristo, buscando e ensinando sempre a Verdade das escrituras.
-    </p>
+    </h3>
   </div>
 
 </div>

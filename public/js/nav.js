@@ -7,10 +7,10 @@ var nav =
       <a class="navbar-brand" href="/">
         ${window.location.pathname == '/' ? logo: ""}
 
-        <h1 class="sub-logo fHel2">
+        <div class="sub-logo">
           <span>IBAV</span><br>
-          <strong>Igreja Batista em Arvores Verdes</strong>
-        </h1>
+          <h1>Igreja Batista em Arvores Verdes</h1>
+        </div>
 
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
