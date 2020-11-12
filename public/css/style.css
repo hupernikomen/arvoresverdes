@@ -329,3 +329,10 @@
         background: #be2a2a;
     }
 }
+
+@media (min-width: 1024px){
+    body {
+        width: 40%;
+        margin: 0 auto;
+    }
+}

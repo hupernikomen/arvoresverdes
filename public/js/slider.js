@@ -41,7 +41,7 @@ var plataformas = [
 
 
 var tela = screen.width > 1199
-var item = plataformas[tela ? 1 : 0]
+var item = plataformas[0]
 
 for (var i = 0; i < plataformas[tela ? 1 : 0].imgs.length; i++) {
     var slide = `
