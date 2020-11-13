@@ -2,10 +2,10 @@ var logo = `<img class="logo" src="imagens/logo-igreja-batista-arvores-verdes.we
 alt="Logo Igreja Batista em Arvores Verdes">`
 
 var nav =
-    `<nav class="navbar navbar-light bg-white">
+  `<nav class="navbar navbar-light bg-white">
 
       <a class="navbar-brand" href="/">
-        ${window.location.pathname == '/' ? logo: ""}
+        ${window.location.pathname == '/' ? logo : ""}
 
         <div class="sub-logo">
           <span>IBAV</span><br>
@@ -25,7 +25,7 @@ var nav =
 
     </nav>`
 
-$('header').append(nav)  
+$('header').append(nav)
 
 // ________
 
