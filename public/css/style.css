@@ -1,4 +1,5 @@
 @media (min-width: 320px){
+    /* default  */
     * {
         margin: 0;
         padding: 0;
@@ -22,28 +23,41 @@
     p {
         font-family: "Open Sans", Arial, Helvetica, sans-serif;
         font-size: 1rem;
+        font-weight: 200;
     }
     span {
         font-family: "Open Sans", Arial, Helvetica, sans-serif;
         font-size: .9rem;
         font-weight: 100;
     }
-    .fas {
-        line-height: 1.5 !important;
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: 800;
     }
-    .topo, .slide-desk, .navbar-text, .sr-only, .carousel-control-next-icon, .carousel-control-prev-icon {
+
+    /* Header  */
+    .topo, 
+    .slide-desk, 
+    .navbar-text, 
+    .carousel-control-next-icon, 
+    .carousel-control-prev-icon {
         display: none;
     }
-    .voltar {
+    .back {
         padding: 10px 10px 10px 0;
         margin-right: 10px;
         width: 50px;
     }
+
     /* NavBars  */
     header {
         background: #fff;
         z-index: 9999;
         box-shadow: 0 1px 3px 0 #00000041;
+    }
+    header h1 {
+        font-weight: normal;
     }
     .navbar-brand {
         display: flex;
@@ -55,9 +69,6 @@
     }
     .sub-logo {
         margin: 0;
-    }
-    .sub-logo h1 {
-        font-size: 1rem;
     }
     .navbar-toggler {
         border: 0;
@@ -72,6 +83,7 @@
     .navbar-nav {
         margin-top: 2rem;
     }
+    
     /* Carousel  */
     .carousel-inner, .carousel-item, .carousel-item img {
         max-height: 400px;
@@ -97,8 +109,7 @@
         text-transform: uppercase;
         animation: identifier 1s 1.5s forwards;
         margin-left: -30px;
-        font-size: 2.5rem !important;
-        font-weight: 900;
+        font-size: 2.5rem;
         color: #fff;
         opacity: 0;
         text-shadow: 1px 1px 3px #00000050;
@@ -108,8 +119,6 @@
         margin-left: -30px;
         margin-bottom: 2.5rem;
         animation: identifier 1s 1.7s forwards;
-        font-size: 1rem;
-        font-weight: 300;
         color: #fff;
         width: 80%;
         opacity: 0;
@@ -141,7 +150,7 @@
     }
 
 
-    /* Proximos Eventos  */
+    /* Pagina Eventos  */
     .modal-prog {
         display: flex;
         flex-direction: column;
@@ -151,13 +160,14 @@
         margin-bottom: 1px;
     }
     .modal-prog h2 {
-        font-size: 1.2rem;
         margin: 0 !important;
     }
     .modal-prog i {
         font-size: 1rem;
         margin-right: 8px;
     }
+
+    /* Eventos Home  */
     .agenda {
         display: flex;
         align-items: center;
@@ -168,6 +178,9 @@
         width: 100%;
         text-align: center;
     }
+    .agenda h3 {
+        font-size: 1.5rem;
+    }
     /* Rodapé  */
     footer {
         padding-top: 10px;
@@ -177,9 +190,8 @@
         color: #fff;
     }
     footer h3 {
-        font-weight: 300;
+        font-weight: 100;
         color: #fff;
-        font-size: 1rem;
     }
     .flex-center {
         display: flex;
@@ -219,13 +231,10 @@
         border: 2px solid #fff;
     }
     .livro h2 {
-        font-size: 1.2rem;
         margin: 10px 0;
     }
     .livro span {
         color: #777;
-        font-weight: 300;
-        font-size: .8rem;
     }
     .msg {
         position: fixed;
@@ -235,7 +244,6 @@
         width: 100%;
     }
     .msg h3 {
-        font-size: 1.1rem;
         margin-bottom: 10px;
         text-align: center;
     }
@@ -246,7 +254,6 @@
     }
     .msg p {
         text-align: center;
-        font-size: .9rem;
     }
     .msg-text {
         display: flex;
@@ -263,17 +270,7 @@
         font-size: .9rem;
         background: transparent;
     }
-    .c-programacao h3 {
-        font-size: 1.6rem;
-        margin-bottom: 20px;
-    }
-    .c-programacao p {
-        padding: 10px;
-        margin: 0;
-        font-size: .9rem;
-        color: #222;
-        padding-left: 20px;
-    }
+
     .contato h1 {
         font-size: 1.5rem;
         margin-bottom: 20px;
