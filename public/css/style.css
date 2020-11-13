@@ -1,4 +1,4 @@
-@media (min-width:320px) {
+@media (min-width: 320px){
     * {
         margin: 0;
         padding: 0;
@@ -28,12 +28,6 @@
         font-size: .9rem;
         font-weight: 100;
     }
-}
-
-/* ___________________________________ */
-
-
-@media (min-width: 320px){
     .fas {
         line-height: 1.5 !important;
     }
@@ -145,40 +139,8 @@
             opacity: .4;
         }
     }
-    .blog {
-        position: fixed;
-        width: 100%;
-        min-height: 100%;
-        top: 0;
-        z-index: 9999;
-        display: none;
-    }
-    .topo-blog {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #fff;
-    }
-    .blog-item {
-        width: 90%;
-        height: auto;
-        max-height: 500px;
-        border-radius: 4px;
-        background: #fff;
-        overflow: auto;
-        margin: 15% auto;
-        box-shadow: 0px 0px 60px 0 #00000080;
-    }
-    .blog-item h2 {
-        font-size: 1.3rem;
-    }
-    .blog i {
-        font-size: 20px;
-        display: flex;
-        position: sticky;
-        top: 0;
-        justify-content: center;
-    }
+
+
     /* Proximos Eventos  */
     .modal-prog {
         display: flex;
