@@ -151,6 +151,11 @@
     .modal-prog h2 {
         margin: 0 !important;
         font-weight: 700;
+        font-size: 1.2rem;
+    }
+    .modal-prog span {
+        font-weight: 100;
+        font-size: .9rem;
     }
     .modal-prog i {
         font-size: 1rem;
