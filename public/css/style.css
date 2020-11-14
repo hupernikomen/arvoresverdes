@@ -1,4 +1,4 @@
-@media (min-width: 320px){
+@media (min-width: 320px) {
     /* default  */
     * {
         margin: 0;
@@ -20,33 +20,13 @@
         z-index: 9999;
         box-shadow: 0 1px 1px 0 #00000041;
     }
-    p,
-    span {
+    p, span, h1, h2, h3, h4, h5, h6 {
         font-family: "Open Sans", Arial, Helvetica, sans-serif;
-        font-size: .9rem;
-        font-weight: 100;
-        color: #000;
-    }
-
-    h1 {
-        font-family: "Open Sans", Arial, Helvetica, sans-serif;
-        font-size: .9rem;
-        font-weight: 800;
-        color: #000;
-    }
-    h2, h3, h4, h5, h6 {
-        font-family: "Open Sans", Arial, Helvetica, sans-serif;
-        font-size: 1rem;
-        font-weight: 500;
         color: #000;
     }
 
     /* Header  */
-    .topo, 
-    .slide-desk, 
-    .navbar-text, 
-    .carousel-control-next-icon, 
-    .carousel-control-prev-icon {
+    .topo, .slide-desk, .navbar-text, .carousel-control-next-icon, .carousel-control-prev-icon {
         display: none;
     }
     .back {
@@ -54,7 +34,6 @@
         margin-right: 10px;
         width: 50px;
     }
-
     /* NavBars  */
     header {
         background: #fff;
@@ -89,7 +68,6 @@
     .navbar-nav {
         margin-top: 2rem;
     }
-    
     /* Carousel  */
     .carousel-inner, .carousel-item, .carousel-item img {
         max-height: 400px;
@@ -155,8 +133,6 @@
             opacity: .4;
         }
     }
-
-
     /* Pagina Eventos  */
     .modal-prog {
         display: flex;
@@ -173,7 +149,6 @@
         font-size: 1rem;
         margin-right: 8px;
     }
-
     /* Eventos Home  */
     .agenda {
         display: flex;
@@ -277,7 +252,6 @@
         font-size: .9rem;
         background: transparent;
     }
-
     .contato h1 {
         font-size: 1.5rem;
         margin-bottom: 20px;
@@ -296,6 +270,4 @@
     }
 }
 
-@media (min-width: 1024px){
-}
-
+@media (min-width: 1024px) {}
