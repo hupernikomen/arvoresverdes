@@ -111,13 +111,14 @@ if (window.location.pathname == '/agenda') {
 }
 
 function fEvent(prog, index, qItems) {
+    var n = week[dayOfWeek(index)] == 'Sabado' || week[dayOfWeek(index)] == 'Domingo' ? 'no' : 'na' 
     return `
     <p class="pl-3" style="border-left: 5px solid ${prog[0].cor}">${index == diaComp ? '<span>Hoje</span>' : week[dayOfWeek(index)]} (${index}) 
       
     teremos ${prog[0].evt} às ${prog[0].hr}:${prog[0].min}hs
         ${prog[0].loc}.</p>
 
-        ${qItems > 1 ? `<p class="pl-3" style="border-left: 5px solid ${prog[1].cor}">E ainda ${index == diaComp ? '<span>Hoje</span>' : week[dayOfWeek(index)]} (${index}) às ${prog[1].hr}:${prog[1].min}hs também teremos ${prog[1].evt} ${prog[1].loc}</p>` : ""}
+        ${qItems > 1 ? `<p class="pl-3" style="border-left: 5px solid ${prog[1].cor}">E ainda ${n} ${index == diaComp ? '<span>Hoje</span>' : week[dayOfWeek(index)]} (${index}) às ${prog[1].hr}:${prog[1].min}hs também teremos ${prog[1].evt} ${prog[1].loc}</p>` : ""}
     `
 }
 
