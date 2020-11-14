@@ -101,6 +101,7 @@
         font-size: 2rem;
         font-weight: 800;
         color: #fff;
+        margin-bottom: 1.5rem;
         opacity: 0;
         text-shadow: 1px 1px 3px #00000050;
     }
