@@ -150,6 +150,7 @@
     }
     .modal-prog h2 {
         margin: 0 !important;
+        font-weight: 700;
     }
     .modal-prog i {
         font-size: 1rem;
@@ -167,7 +168,12 @@
         text-align: center;
     }
     .agenda h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .agenda p {
+        font-size: .9rem;
+        font-weight: 200;
     }
     /* Rodapé  */
     footer {
