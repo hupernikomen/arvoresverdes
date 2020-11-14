@@ -41,7 +41,7 @@ var footer = `
 
   <div class="col-md-2 mb-3">
     <h6 class="text-uppercase font-weight-bold">
-      <a href="#!">Contribua</a>
+      <a href="/">Contribua</a>
     </h6>
   </div>
   <div class="col-md-2 mb-3">

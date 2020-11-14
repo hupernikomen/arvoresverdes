@@ -1,63 +1,31 @@
-var plataformas = [
-    mobile = {
-        'imgs': [
-            {
-                'id': 'evangelismo',
-                'img': '<img class="d-block w-100" src="../imagens/mobile-slide-1.webp">',
-                'h3': 'EVANGELISMO',
-                'p': 'Dia 25/01 no Morro do Papagaio',
-                'button': 'PARTICIPE',
-                'link': '',
-            },
-            {
-                'id': 'cultoinfantil',
-                'img': '<img class="d-block w-100" src="../imagens/mobile-slide-2.webp">',
-                'h3': 'CULTO INFANTIL',
-                'p': 'Jesus disse: "Deixai vir a mim as criancinhas" - Mt 19:14. Traga seu filho ao culto infantil',
-                'button': 'SAIBA MAIS',
-                'link': '',
-            }
-        ]
+var slide = [
+    {
+        'img': '<img class="d-block w-100" src="imagens/mobile-slide-1.webp">',
+        'title': 'EVANGELISMO',
+        'notice': 'Dia 25/01 no Morro do Papagaio',
+        'button': 'PARTICIPE',
     },
-    desktop = {
-        'imgs': [
-            {
-                'img': '<img class="d-block w-100" src="../imagens/ban1.webp">',
-                'h3': '',
-                'p': '',
-                'button': '',
-                'link': '',
-            },
-            {
-                'img': '<img class="d-block w-100" src="../imagens/ban2.webp">',
-                'h3': '',
-                'p': '',
-                'button': '',
-                'link': '',
-            }
-        ]
+    {
+        'img': '<img class="d-block w-100" src="imagens/mobile-slide-2.webp">',
+        'title': 'CULTO INFANTIL',
+        'notice': 'Jesus disse: "Deixai vir a mim as criancinhas" - Mt 19:14. Traga seu filho ao culto infantil',
+        'button': 'SAIBA MAIS',
     }
 ]
 
-
-var tela = screen.width > 1199
-var item = plataformas[0]
-
-for (var i = 0; i < plataformas[tela ? 1 : 0].imgs.length; i++) {
-    var slide = `
+for (var i = 0; i < slide.length; i++) {
+    var slideItem = `
         <div class="carousel-item ${i == 0 ? 'active' : ''}">
-            ${item.imgs[i].img}
+            ${slide[i].img}
             <div class="black"></div>
             <div class="conteudo-slide mx-4">
-                <h3>${item.imgs[i].h3}</h3>
-                <p>${item.imgs[i].p}</p>
-                <a href="/">${item.imgs[i].button}</a>
+                <h3>${slide[i].title}</h3>
+                <p>${slide[i].notice}</p>
+                <a href="/info/${i}">${slide[i].button}</a>
             </div>
         </div>
         `
-    $('.carousel-inner').append(slide)
+    $('.carousel-inner').append(slideItem)
 }
 
-$('#mudarid').attr('id', tela ? 'carouseldesktop' : 'carouselmobile')
-$('.carousel').addClass(tela ? 'slide-desktop' : 'slide-mobile')
-$('.carousel a.control').attr('href', '#' + (tela ? 'carouseldesktop' : 'carouselmobile'))
+$('.carousel a.control').attr('href', '#' + (screen.width > 1199 ? 'carouseldesktop' : 'carouselmobile'))

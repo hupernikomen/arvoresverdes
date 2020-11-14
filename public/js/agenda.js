@@ -110,7 +110,7 @@ if (window.location.pathname == '/agenda') {
     programacao('.item-prog')
 }
 
-function event(prog, index, qItems) {
+function fEvent(prog, index, qItems) {
     return `
     <p class="pl-3" style="border-left: 5px solid ${prog[0].cor}">${index == diaComp ? '<span>Hoje</span>' : week[dayOfWeek(index)]} (${index}) 
       
@@ -125,7 +125,7 @@ function programacao(selector) {
     var index = Object.keys(progs)[day]
 
     if (selector == '.item-prog') {
-        $(selector).append(event(progs[day], index, progs[day].length))
+        $(selector).append(fEvent(progs[day], index, progs[day].length))
     } else {
         progs[day].map((prog) => {
             var event = `
