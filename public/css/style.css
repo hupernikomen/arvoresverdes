@@ -180,10 +180,10 @@
         padding-top: 10px;
         background: #3e6a88;
     }
-    footer h6, footer p, footer a, footer i, .footer-copyright {
+    footer h6, footer p, footer a, footer i {
         color: #fff;
     }
-    footer h3 {
+    footer h3, .footer-copyright {
         font-weight: 100;
         font-size: .9rem;
         color: #fff;
