@@ -28,4 +28,3 @@ for (var i = 0; i < slide.length; i++) {
     $('.carousel-inner').append(slideItem)
 }
 
-$('.carousel a.control').attr('href', '#' + (screen.width > 1199 ? 'carouseldesktop' : 'carouselmobile'))
