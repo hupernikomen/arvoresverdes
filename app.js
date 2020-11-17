@@ -18,11 +18,11 @@ app.get('/agenda', (req, res) => {
 app.get('/sobre', (req, res) => {
     res.sendFile(__dirname + '/html/sobre.html')
 })
-app.get('/biblioteca', (req, res) => {
-    res.sendFile(__dirname + '/html/biblioteca.html')
+app.get('/downloads', (req, res) => {
+    res.sendFile(__dirname + '/html/downloads.html')
 })
-app.get('/contato', (req, res) => {
-    res.sendFile(__dirname + '/html/contato.html')
+app.get('/fale-conosco', (req, res) => {
+    res.sendFile(__dirname + '/html/fale-conosco.html')
 })
 app.get('/sitemap', (req, res) => {
     res.sendFile(__dirname + '/sitemap.xml')
