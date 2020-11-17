@@ -47,6 +47,8 @@ var reuniaoM = {
     'min': '30',
     'loc': 'na Casa da Irmã ...'
 }
+
+
 progs = [[], //00
 [], //01
 [], //02
@@ -96,7 +98,8 @@ while (progs[day] == '') {
     }
 }
 
-// Pega o primeiro item do day 
+
+// Pega o primeiro evento do dia 
 var dateFirstEvent = new Date(year, month, day, progs[day][progs[day].length - 1].hr, progs[day][progs[day].length - 1].min)
 if (data > dateFirstEvent) {
     day++
