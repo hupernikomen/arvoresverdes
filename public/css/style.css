@@ -90,7 +90,7 @@
     .conteudo-slide {
         width: 100%;
         position: absolute; 
-        background: #be2a2a;
+        background: #be2a2ae8;
         animation: identifier0 1s 1.5s forwards;
         padding: 20px 0;
     }
