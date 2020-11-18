@@ -17,11 +17,10 @@ for (var i = 0; i < slide.length; i++) {
     var slideItem = `
         <div class="carousel-item ${i == 0 ? 'active' : ''}">
             ${slide[i].img}
-            <div class="black"></div>
-            <div class="conteudo-slide mx-4">
-                <h3>${slide[i].title}</h3>
-                <p>${slide[i].notice}</p>
-                <a href="/info/${i}">${slide[i].button}</a>
+            <div class="conteudo-slide">
+                <h3 class=" mx-5">${slide[i].title}</h3>
+                <p class=" mx-5">${slide[i].notice}</p>
+                <a class=" mx-5" href="/info/${i}">${slide[i].button}</a>
             </div>
         </div>
         `

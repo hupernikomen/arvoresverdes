@@ -73,44 +73,46 @@
     .navbar-nav {
         margin-top: 2rem;
     }
+    .nav-link {
+        font-size: .9rem;
+    }
     /* Carousel  */
     .carousel-inner, .carousel-item {
         max-height: 400px;
     }
-    .black {
-        animation: identifier2 4s 1.5s forwards;
-        background: #000;
-        min-width: 100%;
-        min-height: 100%;
-        position: absolute;
-        top: 0;
-        opacity: 0;
-    }
+    
     .carousel-control-next, .carousel-control-prev {
         width: 10% !important;
     }
     .conteudo-slide {
         width: 100%;
-        position: absolute;
-        top: 30%;
+        position: absolute; 
+        background: #0000006b;
+        animation: identifier0 2s 1s forwards;
+        padding: 20px 0;
+    }
+    @keyframes identifier0 {
+        from {
+            bottom: -150px;
+            opacity: 0;
+        }
+        to {
+            bottom : 0;
+            opacity: 1;
+        }
     }
     .carousel-item h3 {
         text-transform: uppercase;
-        animation: identifier 1s 1.5s forwards;
-        margin-left: -30px;
-        font-size: 2rem;
+        animation: identifier 1s 2.5s forwards;
+        font-size: 1.8rem;
         font-weight: 800;
         color: #fff;
-        margin-bottom: 1.5rem;
         opacity: 0;
         text-shadow: 1px 1px 3px #00000050;
     }
     .carousel-item p {
-        margin-top: -.8rem;
-        margin-left: -30px;
-        margin-bottom: 2.5rem;
-        animation: identifier 1s 1.7s forwards;
-        font-weight: 300;
+        animation: identifier 1s 2.7s forwards;
+        font-weight: 100;
         font-size: .9rem;
         color: #fff;
         width: 80%;
@@ -120,26 +122,19 @@
     }
     .carousel-item a {
         text-transform: uppercase;
-        margin-left: -30px;
         opacity: 0;
         background: #be2a2a;
         color: #fff !important;
-        padding: .8rem 1rem;
         font-size: .8rem;
         border: 0;
-        animation: identifier 1s 2s forwards;
+        padding: 5px 8px;
+        animation: identifier 1s 3s forwards;
         border-radius: 2px;
         box-shadow: 1px 1px 3px #00000050;
     }
     @keyframes identifier {
         to {
             opacity: 1;
-            margin-left: 0px;
-        }
-    }
-    @keyframes identifier2 {
-        to {
-            opacity: .4;
         }
     }
     /* Pagina Eventos  */
@@ -299,12 +294,13 @@
         display: block;
         width: 50px;
         height: 50px;
+        
     }
     .navbar {
         padding: 15px 0;
     }
     .carousel {
-        background: #e9e9e9;
+        background: #f1f1f1;
     }
     .carousel-inner, .carousel-item, main, .navbar {
         max-width: 900px;
