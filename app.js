@@ -8,7 +8,6 @@ app.use((req, res, next) => {
         next(); 
 });
 app.use(express.static('public'))
-app.use(robots({ UserAgent: '*', Disallow: '/' }))
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/html/index.html')
