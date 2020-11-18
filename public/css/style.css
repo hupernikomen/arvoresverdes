@@ -78,7 +78,10 @@
     }
     /* Carousel  */
     .carousel-inner, .carousel-item {
-        max-height: 400px;
+        max-height: 300px;
+        min-height: 300px;
+        background-size: contain;
+        background-position: center;
     }
     
     .carousel-control-next, .carousel-control-prev {
@@ -87,7 +90,7 @@
     .conteudo-slide {
         width: 100%;
         position: absolute; 
-        background: #0000007c;
+        background: #be2a2a;
         animation: identifier0 1s 1.5s forwards;
         padding: 20px 0;
     }
@@ -301,6 +304,9 @@
     .carousel-inner, .carousel-item, main, .navbar {
         max-width: 900px;
         margin: 0 auto;
+    }
+    .carousel-inner, .carousel-item {
+        max-height: 400px;
     }
     @keyframes identifier {
         to {
