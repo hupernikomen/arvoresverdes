@@ -88,7 +88,7 @@
         width: 100%;
         position: absolute; 
         background: #0000006b;
-        animation: identifier0 2s 1s forwards;
+        animation: identifier0 1s 1.5s forwards;
         padding: 20px 0;
     }
     @keyframes identifier0 {
@@ -103,7 +103,7 @@
     }
     .carousel-item h3 {
         text-transform: uppercase;
-        animation: identifier 1s 2.5s forwards;
+        animation: identifier 1s 2.2s forwards;
         font-size: 1.8rem;
         font-weight: 800;
         color: #fff;
@@ -111,7 +111,7 @@
         text-shadow: 1px 1px 3px #00000050;
     }
     .carousel-item p {
-        animation: identifier 1s 2.7s forwards;
+        animation: identifier 1s 2.4s forwards;
         font-weight: 100;
         font-size: .9rem;
         color: #fff;
@@ -128,7 +128,7 @@
         font-size: .8rem;
         border: 0;
         padding: 5px 8px;
-        animation: identifier 1s 3s forwards;
+        animation: identifier 1s 2.6s forwards;
         border-radius: 2px;
         box-shadow: 1px 1px 3px #00000050;
     }
