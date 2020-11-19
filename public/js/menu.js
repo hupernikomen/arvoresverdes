@@ -1,13 +1,13 @@
 var menu =
     [
-        { 'id': 'Home', 'link': '/' },
-        { 'id': 'Nossa Agenda', 'link': '/agenda' },
-        { 'id': 'Fale Conosco', 'link': '/fale-conosco' },
-        // { 'id': 'Contribua com o Evangelho', 'link': '' },
-        { 'id': 'Downloads', 'link': '/downloads' }
+        { 'id': 'Home', 'ic': '<img src="icones/home.png">', 'link': '/' },
+        { 'id': 'Nossa Agenda', 'ic': '<img src="icones/agenda.png">', 'link': '/agenda' },
+        { 'id': 'Fale Conosco', 'ic': '<img src="icones/carta.png">', 'link': '/fale-conosco' },
+        // { 'id': 'Contribua com o Evangelho', 'ic': '', 'link': '' },
+        { 'id': 'Downloads', 'ic': '<img src="icones/download.png">', 'link': '/downloads' }
     ]
 
 for (var i = 0; i < menu.length; i++) {
-    var compmenu = `<li class="nav-item mx-2"><a class="nav-link" href="${menu[i].link}">${menu[i].id}</a></li>`
+    var compmenu = `<li class="nav-item mx-2"><a class="nav-link" href="${menu[i].link}">${menu[i].ic} ${menu[i].id}</a></li>`
     $('.navbar-nav').append(compmenu)
 }
