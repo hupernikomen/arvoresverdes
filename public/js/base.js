@@ -78,10 +78,9 @@ var footer = `
 </div>
 `
 
-$('footer').append(footer)  
+$('footer').append(footer)
 
 // ___________
-
 
 if (window.location.pathname != '/') {
   var btnvoltar = '<i class="fas fa-arrow-left back" onclick="window.history.go(-1); return false"></i>' 
