@@ -4,10 +4,9 @@ alt="Logo Igreja Batista em Arvores Verdes">`
 var nav =
   `<nav class="navbar navbar-light bg-white">
 
-      <div style="width: 50px"></div>
+      <div style="width: 50px; height: 50px"></div>
       <a class="navbar-brand" href="/">
         ${window.location.pathname == '/' ? logo : ""}
-
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

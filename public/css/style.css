@@ -10,9 +10,7 @@
         user-select: none;
         /* box-shadow: 0 0 1px 0 #000; */
     }
-    a {
-        color: #222;
-    }
+
     a:active, a:hover {
         color: #777;
     }
@@ -21,11 +19,16 @@
         z-index: 9999;
         box-shadow: 0 1px 1px 0 #00000041;
     }
-    p, span, h1, h2, h3, h4, h5, h6 {
+    p, span, h1, h2, h3, h4, h5, h6, a {
         font-family: 'Raleway', sans-serif;
         color: #000;
     }
-
+    h1, h3 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: .9rem;
+    }
     /* Header  */
     .topo, .slide-desk, .navbar-text, .carousel-control-next-icon, .carousel-control-prev-icon {
         display: none;
@@ -40,15 +43,6 @@
         background: #fff;
         z-index: 9999;
         box-shadow: 0 1px 3px 0 #00000041;
-    }
-    header span {
-        font-size: .8rem;
-        font-weight: 100;
-    }
-    header h1 {
-        font-weight: 500;
-        font-size: .9rem;
-        margin-top: -5px;
     }
     .navbar-brand {
         display: flex;
@@ -71,7 +65,7 @@
         margin-top: 2rem;
     }
     .nav-link {
-        font-size: .9rem;
+        font-size: 1rem;
     }
     /* Carousel  */
     .carousel-inner, .carousel-item {
@@ -100,7 +94,6 @@
     }
     .carousel-item h3 {
         animation: identifier 1s 2.2s forwards;
-        font-size: 1.6rem;
         font-weight: 700;
         color: #fff;
         opacity: 0;
@@ -109,7 +102,6 @@
     .carousel-item p {
         animation: identifier 1s 2.4s forwards;
         font-weight: 300;
-        font-size: .9rem;
         color: #fff;
         width: 80%;
         opacity: 0;
@@ -153,11 +145,9 @@
         text-align: center;
     }
     .agenda h3 {
-        font-size: 1.5rem;
         font-weight: bold;
     }
     .agenda p {
-        font-size: .9rem;
         font-weight: 300;
         margin-bottom: 5px;
     }
@@ -167,8 +157,9 @@
     }
 
     .nav-link img {
-        margin-right: 10px;
-        width: 16px;
+        margin-right: 20px;
+        padding-right: 20px;
+        border-right: 1px solid #ddd;
     }
     /* Rodapé  */
     footer {
@@ -220,11 +211,12 @@
         margin-right: 20px;
         border: 2px solid #fff;
     }
-    .livro h2 {
+    .livro h3 {
         margin: 10px 0;
     }
     .livro span {
         color: #777;
+        font-size: .9rem;
     }
     .msg {
         position: fixed;
@@ -279,17 +271,15 @@
     }
     .saudacoes h1 {
         display: inline;
-        font-size: 1.5rem;
         font-weight: bold;
     }
     .saudacoes span {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: 300;
         line-height: 1rem;
     }
     .saudacoes p {
         font-weight: 300;
-        font-size: .9rem;
         margin-top: 20px;
     }
 
