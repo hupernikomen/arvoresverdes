@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @media (min-width: 320px) {
     /* default  */
     * {
@@ -21,7 +22,7 @@
         box-shadow: 0 1px 1px 0 #00000041;
     }
     p, span, h1, h2, h3, h4, h5, h6 {
-        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-family: 'Raleway', sans-serif;
         color: #000;
     }
 
@@ -55,10 +56,6 @@
     }
     .logo {
         max-height: 50px;
-        margin-right: 10px;
-    }
-    .sub-logo {
-        margin: 0;
     }
     .navbar-toggler {
         border: 0;
@@ -90,7 +87,7 @@
     .conteudo-slide {
         width: 100%;
         position: absolute; 
-        background: #be2a2ae8;
+        background: #be2a2ae7;
         animation: identifier0 1s 1.5s forwards;
         padding: 20px 0;
     }
@@ -121,16 +118,7 @@
         opacity: 0;
         line-height: 1rem;
     }
-    .btn-slide {
-        opacity: 0;
-        background: #be2a2a;
-        color: #fff !important;
-        font-size: .8rem;
-        border: 0;
-        padding: 5px 8px;
-        animation: identifier 1s 2.6s forwards;
-        border-radius: 2px;
-    }
+
     @keyframes identifier {
         to {
             opacity: 1;
@@ -170,7 +158,7 @@
     }
     .agenda h3 {
         font-size: 1.5rem;
-        font-weight: 600;
+        font-weight: bold;
     }
     .agenda p {
         font-size: .9rem;
@@ -180,7 +168,7 @@
     /* Rodapé  */
     footer {
         padding-top: 10px;
-        background: #3e6a88;
+        background: #be2a2a;
     }
     footer h6, footer p, footer a, footer i {
         color: #fff;
@@ -283,6 +271,21 @@
         border-radius: 6px;
         color: #fff !important;
         background: #be2a2a;
+    }
+    .saudacoes h1 {
+        display: inline;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .saudacoes span {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1rem;
+    }
+    .saudacoes p {
+        font-weight: 300;
+        font-size: .9rem;
+        margin-top: 20px;
     }
 
 }

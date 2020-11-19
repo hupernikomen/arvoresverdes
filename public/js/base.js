@@ -4,13 +4,9 @@ alt="Logo Igreja Batista em Arvores Verdes">`
 var nav =
   `<nav class="navbar navbar-light bg-white">
 
+      <div style="width: 50px"></div>
       <a class="navbar-brand" href="/">
         ${window.location.pathname == '/' ? logo : ""}
-
-        <div class="sub-logo">
-          <span>IBAV</span><br>
-          <h1>Igreja Batista em Arvores Verdes</h1>
-        </div>
 
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
