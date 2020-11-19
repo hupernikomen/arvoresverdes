@@ -75,10 +75,7 @@
     }
     /* Carousel  */
     .carousel-inner, .carousel-item {
-        max-height: 300px;
-        min-height: 300px;
-        background-size: contain;
-        background-position: center;
+        max-height: 400px;
     }
     
     .carousel-control-next, .carousel-control-prev {
