@@ -1,10 +1,12 @@
-var logo = `<img class="logo" src="imagens/logo-igreja-batista-arvores-verdes.webp"
+var logo = `<img class="logo" src="imagens/logo_ibav.webp"
 alt="Logo Igreja Batista em Arvores Verdes">`
 
 var nav =
   `<nav class="navbar navbar-light bg-white">
 
-      <div style="width: 50px; height: 50px"></div>
+      <div class="back">
+      ${window.location.pathname != '/' ? '<img src="icones/voltar.png" onclick="window.history.go(-1); return false"></img>' : ""}
+      </div>
       <a class="navbar-brand" href="/">
         ${window.location.pathname == '/' ? logo : ""}
       </a>
@@ -63,7 +65,7 @@ var footer = `
 
       <!--Instagram-->
       <a href="https://www.instagram.com/ibavthe" class="ins-ic">
-        <i class="fab fa-instagram fa-2x white-text"> </i>
+        <img src="icones/instagram.png">
       </a>
 
     </div>
@@ -81,8 +83,3 @@ var footer = `
 $('footer').append(footer)
 
 // ___________
-
-if (window.location.pathname != '/') {
-  var btnvoltar = '<i class="fas fa-arrow-left back" onclick="window.history.go(-1); return false"></i>' 
-  $('.navbar-brand').prepend(btnvoltar)
-}
