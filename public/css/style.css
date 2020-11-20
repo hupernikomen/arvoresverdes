@@ -41,7 +41,7 @@
     }
     .social img {
         display: none;
-        width: 40px;
+        width: 35px;
     }
     .back {
         height: 50px;
@@ -80,7 +80,9 @@
         justify-content: flex-end;
     }
     .navbar-nav {
-        margin-top: 2rem;
+        height: 80vh;
+        border-top: 1px solid #ddd;
+        margin-top: 15px;
     }
     .nav-link {
         font-size: 1rem;
@@ -296,6 +298,9 @@
     main, .navbar {
         max-width: 1200px;
         margin: 0 auto;
+    }
+    .navbar-nav {
+        height: auto;
     }
     .carousel-inner, .carousel-item {
         max-height: 400px;

@@ -11,7 +11,7 @@ var nav =
       </button>
 
       <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mb-3"></ul>
+        <ul class="navbar-nav"></ul>
         <span class="navbar-text"></span>
       </div>
 
