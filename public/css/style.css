@@ -16,7 +16,7 @@
     }
     header {
         background: #fff;
-        z-index: 9999;
+        z-index: 999;
         box-shadow: 0 1px 1px 0 #00000041;
     }
     p, span, h1, h2, h3, h4, h5, h6, a {
@@ -44,10 +44,10 @@
         width: 40px;
     }
     .back {
-        padding: 10px 10px 10px 0;
-        margin-right: 10px;
         height: 50px;
         width: 50px;
+        display: flex;
+        align-items: center;
     }
     /* NavBars  */
     header {
@@ -64,7 +64,7 @@
         max-height: 50px;
     }
     .navbar {
-        padding: .8rem;
+        padding: .8rem 1.2rem;
     }
     .navbar-toggler {
         border: 0;
@@ -219,7 +219,7 @@
         position: fixed;
         left: -100%;
         top: 150px;
-        z-index: 9999;
+        z-index: 999;
         width: 100%;
     }
     .msg h3 {
