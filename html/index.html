@@ -14,34 +14,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-
   <title>Igreja Batista em Árvores Verdes | IBAV</title>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9iBJBYdZmiqf71OYH-lAJbmabED8Fqvo&callback=initMap&libraries=&v=weekly"
-    defer
-  ></script>
-  <style type="text/css">
-    /* Always set the map height explicitly to define the size of the div
-     * element that contains the map. */
-    #map {
-      height: 250px;
-    }
-
-    /* Optional: Makes the sample page fill the window. */
-
-  </style>
-  <script>
-    let map;
-
-    function initMap() {
-      map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: -4.989704, lng: -42.697232 },
-        zoom: 12,
-      });
-    }
-  </script>
 </head>
 
 <body>
@@ -66,8 +40,7 @@
     <div class="saudacoes mt-3 p-4">
       <span class="mb-3">Bem-vindo à <h1>Igreja Batista em Árvores Verdes</h1> online</span>
       <p>
-        Estamos felizes com sua visíta a nosso site. <br> Conferira nossos trabalhos evangelisticos, programação, acesso
-        a redes sociais e muito mais. <br> Fique a vontade e aproveite nosso conteudo.
+        Estamos felizes com sua visíta a nosso site. <br> Conferira nossos trabalhos evangelisticos, programação, acesso a redes sociais e muito mais. <br> Fique a vontade e aproveite nosso conteudo.
       </p>
     </div>
 
@@ -78,30 +51,7 @@
 
   </main>
 
-  <div id="map"></div>
-
-
   <footer class="page-footer font-small indigo"></footer>
-
-  <script>
-
-    function inicializar() {
-      var coordenadas = { lat: -22.912869, lng: -43.228963 };
-
-      var mapa = new google.maps.Map(document.getElementById('mapa'), {
-        zoom: 15,
-        center: coordenadas
-      });
-
-      var marker = new google.maps.Marker({
-        position: coordenadas,
-        map: mapa,
-        title: 'Meu marcador'
-      });
-    }
-  </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJCpz931JK1E6yC-oif6ab9WTfzr4rGyY">
-  </script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
