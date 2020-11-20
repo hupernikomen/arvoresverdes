@@ -33,23 +33,37 @@
     .topo, .slide-desk, .navbar-text, .carousel-control-next-icon, .carousel-control-prev-icon {
         display: none;
     }
+    .social {
+        z-index: 999;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+    }
+    .social img {
+        width: 35px;
+    }
     .back {
         padding: 10px 10px 10px 0;
         margin-right: 10px;
+        height: 50px;
         width: 50px;
     }
     /* NavBars  */
     header {
         background: #fff;
-        z-index: 9999;
+        z-index: 999;
         box-shadow: 0 1px 3px 0 #00000041;
     }
     .navbar-brand {
         display: flex;
         align-items: center;
+        padding: 0;
     }
     .logo {
         max-height: 50px;
+    }
+    .navbar {
+        padding: .8rem;
     }
     .navbar-toggler {
         border: 0;
@@ -61,6 +75,9 @@
     .navbar-toggler-icon {
         font-size: 1rem;
     }
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
     .navbar-nav {
         margin-top: 2rem;
     }
@@ -71,10 +88,7 @@
     .carousel-inner, .carousel-item {
         max-height: 400px;
     }
-    
-    .carousel-control-next, .carousel-control-prev {
-        width: 10% !important;
-    }
+
     .conteudo-slide {
         width: 100%;
         position: absolute; 
@@ -178,23 +192,7 @@
         display: flex;
         justify-content: center;
     }
-    /* Voltar para o topo  */
-    .back2Top {
-        width: 35px;
-        overflow: hidden;
-        z-index: 999;
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 10px;
-        background: #be2a2adc;
-        text-align: center;
-        font-size: 30px;
-        text-decoration: none;
-    }
-    .back2Top:hover {
-        background-color: #fff7;
-    }
+
     /* Pagina Downloads  */
     .livro {
         display: flex;
@@ -293,18 +291,19 @@
         height: 50px;
         
     }
-    .navbar {
-        padding: 15px 0;
-    }
     .carousel {
         background: #f1f1f1;
     }
-    .carousel-inner, .carousel-item, main, .navbar {
-        max-width: 900px;
+    main, .navbar {
+        max-width: 1200px;
         margin: 0 auto;
     }
     .carousel-inner, .carousel-item {
         max-height: 400px;
+    }
+        
+    .carousel-control-next, .carousel-control-prev {
+        width: 15% !important;
     }
     @keyframes identifier {
         to {

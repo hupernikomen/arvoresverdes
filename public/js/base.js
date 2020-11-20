@@ -2,12 +2,9 @@ var logo = `<img class="logo" src="imagens/logo_ibav.webp"
 alt="Logo Igreja Batista em Arvores Verdes">`
 
 var nav =
-  `<nav class="navbar navbar-light bg-white">
-
-      <div class="back">
-      ${window.location.pathname != '/' ? '<img src="icones/voltar.png" onclick="window.history.go(-1); return false"></img>' : ""}
-      </div>
-      <a class="navbar-brand" href="/">
+  `<nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="back"></div>
+      <a class="navbar-brand">
         ${window.location.pathname == '/' ? logo : ""}
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -23,6 +20,11 @@ var nav =
     </nav>`
 
 $('header').append(nav)
+
+if (window.location.pathname != '/' ) {
+  $('.back').html('<img src="icones/voltar.png" onclick="window.history.go(-1); return false">')
+} 
+
 
 // ________
 
