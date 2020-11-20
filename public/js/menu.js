@@ -2,7 +2,7 @@ var menu =
     [
         { 'id': 'Home', 'ic': '<img src="icones/home.png">', 'link': '/' },
         { 'id': 'Nossa Agenda', 'ic': '<img src="icones/agenda.png">', 'link': '/agenda' },
-        { 'id': 'Fale Conosco', 'ic': '<img src="icones/carta.png">', 'link': '/fale-conosco' },
+        { 'id': 'Fale Conosco', 'ic': '<img src="icones/o-email.png">', 'link': '/fale-conosco' },
         // { 'id': 'Contribua com o Evangelho', 'ic': '', 'link': '' },
         { 'id': 'Downloads', 'ic': '<img src="icones/download.png">', 'link': '/downloads' }
     ]
