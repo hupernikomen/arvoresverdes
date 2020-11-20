@@ -21,8 +21,5 @@ app.get('/sobre', (req, res) => {
 app.get('/downloads', (req, res) => {
     res.sendFile(__dirname + '/html/downloads.html')
 })
-app.get('/fale-conosco', (req, res) => {
-    res.sendFile(__dirname + '/html/fale-conosco.html')
-})
 
 app.listen(3000, ()=> console.log('Rodando 3000'))
