@@ -152,22 +152,22 @@
         font-size: 1rem;
         margin-right: 8px;
     }
-    /* Eventos Home  */
-    .agenda {
+    /* Eventos */
+    .item-prog {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-    .agenda a {
+    .item-prog a {
         width: 100%;
         text-align: center;
     }
-    .agenda h3 {
+    .item-prog h3 {
         font-weight: bold;
     }
-    .agenda p {
+    .itens-prog p {
         font-weight: 300;
-        margin-bottom: 5px;
+        margin-bottom: 1px !important;
     }
     .nav-link {
         display: flex;

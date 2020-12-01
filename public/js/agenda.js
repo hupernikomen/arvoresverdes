@@ -24,7 +24,7 @@ var oracao = {
 var pizza = {
     'cor': '#B32929',
     'evt': 'Festival de Pizza',
-    'hr': '18',
+    'hr': '19',
     'min': '00',
     'loc': 'no Templo'
 }
