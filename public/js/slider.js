@@ -6,7 +6,7 @@ var slide = [
         'notice': 'Dia 25/01 no Morro do Papagaio'
     },
     {
-        'imgmob': '<img class="d-block w-100" src="imagens/banners/mobile-slide-2.webp">',
+        'imgmob': '<img class="d-block w-100" src="imagens/banners/culto-infantil.webp">',
         'imgdesk': '<img class="d-block w-100" src="imagens/banners/oracao.jpg">',
         'title': 'Culto Infantil',
         'notice': 'Jesus disse: "Deixai vir a mim as criancinhas" - Mt 19:14. Traga seu filho ao culto infantil'
