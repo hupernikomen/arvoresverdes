@@ -21,5 +21,8 @@ app.get('/sobre', (req, res) => {
 app.get('/downloads', (req, res) => {
     res.sendFile(__dirname + '/html/downloads.html')
 })
+app.get('/blog/:id', (req, res) => {
+    res.sendFile(__dirname + '/html/blog.html')
+})
 
 app.listen(3000, ()=> console.log('Rodando 3000'))
