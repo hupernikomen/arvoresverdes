@@ -88,7 +88,7 @@ endMonth(day)
 
 console.log(month)
 
-$('.mes').html(nameMonth[month - 1])
+$('.mes').html(nameMonth[month])
 
 while (progs[day] == '') {
     day++
