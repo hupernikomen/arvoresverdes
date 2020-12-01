@@ -116,12 +116,12 @@ function createEvent(prog, index, seletor) {
 
         prog.map((item) => {
             var e = `
-            <p class="py-2 px-4" style="border-left: 5px solid ${item.cor}">${index == diaComp ? '<span>Hoje</span>' : week[dayOfWeek(index)]} (${index}) ${item.evt} às ${item.hr}:${item.min}hs ${item.loc}.</p>
+            <p style="border-left: 5px solid ${item.cor}">${index == diaComp ? '<span>Hoje</span>' : week[dayOfWeek(index)]} (${index}) ${item.evt} às ${item.hr}:${item.min}hs ${item.loc}.</p>
             `
             $(seletor).append(e)
         })
     } else {
-        $('.itens-prog').html('<h1 class="py-3 px-4">Em breve atualizaremos nossa agenda...</h1>')
+        $('.itens-prog').html('<h1>Em breve atualizaremos nossa agenda...</h1>')
     }
 }
 
