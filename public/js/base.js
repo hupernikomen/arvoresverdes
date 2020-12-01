@@ -21,7 +21,9 @@ $('header').append(nav)
 
 if (window.location.pathname != '/' ) {
   $('.back').html('<img src="icones/voltar.png" onclick="window.history.go(-1); return false">')
-} 
+} else {
+  $('.back').html('')
+}
 
 
 // ________

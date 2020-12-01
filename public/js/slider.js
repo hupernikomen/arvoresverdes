@@ -19,8 +19,8 @@ for (var i = 0; i < slide.length; i++) {
         <div class="carousel-item ${i == 0 ? 'active' : ''}">
             ${larg > 1024 ? slide[i].imgdesk : slide[i].imgmob}
             <a href="/${i}" class="conteudo-slide">
-                <h3 class=" mx-4">${slide[i].title}</h3>
-                <p class=" mx-4">${slide[i].notice}</p>
+                <h3>${slide[i].title}</h3>
+                <p>${slide[i].notice}</p>
             </a>
         </div>
         `
