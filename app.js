@@ -21,7 +21,7 @@ app.get('/sobre', (req, res) => {
 app.get('/downloads', (req, res) => {
     res.sendFile(__dirname + '/html/downloads.html')
 })
-app.get('/blog/:id', (req, res) => {
+app.get('/blog', (req, res) => {
     res.sendFile(__dirname + '/html/blog.html')
 })
 

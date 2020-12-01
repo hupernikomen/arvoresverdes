@@ -86,8 +86,6 @@ var diaComp = data.getDate()
 todayHas = []
 endMonth(day)
 
-console.log(month)
-
 $('.mes').html(nameMonth[month])
 
 while (progs[day] == '') {
