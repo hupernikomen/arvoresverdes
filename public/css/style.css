@@ -121,6 +121,9 @@
 
 
     /* Conteudo  */
+    main {
+        margin: 40px 0;
+    }
     .boasVindas h1, .livro h1 {
         display: inline;
         font-weight: bold;
@@ -283,6 +286,9 @@
 
 
 @media (min-width: 1024px) {
+    main {
+        margin: 50px 0;
+    }
     .back {
         height: 50px;
         width: 0px;
@@ -308,7 +314,7 @@
         height: auto;
     }
     .carousel-inner, .carousel-item {
-        max-height: 400px;
+        max-height: 450px;
     }
         
     .carousel-control-next, .carousel-control-prev {
