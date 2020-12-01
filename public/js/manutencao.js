@@ -12,13 +12,13 @@ combinado?
 </div>
 `)  
 
-if(!sessionStorage.getItem('salt')){
-    setTimeout(() => {
-        $('.msg').animate({left: 0}, "fast")
-    }, 5000);
-}
+// if(!sessionStorage.getItem('salt')){
+//     setTimeout(() => {
+//         $('.msg').animate({left: 0}, "fast")
+//     }, 5000);
+// }
     
-function fechar() {
-    $('.msg').css('display', 'none')
-    sessionStorage.setItem('salt','true')
-}
+// function fechar() {
+//     $('.msg').css('display', 'none')
+//     sessionStorage.setItem('salt','true')
+// }
