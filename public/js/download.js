@@ -12,7 +12,7 @@ var biblioteca =
             'capa': '<img src="../imagens/livros/o_que_significa_ser_nascido_de_novo.webp">',
             'titulo': 'O que significa ser nascido de novo?',
             'autor': 'R. C. Sproul',
-            'link': 'https://drive.google.com/file/d/1BjHjTGfL2J7YnnTUOGbLiFK50XpDocrW/view?usp=sharing'
+            'link': 'https://drive.google.com/file/d/1Ww9BrZ1j8AfG50ILqY_qYjnNqu9JVJnH/view?usp=sharing'
         }
     ]
 
