@@ -1,5 +1,5 @@
 var week = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
-var nameMonth = ['Janeiro', 'Fevereiro', 'Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro']
+var nameMonth = ['janeiro', 'fevereiro', 'março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro']
 var cultoDominical = {
     'cor': '#659EA3',
     'evt': 'Culto de Louvor e Pregação',
