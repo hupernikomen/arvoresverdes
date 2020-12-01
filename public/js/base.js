@@ -41,11 +41,7 @@ var footer = `
       <a href="/">Contribua</a>
     </h6>
   </div>
-  <div class="col-md-2 mb-3">
-    <h6 class="text-uppercase font-weight-bold">
-      <a href="/contato">Contato</a>
-    </h6>
-  </div>
+
 
 </div>
 <hr class="rgba-white-light" style="margin: 0 15%">
