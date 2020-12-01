@@ -39,6 +39,9 @@
         bottom: 20px;
         left: 20px;
     }
+    .social a {
+        background: #fff;
+    }
     .social img {
         display: none;
         width: 35px;
@@ -80,8 +83,6 @@
         justify-content: flex-end;
     }
     .navbar-nav {
-        height: 80vh;
-        border-top: 1px solid #ddd;
         margin-top: 15px;
     }
     .nav-link {
@@ -197,22 +198,19 @@
     /* Pagina Downloads  */
     .livro {
         display: flex;
-        margin-bottom: 10px;
-        box-shadow: 1px 1px 3px 0 #00000020;
+        margin-bottom: 20px;
     }
     .livro div {
         display: flex;
         flex-direction: column;
     }
     .livro img {
-        height: 120px;
-        min-width: 90px;
+        height: 80px;
+        min-width: 60px;
         margin-right: 20px;
         border: 2px solid #fff;
     }
-    .livro h3 {
-        margin: 10px 0;
-    }
+
     .livro span {
         color: #777;
         font-size: .9rem;
@@ -268,7 +266,7 @@
         color: #fff !important;
         background: #be2a2a;
     }
-    .saudacoes h1 {
+    .saudacoes h1, .livro h1 {
         display: inline;
         font-weight: bold;
     }
@@ -280,6 +278,10 @@
     .saudacoes p {
         font-weight: 300;
         margin-top: 20px;
+    }
+
+    .itens-prog h1 {
+        font-weight: bold;
     }
 
 }

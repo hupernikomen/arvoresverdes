@@ -1,4 +1,5 @@
 var week = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
+var nameMonth = ['Janeiro', 'Fevereiro', 'Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro']
 var cultoDominical = {
     'cor': '#659EA3',
     'evt': 'Culto de Louvor e Pregação',
@@ -42,37 +43,37 @@ var reuniaoM = {
     'loc': 'na Casa da Irmã ...'
 }
 
-
+agendOfMonth = 12
 progs = [[], //00
 [], //01
 [], //02
 [], //03
-[], //04
+[oracao], //04
 [], //05
-[], //06
+[ebd, cultoDominical], //06
 [], //07
 [], //08
 [], //09
 [], //10
-[], //11
-[], //12
-[oracao], //13
+[oracao], //11
+[pizza], //12
+[ebd, cultoDominical], //13
 [], //14
-[ebd, cultoDominical], //15
+[], //15
 [], //16
 [], //17
-[], //18
+[oracao], //18
 [], //19
-[oracao], //20
+[ebd, cultoDominical], //20
 [], //21
-[ebd, cultoDominical], //22
+[], //22
 [], //23
 [], //24
-[pizza], //25
+[oracao], //25
 [], //26
-[oracao], //27
+[ebd, cultoDominical], //27
 [], //28
-[ebd, cultoDominical], //29
+[], //29
 [], //30
 [] //31
 ]
@@ -84,6 +85,10 @@ var day = data.getDate()
 var diaComp = data.getDate()
 todayHas = []
 endMonth(day)
+
+console.log(month)
+
+$('.mes').html(nameMonth[month - 1])
 
 while (progs[day] == '') {
     day++
@@ -107,12 +112,17 @@ if (window.location.pathname == '/agenda') {
 }
 
 function createEvent(prog, index, seletor) {
-    prog.map((item) => {
-        var e = `
-        <p class="py-1 px-4" style="border-left: 5px solid ${item.cor}">${index == diaComp ? '<span>Hoje</span>' : week[dayOfWeek(index)]} (${index}) ${item.evt} às ${item.hr}:${item.min}hs ${item.loc}.</p>
-        `
-        $(seletor).append(e)
-    })
+    if (agendOfMonth == month + 1) {
+
+        prog.map((item) => {
+            var e = `
+            <p class="py-3 px-4" style="border-left: 5px solid ${item.cor}">${index == diaComp ? '<span>Hoje</span>' : week[dayOfWeek(index)]} (${index}) ${item.evt} às ${item.hr}:${item.min}hs ${item.loc}.</p>
+            `
+            $(seletor).append(e)
+        })
+    } else {
+        $('.itens-prog').html('<h1 class="py-3 px-4">Em breve atualizaremos nossa agenda...</h1>')
+    }
 }
 
 function dayOfWeek(day) {
@@ -126,3 +136,4 @@ function endMonth(day) {
     }
     return todayHas.find(i => i == 'yesEvent') ? month : month++
 }
+

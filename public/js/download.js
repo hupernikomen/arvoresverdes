@@ -23,9 +23,8 @@ var biblioteca =
         <a href="${biblioteca[i].link}" class="livro">
             ${biblioteca[i].capa}
             <div>
-                <h3>${biblioteca[i].titulo}</h3>
+                <h1>${biblioteca[i].titulo}</h1>
                 <span>Autor: ${biblioteca[i].autor}</span>
-                <span>Categoria: ${biblioteca[i].categoria}</span>
             </div>
         </a>
     
