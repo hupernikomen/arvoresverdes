@@ -3,7 +3,7 @@ var nav =
       <div class="back"></div>
       <a class="navbar-brand" href="/">
       <img class="logo" src="imagens/logo_ibav.webp"
-      alt="Logo Igreja Batista em Arvores Verdes">
+      alt="Logo da IBAV Igreja Batista em Árvores Verdes">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
