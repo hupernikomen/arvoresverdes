@@ -1,6 +1,7 @@
 var menu =
     [
         { 'id': 'Home', 'link': '/' },
+        { 'id': 'Culto Infantil', 'link': '/culto-infantil' },
         { 'id': 'Nossa Agenda', 'link': '/agenda' },
         { 'id': 'Drive de Fotos', 'link': 'https://drive.google.com/drive/folders/13tuGY87fcoOIksMpmCCuRBQo-dGAPq6U?usp=sharing' },
         { 'id': 'Downloads', 'link': '/downloads' }

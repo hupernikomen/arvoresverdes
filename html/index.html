@@ -17,23 +17,22 @@
   <title>Igreja Batista em Árvores Verdes | IBAV</title>
 
 </head>
-
 <body>
-
-  <div class="msg px-4 py-1"></div>
 
   <header class="sticky-top"></header>
 
   <div data-interval="8000" id="carousel" class="carousel slide slide-mobile" data-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Script JS para criação de slide -->
-    </div>
+    
+    <div class="carousel-inner"></div>
+    
     <a href="#carousel" class="carousel-control-prev control" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </a>
+    
     <a href="#carousel" class="carousel-control-next control" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </a>
+
   </div>
   <main>
 
@@ -42,8 +41,8 @@
       <div class="boasVindas">
         <h2 class="sub">Bem-vindo à <strong>Igreja Batista em Árvores Verdes</strong> online</h2>
         <p>
-          Estamos felizes com sua visíta a nosso site. <br> Confira nossos trabalhos evangelisticos, programação, acesso
-          a redes sociais e muito mais. <br> Fique a vontade e aproveite nosso conteudo.
+          Estamos felizes com sua visíta a nosso site. Confira nossos trabalhos evangelisticos, programação, acesso
+          a redes sociais e muito mais. <br>Fique a vontade e aproveite nosso conteudo.
         </p>
       </div>
 
@@ -53,16 +52,28 @@
     </div>
   </main>
 
-  <footer class="page-footer font-small indigo"></footer>
+  <footer class="page-footer font-small indigo">
+    <div class="icEmail">
+      <a href="mailto:ibavthe@gmail.com">
+        <img src="icones/email.png">
+      </a>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script>
+    $(window).scroll(() => 
+      $(window).scrollTop() > 250 ? $('.icEmail img').fadeIn() : $('.icEmail img').fadeOut()
+    );
+  </script>
 
   <script src="js/base.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/agenda.js"></script>
-  <script src="js/flutuantes.js"></script>
+
 </body>
 
 </html>

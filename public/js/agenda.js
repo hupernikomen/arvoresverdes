@@ -1,5 +1,5 @@
 var week = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
-var nameMonth = ['janeiro', 'fevereiro', 'março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro']
+var months = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
 var cultoDominical = {
     'cor': '#659EA3',
     'evt': 'Culto de Louvor e Pregação',
@@ -83,23 +83,17 @@ var year = data.getFullYear()
 var month = data.getMonth()
 var day = data.getDate()
 var diaComp = data.getDate()
-todayHas = []
-endMonth(day)
 
-$('.mes').html(nameMonth[month])
+$('.mes').html(months[month])
 
 while (progs[day] == '') {
     day++
-    if (progs[day] == null) {
-        day = 0
-    }
+    if(progs[day] == null) day = 0
 }
 
 // Pega o ultimo evento do dia 
 var dateFirstEvent = new Date(year, month, day, progs[day][progs[day].length - 1].hr, progs[day][progs[day].length - 1].min)
-if (data > dateFirstEvent) {
-    day++
-}
+if (data > dateFirstEvent) day++
 
 if (window.location.pathname == '/agenda') {
     for (day; day < progs.length; day++) {
@@ -119,19 +113,10 @@ function createEvent(prog, index, seletor) {
             $(seletor).append(e)
         })
     } else {
-        $('.itens-prog').html('<h1>Em breve atualizaremos nossa agenda...</h1>')
+        $('.item-prog').append('<p><img class="mr-2" src="icones/atencao.png">Em breve atualizaremos nossa agenda...</p>')
     }
 }
 
 function dayOfWeek(day) {
     return new Date(year, month, day).getDay()
 }
-
-function endMonth(day) {
-    while (day < progs.length - 1) {
-        progs[day].length == 0 ? todayHas.push('noEvent') : todayHas.push('yesEvent')
-        day++
-    }
-    return todayHas.find(i => i == 'yesEvent') ? month : month++
-}
-
