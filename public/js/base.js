@@ -79,5 +79,3 @@ var footer = `
 `
 
 $('footer').append(footer)
-
-// ___________
