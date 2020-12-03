@@ -140,7 +140,7 @@
         font-weight: bold ;
     }
     .item-prog p {
-        padding-left: 20px;
+        padding: 5px 20px;
     }
     .item-prog span {
         display: none;
