@@ -1,0 +1,46 @@
+{
+    
+    "cultoDominical" : {
+        "cor": "#659EA3",
+        "evt": "Culto de Louvor e Pregação",
+        "hr": "18",
+        "min": "00",
+        "loc": "no Templo"
+    },
+    "ebd": {
+        "cor": "#8caf0c",
+        "evt": "EBD",
+        "hr": "17",
+        "min": "00",
+        "loc": "no Templo"
+    },
+    "oracao" : {
+        "cor": "#b6723a",
+        "evt": "Culto de Oração e Doutrina",
+        "hr": "19",
+        "min": "30",
+        "loc": "no Templo"
+    },
+    "pizza" : {
+        "cor": "#B32929",
+        "evt": "Festival de Pizza",
+        "hr": "19",
+        "min": "00",
+        "loc": "no Templo"
+    },
+    "reuniaoH" : {
+        "cor": "#3F95E0",
+        "evt": "Reunião dos Homens",
+        "hr": "18",
+        "min": "30",
+        "loc": "na Casa do Irmão ..."
+    },
+    "reuniaoM" : {
+        "cor": "#F3A0B4",
+        "evt": "Reunião das Mulheres",
+        "hr": "18",
+        "min": "30",
+        "loc": "na Casa da Irmã ..."
+    }
+
+}
