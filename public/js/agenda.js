@@ -8,51 +8,49 @@ const week = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quint
 
 const months = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
 
-// const cultoDominical = {
-//     'cor': '#659EA3',
-//     'evt': 'Culto de Louvor e Pregação',
-//     'hr': '18',
-//     'min': '00',
-//     'loc': 'no Templo'
-// }
-// const ebd = {
-//     'cor': '#8caf0c',
-//     'evt': 'EBD',
-//     'hr': '17',
-//     'min': '00',
-//     'loc': 'no Templo'
-// }
-// const oracao = {
-//     'cor': '#b6723a',
-//     'evt': 'Culto de Oração e Doutrina',
-//     'hr': '19',
-//     'min': '30',
-//     'loc': 'no Templo'
-// }
-// const pizza = {
-//     'cor': '#B32929',
-//     'evt': 'Festival de Pizza',
-//     'hr': '19',
-//     'min': '00',
-//     'loc': 'no Templo'
-// }
-// const reuniaoH = {
-//     'cor': '#3F95E0',
-//     'evt': 'Reunião dos Homens',
-//     'hr': '18',
-//     'min': '30',
-//     'loc': 'na Casa do Irmão ...'
-// }
-// const reuniaoM = {
-//     'cor': '#F3A0B4',
-//     'evt': 'Reunião das Mulheres',
-//     'hr': '18',
-//     'min': '30',
-//     'loc': 'na Casa da Irmã ...'
-// }
+const cultoDominical = {
+    'cor': '#659EA3',
+    'evt': 'Culto de Louvor e Pregação',
+    'hr': '18',
+    'min': '00',
+    'loc': 'no Templo'
+}
+const ebd = {
+    'cor': '#8caf0c',
+    'evt': 'EBD',
+    'hr': '17',
+    'min': '00',
+    'loc': 'no Templo'
+}
+const oracao = {
+    'cor': '#b6723a',
+    'evt': 'Culto de Oração e Doutrina',
+    'hr': '19',
+    'min': '30',
+    'loc': 'no Templo'
+}
+const pizza = {
+    'cor': '#B32929',
+    'evt': 'Festival de Pizza',
+    'hr': '19',
+    'min': '00',
+    'loc': 'no Templo'
+}
+const reuniaoH = {
+    'cor': '#3F95E0',
+    'evt': 'Reunião dos Homens',
+    'hr': '18',
+    'min': '30',
+    'loc': 'na Casa do Irmão ...'
+}
+const reuniaoM = {
+    'cor': '#F3A0B4',
+    'evt': 'Reunião das Mulheres',
+    'hr': '18',
+    'min': '30',
+    'loc': 'na Casa da Irmã ...'
+}
 
-const obj = JSON.parse('teste.json');
-console.log(obj)
 
 const progs = new Array();
 agendOfMonth = 12
