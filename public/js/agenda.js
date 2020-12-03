@@ -43,40 +43,24 @@ var reuniaoM = {
     'loc': 'na Casa da Irmã ...'
 }
 
+var progs = new Array();
 agendOfMonth = 12
-progs = [[], //00
-[], //01
-[], //02
-[], //03
-[oracao], //04
-[], //05
-[ebd, cultoDominical], //06
-[], //07
-[], //08
-[], //09
-[], //10
-[oracao], //11
-[pizza], //12
-[ebd, cultoDominical], //13
-[], //14
-[], //15
-[], //16
-[], //17
-[oracao], //18
-[], //19
-[ebd, cultoDominical], //20
-[], //21
-[], //22
-[], //23
-[], //24
-[oracao], //25
-[], //26
-[ebd, cultoDominical], //27
-[], //28
-[], //29
-[], //30
-[] //31
-]
+
+// O indice representa o dia do evento ou culto
+
+progs[4] = [oracao]
+progs[6] = [ebd, cultoDominical]
+progs[11] = [oracao]
+progs[12] = [pizza]
+progs[13] = [ebd, cultoDominical]
+progs[18] = [oracao]
+progs[20] = [ebd, cultoDominical]
+progs[25] = [oracao]
+progs[27] = [ebd, cultoDominical]
+
+for (var i = 0; i < progs.length; i++) {
+    if (progs[i] == undefined) progs[i] = []
+}
 
 var data = new Date()
 var year = data.getFullYear()
@@ -88,7 +72,7 @@ $('.mes').html(months[month])
 
 while (progs[day] == '') {
     day++
-    if(progs[day] == null) day = 0
+    if (progs[day] == null) day = 0
 }
 
 // Pega o ultimo evento do dia 
