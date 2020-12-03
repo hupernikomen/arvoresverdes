@@ -1,41 +1,49 @@
-var week = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
-var months = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
-var cultoDominical = {
+var data = new Date()
+var year = data.getFullYear()
+var month = data.getMonth()
+var day = data.getDate()
+var diaComp = data.getDate()
+
+const week = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"]
+
+const months = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
+
+const cultoDominical = {
     'cor': '#659EA3',
     'evt': 'Culto de Louvor e Pregação',
     'hr': '18',
     'min': '00',
     'loc': 'no Templo'
 }
-var ebd = {
+const ebd = {
     'cor': '#8caf0c',
     'evt': 'EBD',
     'hr': '17',
     'min': '00',
     'loc': 'no Templo'
 }
-var oracao = {
+const oracao = {
     'cor': '#b6723a',
     'evt': 'Culto de Oração e Doutrina',
     'hr': '19',
     'min': '30',
     'loc': 'no Templo'
 }
-var pizza = {
+const pizza = {
     'cor': '#B32929',
     'evt': 'Festival de Pizza',
     'hr': '19',
     'min': '00',
     'loc': 'no Templo'
 }
-var reuniaoH = {
+const reuniaoH = {
     'cor': '#3F95E0',
     'evt': 'Reunião dos Homens',
     'hr': '18',
     'min': '30',
     'loc': 'na Casa do Irmão ...'
 }
-var reuniaoM = {
+const reuniaoM = {
     'cor': '#F3A0B4',
     'evt': 'Reunião das Mulheres',
     'hr': '18',
@@ -43,7 +51,7 @@ var reuniaoM = {
     'loc': 'na Casa da Irmã ...'
 }
 
-var progs = new Array();
+const progs = new Array();
 agendOfMonth = 12
 
 // O indice representa o dia do evento ou culto
@@ -58,15 +66,12 @@ progs[20] = [ebd, cultoDominical]
 progs[25] = [oracao]
 progs[27] = [ebd, cultoDominical]
 
+const ultimoDia = new Date(data.getFullYear(), data.getMonth() + 1, 0).getDate();
+if (progs[ultimoDia] == undefined) progs[ultimoDia] = []
+
 for (var i = 0; i < progs.length; i++) {
     if (progs[i] == undefined) progs[i] = []
 }
-
-var data = new Date()
-var year = data.getFullYear()
-var month = data.getMonth()
-var day = data.getDate()
-var diaComp = data.getDate()
 
 $('.mes').html(months[month])
 
@@ -76,7 +81,7 @@ while (progs[day] == '') {
 }
 
 // Pega o ultimo evento do dia 
-var dateFirstEvent = new Date(year, month, day, progs[day][progs[day].length - 1].hr, progs[day][progs[day].length - 1].min)
+const dateFirstEvent = new Date(year, month, day, progs[day][progs[day].length - 1].hr, progs[day][progs[day].length - 1].min)
 if (data > dateFirstEvent) day++
 
 if (window.location.pathname == '/agenda') {
@@ -97,7 +102,7 @@ function createEvent(prog, index, seletor) {
             $(seletor).append(e)
         })
     } else {
-        $('.item-prog').append('<p><img class="mr-2" src="icones/atencao.png">Em breve atualizaremos nossa agenda...</p>')
+        $('.item-prog span').css('display', 'block')
     }
 }
 
