@@ -286,6 +286,27 @@
 
 
 
+@media (min-width: 768px) {
+    .navbar {
+        padding: 1rem 2.8rem;
+    }
+    .navbar-brand img {
+        max-height: 70px;
+    }
+    .nav-link {
+        font-size: 1rem;
+    }
+    .carousel-inner, .carousel-item {
+        max-height: 600px;
+    }
+    .line {
+        flex-direction: row;
+        margin: 0 30px;
+    }
+    .conteudo-slide {
+        padding: 50px;
+    }
+}
 
 
 
