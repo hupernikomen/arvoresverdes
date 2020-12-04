@@ -142,7 +142,7 @@
     .item-prog p {
         padding: 5px 20px;
     }
-    .item-prog span {
+    .diaSemEvento {
         display: none;
     }
     .item-prog, .boasVindas {

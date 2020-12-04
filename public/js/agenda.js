@@ -52,8 +52,8 @@ const reuniaoM = {
 }
 
 
-agendOfMonth = 12
-const prog = new Array();
+const agendOfMonth = 12
+const prog = []
 // O indice representa o dia do evento ou culto
 
 prog[4] = [oracao]
@@ -66,10 +66,9 @@ prog[20] = [ebd, cultoDominical]
 prog[25] = [oracao]
 prog[27] = [ebd, cultoDominical]
 
-for (var i = 0; i < prog.length; i++) {
+for (let i = 0; i < prog.length; i++) {
     if (prog[i] == undefined) prog[i] = []
 }
-
 
 const ultimoDia = new Date(data.getFullYear(), data.getMonth() + 1, 0).getDate();
 if (prog[ultimoDia] == undefined) prog[ultimoDia] = []
@@ -84,27 +83,27 @@ while (prog[day] == '') {
 
 // Pega o ultimo evento do dia 
 const dateFirstEvent = new Date(year, month, day, prog[day][prog[day].length - 1].hr, prog[day][prog[day].length - 1].min)
+
 if (data > dateFirstEvent) day++
 
 if (window.location.pathname == '/agenda') {
     for (day; day < prog.length; day++) {
-        createEvent(prog[day], Object.keys(prog)[day], '.itens-prog')
+        createEvent('.itens-prog')
     }
-} else if (window.location.pathname == '/') {
-    createEvent(prog[day], Object.keys(prog)[day], '.item-prog')
-}
+} else if (window.location.pathname == '/') createEvent('.item-prog')
 
-function createEvent(el, index, seletor) {
+
+
+function createEvent(seletor) {
     if (agendOfMonth == month + 1) {
-
-        el.map(i => {
+        prog[day].map(i => {
             var e = `
-            <p style="border-left: 5px solid ${i.cor}">${index == diaComp ? '<span>Hoje</span>' : week[dayOfWeek(index)]} (${index}) ${i.evt} às ${i.hr}:${i.min}hs ${i.loc}</p>
+            <p style="border-left: 5px solid ${i.cor}">${Object.keys(prog)[day] == diaComp ? '<span>Hoje</span>' : week[dayOfWeek(Object.keys(prog)[day])]} (${Object.keys(prog)[day]}) ${i.evt} às ${i.hr}:${i.min}hs ${i.loc}</p>
             `
             $(seletor).append(e)
         })
     } else {
-        $('.item-prog span').css('display', 'block')
+        $('.diaSemEvento').css('display', 'block')
     }
 }
 
