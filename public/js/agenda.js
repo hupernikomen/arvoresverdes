@@ -76,23 +76,23 @@ if (prog[ultimoDia] == undefined) prog[ultimoDia] = []
 
 $('.mes').html(months[month])
 
+
+// Pega o ultimo evento do dia 
+const dateFirstEvent = new Date(year, month, day, prog[day][prog[day].length - 1].hr, prog[day][prog[day].length - 1].min)
+if (data > dateFirstEvent) day++
+
 while (prog[day] == '') {
     day++
     if (prog[day] == null) day = 0
 }
 
-// Pega o ultimo evento do dia 
-const dateFirstEvent = new Date(year, month, day, prog[day][prog[day].length - 1].hr, prog[day][prog[day].length - 1].min)
-
-if (data > dateFirstEvent) day++
-
 if (window.location.pathname == '/agenda') {
     for (day; day < prog.length; day++) {
         createEvent('.itens-prog')
     }
-} else if (window.location.pathname == '/') createEvent('.item-prog')
-
-
+} else if (window.location.pathname == '/') {
+    createEvent('.item-prog')
+}
 
 function createEvent(seletor) {
     if (agendOfMonth == month + 1) {
