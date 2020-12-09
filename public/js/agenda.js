@@ -100,10 +100,13 @@ if (window.location.pathname == '/agenda') {
 }
 
 function createEvent(seletor) {
+    d = ['Hoje', 'Amanhã']
+    const condicao = Object.keys(prog)[day] == diaComp || Object.keys(prog)[day] - diaComp < 2
+    
     if (agendOfMonth == month + 1) {
         prog[day].map(i => {
             var e = `
-            <p style="border-left: 5px solid ${i.cor}">${Object.keys(prog)[day] == diaComp ? '<span>Hoje</span>' : week[dayOfWeek(Object.keys(prog)[day])]} (${Object.keys(prog)[day]}) ${i.evt} às ${i.hr}:${i.min}hs ${i.loc}</p>
+            <p style="border-left: 5px solid ${i.cor}">${condicao ? `<span>${d[Object.keys(prog)[day] - diaComp]}</span>` : week[dayOfWeek(Object.keys(prog)[day])]} (${Object.keys(prog)[day]}) ${i.evt} às ${i.hr}:${i.min}hs ${i.loc}</p>
             `
             $(seletor).append(e)
         })
@@ -111,6 +114,7 @@ function createEvent(seletor) {
         $('.diaSemEvento').css('display', 'block')
     }
 }
+
 
 function dayOfWeek(day) {
     return new Date(year, month, day).getDay()
