@@ -8,6 +8,8 @@ const week = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quint
 
 const months = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
 
+const d = ['Hoje', 'Amanhã']
+
 const cultoDominical = {
     'cor': '#659EA3',
     'evt': 'Culto de Louvor e Pregação',
@@ -100,7 +102,7 @@ if (window.location.pathname == '/agenda') {
 }
 
 function createEvent(seletor) {
-    d = ['Hoje', 'Amanhã']
+
     const condicao = Object.keys(prog)[day] == diaComp || Object.keys(prog)[day] - diaComp < 2
     
     if (agendOfMonth == month + 1) {
@@ -114,7 +116,6 @@ function createEvent(seletor) {
         $('.diaSemEvento').css('display', 'block')
     }
 }
-
 
 function dayOfWeek(day) {
     return new Date(year, month, day).getDay()
