@@ -8,11 +8,18 @@ var biblioteca =
             'link': 'https://drive.google.com/file/d/1b8Dy-8u-JMbNJhmOfu6AE8Np-aA-P98u/view?usp=sharing'
         },
         {
-            'categoria':'ebd',
+            'categoria':'livros',
             'capa': '<img src="../imagens/livros/o_que_significa_ser_nascido_de_novo.webp">',
             'titulo': 'O que significa ser nascido de novo?',
             'autor': 'R. C. Sproul',
             'link': 'https://drive.google.com/file/d/1Ww9BrZ1j8AfG50ILqY_qYjnNqu9JVJnH/view?usp=sharing'
+        },
+        {
+            'categoria':'livros',
+            'capa': '<img src="../imagens/livros/como_estudar_a_biblia.jpg">',
+            'titulo': 'Como estudar a bíblia',
+            'autor': 'James Braga',
+            'link': 'https://drive.google.com/file/d/12DAVhsCxX8aevfE4o0YJ0_QLSA3zsL8X/view?usp=sharing'
         }
     ]
 

@@ -67,7 +67,9 @@ prog[25] = [oracao]
 prog[27] = [ebd, cultoDominical]
 
 for (let i = 0; i < prog.length; i++) {
-    if (prog[i] == undefined) prog[i] = []
+    if (prog[i] == undefined) {
+        prog[i] = []
+    }
 }
 
 const ultimoDia = new Date(data.getFullYear(), data.getMonth() + 1, 0).getDate();
@@ -79,11 +81,15 @@ $('.mes').html(months[month])
 
 while (prog[day] == '') {
     day++
-    if (prog[day] == null) day = 0
+    if (prog[day] == null) {
+        day = 0
+    }
 }
 
 const dateFirstEvent = new Date(year, month, day, prog[day][prog[day].length - 1].hr, prog[day][prog[day].length - 1].min)
-if (data > dateFirstEvent) day++
+if (data > dateFirstEvent) {
+    day++
+}
 
 if (window.location.pathname == '/agenda') {
     for (day; day < prog.length; day++) {
