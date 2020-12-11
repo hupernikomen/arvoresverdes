@@ -8,7 +8,7 @@ const week = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quint
 
 const months = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
 
-const d = ['Hoje', 'Amanhã']
+const ha = ['Hoje', 'Amanhã']
 
 const cultoDominical = {
     'cor': '#659EA3',
@@ -53,10 +53,8 @@ const reuniaoM = {
     'loc': 'na Casa da Irmã ...'
 }
 
-
 const agendOfMonth = 12
 const prog = []
-// O indice representa o dia do evento ou culto
 
 prog[4] = [oracao]
 prog[6] = [ebd, cultoDominical]
@@ -108,7 +106,7 @@ function createEvent(seletor) {
     if (agendOfMonth == month + 1) {
         prog[day].map(i => {
             var e = `
-            <p style="border-left: 5px solid ${i.cor}">${condicao ? `<span>${d[Object.keys(prog)[day] - diaComp]}</span>` : week[dayOfWeek(Object.keys(prog)[day])]} (${Object.keys(prog)[day]}) ${i.evt} às ${i.hr}:${i.min}hs ${i.loc}</p>
+            <p style="border-left: 5px solid ${i.cor}">${condicao ? `<span>${ha[Object.keys(prog)[day] - diaComp]}</span>` : week[dayOfWeek(Object.keys(prog)[day])]} (${Object.keys(prog)[day]}) ${i.evt} às ${i.hr}:${i.min}hs ${i.loc}</p>
             `
             $(seletor).append(e)
         })
