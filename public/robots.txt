@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.ibavthe.com/sitemap.xml
+Sitemap: https://ibavthe.com/sitemap.xml
