@@ -25,4 +25,8 @@ app.get('/culto-infantil', (req, res) => {
     res.sendFile(__dirname + '/html/culto-infantil.html')
 })
 
+app.get('/desk', (req, res) => {
+    res.sendFile(__dirname + '/html/desk.html')
+})
+
 app.listen(3000, ()=> console.log('Rodando 3000'))
