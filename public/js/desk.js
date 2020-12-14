@@ -1,4 +1,4 @@
 let larg = window.screen.width
-if (larg > 1024) {
+if (larg > 768) {
   window.location = 'https://www.ibavthe.com/desk'
 }
