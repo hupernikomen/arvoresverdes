@@ -64,7 +64,6 @@ prog[12] = [pizza];
 prog[13] = [ebd, cultoDominical];
 prog[18] = [oracao];
 prog[20] = [ebd, cultoDominical];
-prog[25] = [oracao];
 prog[27] = [ebd, cultoDominical];
 
 for (let i = 0; i < prog.length; i++) {
